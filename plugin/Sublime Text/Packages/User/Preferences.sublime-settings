@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Dark.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"theme": "auto",
+}

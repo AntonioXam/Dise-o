@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"auto-save",
+		"AutoFileName",
+		"Babel",
+		"Babel Snippets",
+		"BootstrapAutocomplete",
+		"BracketHighlighter",
+		"Color Highlight",
+		"Color Highlighter",
+		"comment-snippet",
+		"Emmet",
+		"Emmet Css Snippets",
+		"FileIcons",
+		"HTML Snippets",
+		"HTML5",
+		"jQuery",
+		"LiveReload",
+		"LSP",
+		"LSP-copilot",
+		"Monokai Dark",
+		"Package Control",
+		"Save Copy As",
+		"SublimeCodeIntel",
+	],
+}
