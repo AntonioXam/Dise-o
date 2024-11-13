@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<script href="../bootstrap/js/bootstrap.bundle.min.js"></script>
-	
+	<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 	<title>desplegable</title>
 	<style>
 
@@ -21,7 +20,7 @@
 			<div class="col">
 				<h2>Botones dropdown</h2>
 				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+					<button type="button" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
 						Dropdown button
 					</button>
 					<ul class="dropdown-menu" >
@@ -41,7 +40,7 @@
 			<div class="col">
 				<h2>Botones dropdown</h2>
 				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+					<button type="button" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
 						Botón DROPDOWN con menu desplegable a la derecha
 					</button>
 					<ul class="dropdown-menu dropdown-menu-end" >
@@ -52,7 +51,52 @@
 
 			</div>
 		</div>
+
+
+		<hr>
+
+
+
+		<h2>dropdown end </h2>
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+				Dropdown button
+			</button>
+			<ul class="dropdown-menu dropdown-menu-end" >
+				<a class="dropdown-item" href="#">Opción 1</a>
+				<a class="dropdown-item" href="#">Opción 2</a>
+				<a class="dropdown-item" href="#">Opción 3</a>
+			</ul>
 		
+		<hr>
+
+		<h2>Dropdown start</h2>
+		<div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+				Dropdown button
+			</button>
+			<ul class="dropdown-menu dropdown-menu-start" >
+				<a class="dropdown-item" href="#">Opción 1</a>
+				<a class="dropdown-item" href="#">Opción 2</a>
+				<a class="dropdown-item" href="#">Opción 3</a>
+			</ul>
+
+
+
+			<hr>
+
+
+			<h2>Desplegable con aria-labelledby</h2>
+			<button class="btn btn-success dropdown-toggle" type="button" id="ejemplo-desplegable" data-bs-toggle="dropdown">
+				Diseño Web</button>
+				<ul class="dropdown-menu" aria-labelledby="ejemplo-desplegable">
+					<li><h6 class="dropdown-header">Elige una opciom:</h6>
+					<li><a class="dropdown-item" href="#">HTML</a></li>
+					<li><a class="dropdown-item" href="#">CSS</a></li>
+					<li><a class="dropdown-item" href="#">JavaScript</a></li>
+					<li><hr class="dropdown-divider"></a>
+						<li><a class="dropdown-item" href="#">Boostrap</a>
+				</ul>
 		
 
 	</div>
