@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+	<title>Inputs Tamaños</title>
+	<style>
+
+	
+		
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				
+				<form action="">
+            <h2>Etiquetas flotantes</h2>
+            <small>form-floating</small>
+            <!-- Usando el div form-floating -->
+            <!-- primero input antes que label -->
+            <!--PLaceholder vacio para que haga la animación el label,  -->
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="text" class="form-control" placeholder="">
+                <label for="text">User</label>
+             </div>
+
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="passw" class="form-control" placeholder="">
+                <label for="passwd">Password</label>
+             </div>
+             
+       </form>
+
+       <br>
+       <hr>
+      
+       <form action="" class="was-validated">
+            <h2>Validación</h2>
+            <small>form.was-validated</small>
+
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="text" class="form-control" placeholder="" required>
+                <label for="text">User</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, rellena este campo</div>
+             </div>
+
+             <div class="form-floating mb-3 mt-3">
+                <input type="text" name="" id="passw" class="form-control" placeholder="" required>
+                <label for="passwd">Password</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, rellena este campo</div>
+             </div>
+
+             <div class="form-check mb-3">
+                <input type="checkbox" name="" id="check" class="form-check-input" required>
+                <label for="check" class="form-check-label">Acepto las condiciones y términos</label>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, acepta las condiciones antes</div>
+             </div>
+
+             <button class="btn btn-primary" type="submit">Aceptar</button>
+             
+       </form>
+
+
+				<br><hr><br>
+
+				<!-- g-* horizontal y vertical //  g-x horizontal //  g-y vertical   //    gutters: Espacio entre los elementos-->
+
+				<form action="" class="row g-3">
+					<div class="col-6">
+						<label for="user">Usuario</label>
+						<input type="text" class="form-control" id="user" placeholder="Nombre de usuario">
+					</div>
+					<div class="col-6">
+						<label for="passwd">Contraseña</label>
+						<input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+					</div>
+					<div class="col-6">
+						<input type="checkbox" name="privacidad" id="privacidad" class="form-check-input">
+						<label for="privacidad" class="form-check-label">Guardar usuario y constraseña en este equipo</label>
+					</div>
+					<div class="col-6">
+						<button class="btn btn-primary" type="submit">Entrar</button>
+						
+					</div>
+
+
+				</form>
+
+				<br><br>
+				<hr>
+				<br><br>
+
+
+
+				<form action="" class="row g-3">
+					<div class="col-12 col-md-6">
+						<label for="user">Usuario</label>
+						<input type="text" class="form-control" id="user" placeholder="Nombre de usuario">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="email">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" placeholder="Email...">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="comment">Escribe tus comentarios...</label>
+						<textarea class="form-control" id="comment" rows="5" placeholder="Comentarios..."></textarea>
+					</div>
+					<div class="col-12 col-md-4">
+						<label for="nacionalidad">Nacionalidad</label>
+						<select class="form-select" id="nacionalidad">
+							<option value="1">Española</option>
+							<option value="2">Mexicana</option>
+							<option value="3">Argentina</option>
+							<option value="4">Chilena</option>
+							<option value="5">Colombiana</option>
+							<option value="6">Peruana</option>
+							<option value="7">Venezolana</option>
+						</select>
+					</div>
+					<div class="col-12  col-md-2">
+						<div class=" form-label">Sexo</div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" id="sexo1" name="sexo">
+							<label for="sexo1" class="form-check-label">Hombre</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" id="sexo2" name="sexo">
+							<label for="sexo2" class="form-check-label">Mujer</label>
+
+						</div>
+
+					</div>
+					<div class="w-100"></div>
+					<div class="col-auto mx-auto ">
+						<input type="checkbox" class="form-check-input" id="aceptar">
+						<label for="aceptar" class="form-check-label">Acepto condiciones y términos de uso</label>
+					</div>
+					<div class="w-100"></div>
+					<div class="d-grid col-md-4 mx-auto">
+						<button class="btn btn-primary" type="submit">Enviar</button>
+					</div>
+
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
