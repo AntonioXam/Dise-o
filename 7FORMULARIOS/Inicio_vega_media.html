@@ -10,7 +10,7 @@
 
 	.inicio{background-color: #deffef; border: 1px solid #eaf4ef; text-align: center;}
 
-	input{height: 50px;}
+	
 	
 
 	</style>
@@ -20,30 +20,35 @@
 <body>
 	<div class="container">
 		<div class="row justify-content-center align-items-center vh-100">
-			<div class="inicio col-7 col-md-6 col-lg-4 g-3">
+			<div class="inicio col-7 col-sm-8 col-md-6 col-lg-5 col-xl-4 g-4">
 				<div class="col-12 mb-3 mt-3">
-				<img src="img/logo-ces-vegamedia.jpg" alt="VegaMedia" title="Vega Media" class="img-fluid" width="30%">
+				<img src="../7FORMULARIOS/img/logo-ces-vegamedia.jpg" alt="VegaMedia" title="Vega Media" class="img-fluid" width="30%">
 				</div>
 				<div class="col-12 mb-3">
 				<h3>Inicio de sesión</h3>
 				</div>
-				<div class="col-12 mb-3">
-					<input type="text" name="user" placeholder="Usuario" class="form-control">
-					<small class="form-text">(Ejemplo:alumno.daw@ces-vegamedia.es)</small>
-				</div>
-				<div class="col-12 mb-3">
-					<input type="password" name="passwd" placeholder="Contraseña" class="form-control">
-				</div>
-				<div class="d-grid col-12 mb-3">
-					<button class="btn btn-success btn-lg">INICIAR SESIÓN</button>
+				<form action="#" class="was-validated">
+         		 <div class=" col-12 form-floating mb-3 mt-3">
+           		 <input type="text" name="" id="text" class="form-control" placeholder="">
+            	<label for="text">Ususario</label> 
+            	<small class="form-text">(Ejemplo: alumno.daw@ces-vegamedia.es)</small>
+         		 </div>
+
+         		 <div class="col-12 form-floating mb-3 mt-3">
+          		  <input type="text" name="" id="passw" class="form-control" placeholder="">
+         		   <label for="passwd">Contraseña</label>
+        		  </div>
+     
+					<div class="d-grid col-12 mb-3">
+						<button class="btn btn-success btn-lg">INICIAR SESIÓN</button>
 					
-				</div>
-				<div class="d-grid col-12 mb-3">
+					</div>
+					<div class="d-grid col-12 mb-3">
 					<small class="form-text">¿No tienes cuenta aún?</small>
 					<button class="btn btn-outline-success btn-lg">CREAR CUENTA</button>
-					
+				
 				</div>
-
+ 			</form>
 
 			</div>
 		</div>
