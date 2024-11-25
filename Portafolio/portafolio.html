@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<title>Portafolio Antonio Ibáñez</title>
+	<style>
+		body {
+			background-color: #2c2c2c;
+			color: #dddddd;
+		}
+		header {
+			background-color: #1a1a1a;
+		}
+	
+		header a.navbar-brand, header .navbar-nav a.nav-link {
+			color: #dddddd;
+		}
+		header a.navbar-brand:hover{color: #ffffff;}
+		
+		
+		
+	</style>
+	
+</head>
+<body>
+
+	<header class="bg-secondary text-white py-2 container">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand d-flex align-items-center" href="#">
+				<img src="images/Logo.png" alt="Logo" width="70" class="me-2">
+				Antonio Ibáñez - Desarrollador Web
+			</a>
+			<button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link me-2 text-white" href="#portafolio">
+							<i class="bi bi-briefcase me-1"></i> Portafolio
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link me-2 text-white" href="#acerca">
+							<i class="bi bi-person-circle me-1"></i> Acerca de
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#contacto">
+							<i class="bi bi-envelope me-1"></i> Contacto
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="carouselPortfolio" class="carousel slide mt-3" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="2"></button>
+				<button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/carousel1.jpg" class="d-block w-100" alt="Rock Music">
+				</div>
+				<div class="carousel-item">
+					<img src="images/carousel2.jpg" class="d-block w-100" alt="Programming">
+				</div>
+				<div class="carousel-item">
+					<img src="images/carousel3.jpg" class="d-block w-100" alt="3D Printer">
+				</div>
+				<div class="carousel-item">
+					<img src="images/carousel4.jpg" class="d-block w-100" alt="3D Printer">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</header>
+
+	<section class="container my-5">
+		<main class="mb-4">
+			<div class="row g-4">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-6">
+					<img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?fit=crop&w=300&h=200" class="img-fluid rounded shadow-lg transition-transform hover-scale" alt="Programación 1">
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=300&h=200" class="img-fluid rounded shadow-lg transition-transform hover-scale" alt="Programación 2">
+				</div>
+				<!-- Repeat for other images -->
+			</div>
+
+			<style>
+				.transition-transform {
+					transition: transform 0.3s ease;
+				}
+				.hover-scale:hover {
+					transform: scale(1.05);
+					cursor: pointer;
+				}
+				img {
+					opacity: 0.9;
+					transition: opacity 0.3s;
+				}
+				img:hover {
+					opacity: 1;
+				}
+			</style>
+
+
+
+
+		</main>
+	</section>
+
+			
+		<main/>
+	<section/>
+
+	<footer class="bg-light text-black text-center py-3 container">
+		&copy; 2023 Antonio Ibáñez. Todos los derechos reservados.
+	</footer>
+
+</body>
+</html>
