@@ -13,21 +13,45 @@
 			background-color: #2c2c2c;
 			color: #dddddd;
 		}
+
 		header {
 			background-color: #1a1a1a;
 		}
-	
-		header a.navbar-brand, header .navbar-nav a.nav-link {
+
+		header a.navbar-brand, 
+		header .navbar-nav a.nav-link {
 			color: #dddddd;
 			transition: all 0.3s ease;
 		}
+
 		header a.navbar-brand:hover {
 			color: #ffffff;
 			text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 		}
+
 		header .navbar-nav a.nav-link:hover {
 			text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 		}
+
+		.transition-transform {
+			transition: transform 0.3s ease;
+		}
+
+		.hover-scale:hover {
+			transform: scale(1.05);
+			cursor: pointer;
+		}
+
+		img {
+			opacity: 0.9;
+			transition: opacity 0.3s;
+		}
+
+		img:hover {
+			opacity: 1;
+		}
+
+
 	</style>
 	
 </head>
@@ -107,22 +131,6 @@
 			
 			</div>
 
-			<style>
-				.transition-transform {
-					transition: transform 0.3s ease;
-				}
-				.hover-scale:hover {
-					transform: scale(1.05);
-					cursor: pointer;
-				}
-				img {
-					opacity: 0.9;
-					transition: opacity 0.3s;
-				}
-				img:hover {
-					opacity: 1;
-				}
-			</style>
 
 
 
