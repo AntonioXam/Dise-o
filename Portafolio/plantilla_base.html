@@ -23,7 +23,7 @@
 	</style>
 	
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 		<header>
 	<div class="container mb-5">
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -47,13 +47,14 @@
 				Portafolio</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link nav-pills pe-3 ps-3 me-2 ">
-					<i class="bi bi-camera me-2"></i>Sobre mí</a>
+				<a href="#sobre-mi" class="nav-link nav-pills p-3 me-2">Sobre mí</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link nav-pills p-3 me-2">
-					<i class="bi bi-envelope me-2"></i>Contacto</a>
-		
+				<a href="#galeria" class="nav-link nav-pills p-3 me-2">Galería</a>
+			</li>
+			<li class="nav-item">
+				<a href="#contacto" class="nav-link nav-pills p-3 me-2">Contacto</a>
+			</li>
 		</ul>
 		</div>
 	</nav>
@@ -127,12 +128,118 @@
 	</section>
 </div>
 
-	<footer class="row">
-		<div class="col">
-			
-		</div>
-	</footer>
+<!-- Sección Sobre mí -->
+<section id="sobre-mi" class="mt-5">
+    <h2>Sobre mí</h2>
+    <div class="accordion" id="accordionSobreMi">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingUno">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno">
+                    Experiencia
+                </button>
+            </h2>
+            <div id="collapseUno" class="accordion-collapse collapse show" data-bs-parent="#accordionSobreMi">
+                <div class="accordion-body">
+                    <!-- Detalles de experiencia -->
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos">
+                    Habilidades
+                </button>
+            </h2>
+            <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#accordionSobreMi">
+                <div class="accordion-body">
+                    <h5>HTML</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <h5>CSS</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <h5>JavaScript</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                    <!-- ...otras habilidades... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Sección Galería -->
+<section id="galeria" class="mt-5">
+    <h2>Galería</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="images/galeria1.jpg" class="galeria-item">
+                <img src="images/galeria1_thumb.jpg" class="img-fluid" alt="Imagen 1">
+            </a>
+        </div>
+        <!-- ...otras imágenes... -->
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="mt-5">
+    <h2>Contacto</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+<footer class="row mt-5">
+    <div class="col text-center">
+        <a href="https://facebook.com" class="me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com" class="me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
+    </div>
+</footer>
+
+<!-- Scripts adicionales para Magnific Popup y Scrollspy -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.galeria-item').magnificPopup({
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    });
+</script>
+
+<!-- Scripts adicionales para Lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        var lightboxLinks = document.querySelectorAll('[data-bs-toggle="modal"]');
+        lightboxLinks.forEach(function(link){
+            link.addEventListener('click', function(e){
+                e.preventDefault();
+                // Implementación Lightbox
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
