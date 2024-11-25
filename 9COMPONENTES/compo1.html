@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+	<title>compo1</title>
+	<style>
+
+	
+		
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-auto">
+
+				<h2>Alertas</h2>
+				
+				<div class="alert alert-success">
+					<b>Succes!</b> Este cuadro de alerta indica una acción positiva o exitosa
+				</div>
+				<div class="alert alert-info">
+					<b>Info!</b> Este cuadro de alerta indica una acción informativa
+				</div>
+
+				<div class="alert alert-warning">
+					<b>Warning!</b> Este cuadro de alerta indica una acción de advertencia
+				</div>
+
+				<div class="alert alert-danger">
+					<b>Danger!</b> Este cuadro de alerta indica una acción peligrosa o negativa
+				</div>
+
+				<div class="alert alert-primary">
+					<b>Primary!</b> Este cuadro de alerta indica una acción importante
+				</div>
+
+				<div class="alert alert-secondary">
+					<b>Secondary!</b> Este cuadro de alerta indica una acción secundario
+				</div>
+
+				<div class="alert alert-light border-dark">
+					<b>Light!</b> Este cuadro de alerta indica una acción de poca importancia
+				</div>
+
+				<div class="alert alert-dark">
+					<b>Dark!</b> Este cuadro de alerta indica una acción oscura
+				</div>
+
+				<hr>
+
+				<h2>Aletas con enlaces</h2>
+
+				<div class="alert alert-danger">
+					<b>Peligro!</b> Cuidado con el contenido
+					<a href="#" class="alert-link"> Pinche aquí para más detalles</a> 
+				</div>
+
+				<div class="alert alert-warning">
+					<b>Advertencia!</b> Debe leer <a href="#" class="alert-link">este mensaje</a> antes de continuar.
+				</div>
+
+				<hr>
+
+
+				<h2>Alerta dismissible</h2>
+					<div class="alert alert-success alert-dismissible">
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+					Haz click sobre el símbolo "X" a la derecha para cerrarme.
+				</div>
+
+				<hr>
+
+
+					<h2>Alerta dismissible con fade show</h2>
+					<div class="alert alert-warning alert-dismissible fade show">
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+					Haz click sobre el símbolo "X" a la derecha para cerrarme.
+				</div>
+
+				<hr>
+
+
+				<h2>Insignias (badgets)</h2>
+				<h1>Encabezado H1<span class="badge bg-secondary">Etiqueta</span></h1>
+				<h2>Encabezado H2<span class="badge bg-primary">Etiqueta</span></h2>
+				<h3>Encabezado H3<span class="badge bg-success">Etiqueta</span></h3>
+				<h4>Encabezado H4<span class="badge bg-danger">Etiqueta</span></h4>
+				<h5>Encabezado H5<span class="badge bg-warning">Etiqueta</span></h5>
+				<h6>Encabezado H6<span class="badge bg-info text-dark">Etiqueta</span></h6>
+
+				<hr>
+
+				<h2>Insignias (badgets) con H3</h2>
+				<h3>Encabezado H3<span class="badge bg-secondary">Secondary</span></h3>
+				<h3>Encabezado H3<span class="badge bg-primary">Primary</span></h3>
+				<h3>Encabezado H3<span class="badge bg-success">Succes</span></h3>
+				<h3>Encabezado H3<span class="badge bg-danger">Danger</span></h3>
+				<h3>Encabezado H3<span class="badge bg-warning">Warning</span></h3>
+				<h3>Encabezado H3<span class="badge bg-info text-dark">Info</span></h3>
+				<h3>Encabezado H3<span class="badge bg-light text-dark">Light</span></h3>
+
+				<hr>
+
+				<h2>Insignias (badgets) con rounded-pill</h2>
+				<h3>Encabezado H3<span class="badge bg-secondary rounded-pill">Secondary</span></h3>
+				<h3>Encabezado H3<span class="badge bg-primary rounded-pill">Primary</span></h3>
+				<h3>Encabezado H3<span class="badge bg-success rounded-pill">Succes</span></h3>
+				<h3>Encabezado H3<span class="badge bg-danger rounded-pill">Danger</span></h3>
+				<h3>Encabezado H3<span class="badge bg-warning rounded-pill">Warning</span></h3>
+				<h3>Encabezado H3<span class="badge bg-info text-dark rounded-pill">Info</span></h3>
+				<h3>Encabezado H3<span class="badge bg-light text-dark rounded-pill">Light</span></h3>
+
+
+				<hr>
+
+
+				<h2>Insignias (badgets) con button</h2>
+
+				<button type="button" class="btn btn-outline-secondary">
+					Notificaciones <span class="badge bg-danger">8</span>	
+				</button>
+
+				<button type="button" class="btn btn-primary">
+					Mensajes <span class="badge bg-light text-dark">12</span>	
+				</button>
+
+				<hr>
+
+				<h2>Insignias (badgets) con button y posicion relativa</h2>
+
+
+				<button type="button" class="btn btn-primary position-relative me-3">
+					Recibidos <span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">8</span>	
+				</button>
+
+
+
+				<button type="button" class="btn btn-primary position-relative">
+					Alerta <span class="rounded-circle p-2 border border-light bg-danger position-absolute top-0 start-100 translate-middle"></span>	
+				</button>
+
+				<hr>
+
+
+				<h2>Cards</h2>
+
+				<div class="card mb-3">
+					<div class="card-body">Basic card</div>
+				</div>
+
+				<hr>
+
+
+				<div class="card mb-3">
+					<div class="card-header">Header</div>
+					<div class="card-body">Contenido</div>
+					<div class="card-footer">Footer</div>
+				</div>
+
+
+				<hr>
+
+				<h2>Cards colores</h2>
+
+				<div class="card bg-primary text-white mb-3">
+					<div class="card-body">Primary card</div>
+
+				</div>
+
+					<div class="card bg-success text-white mb-3">
+					<div class="card-body">Succes card</div>
+
+				</div>
+
+
+				<div class="card bg-danger text-white mb-3">
+					<div class="card-body">Danger card</div>
+
+				</div>
+
+				<div class="card bg-warning text-white mb-3">
+					<div class="card-body">Warning card</div>
+				</div>
+
+				<div class="card bg-info text-white mb-3">
+					<div class="card-body">Info card</div>
+				</div>
+
+				<div class="card bg-secondary text-white mb-3">
+					<div class="card-body">Secondary card</div>
+				</div>
+
+				<div class="card bg-light text-dark mb-3">
+					<div class="card-body">Dark card</div>
+				</div>
+
+				<div class="card bg-dark text-white mb-3">
+					<div class="card-body">Primary card</div>
+				</div>
+
+
+				<hr>
+
+				<h2>Cards bordes y alineamiento</h2>
+
+				<div class="card border-danger mb-3">
+					<div class="card-body">Card con border <em>Danger</em> y texto alineado a la izquierda</div>
+				</div>
+
+				<div class="card border-warning mb-3">
+					<div class="card-body text-center">Card con border <em>Warning</em> y texto centrado</div>
+				</div>
+
+				<div class="card border-info mb-3">
+					<div class="card-body text-end">Card con border <em>Info</em> y texto alineado a la derecha</div>
+				</div>
+
+				<hr>
+
+
+				<h2>Cards Tamaños</h2>
+
+				<div class="card bg-primary text-white w-100 mb-3">
+					<div class="card-body">Card tamaño 100%</div>
+				</div>
+
+				<div class="card bg-success text-white w-50 mb-3">
+					<div class="card-body">Card tamaño 50%</div>
+				</div>
+
+				<div class="card bg-danger text-white w-25 mb-3">
+					<div class="card-body">Card tamaño 25%</div>
+				</div>
+
+				<div class="card bg-warning text-white w-75 mb-3">
+					<div class="card-body">Card tamaño 75%</div>
+				</div>
+
+				<h4>Con pixeles</h4>
+
+				<div class="card bg-info text-white style="width:300px;>
+					<div class="card-body">Card tamaño 300px</div>
+				</div>
+
+
+				<hr>
+
+				<h2>Cards con links</h2>
+
+					<div class="card">
+			  <div class="card-body">
+			    <h4 class="card-title">Titulo</h4>
+			    <p class="card-text">Ejemplo de texto</p>
+			    <a href="#" class="card-link">Card link</a>
+			    <a href="#" class="card-link">Another link</a>
+			  </div>
+			</div>
+
+
+			<hr>
+
+				<h2>Cards con Imagenes</h2>
+
+				<div class="row">
+				<div class="col-6">
+							<div class="card mb-3" style="width:300px">
+			  <img class="card-img-top" src="images/avatar2.png" alt="Card image">
+			  <div class="card-body text-center">
+			    <h4 class="card-title">Juan López</h4>
+			    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+			    <a href="#" class="btn btn-primary">Ver perfil</a>
+			  </div>
+			</div>
+			</div>
+
+			<div class="col-6">
+								<div class="card mb-3" style="width:300px">
+			  <div class="card-body text-center">
+			    <h4 class="card-title">Juana López</h4>
+			    <p class="card-text">Desarrolladora web. Experto en HTML, CSS y Bootstrap.</p>
+			    <a href="#" class="btn btn-primary">Ver perfil</a>
+			  </div>
+			  <img class="card-img-bottom" src="images/avatar5.png" alt="Card image">
+			</div>
+
+			</div>
+			</div>
+
+
+			<hr>
+
+
+			<h2>Ejemplos Cards</h2>
+
+
+			<div class="card" style="width:75%">
+			  <img class="card-img-top" src="images/vegamedia01.jpg" alt="Card image" width="100%">
+			  <div class="card-body">
+			    <h4 class="card-title">C.E.S Vega Media</h4>
+			    <small class="text-muted">Centro de Enseñanza Concertad</small>
+			    <p class="card-text mt-3">El C.E.S. Vega Media es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio donde compartimos muchas cosas con otras Cooperativas pero donde también tenemos nuestra propia identidad que nos hace diferentes.
+
+				Aquí se mezclan la experiencia, madurez y estabilidad que aportan los socios más antiguos, con la frescura y la ilusión que nos traen las últimas generaciones, pero todos con un denominador común: “Seguir trabajando por nuestro Centro, por una mayor calidad en nuestros servicios, siendo flexibles a los cambios constantes de la sociedad para adaptarnos a ellos en las mejores condiciones, y aprovechando la creatividad y la iniciativa que sólo las personas pueden aportar”.</p>
+			    <a href="https://ces-vegamedia.es/" class="btn btn-primary d-grid stretched-link">Ir al sitio web</a>
+			  </div>
+
+
+			  <hr>
+
+
+
+
+			  <div class="container">
+				<div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+				<div class="col">
+							<div class="card mb-3" style="width:300px">
+			  <img class="card-img-top" src="images/avatar2.png" alt="Card image">
+			  <div class="card-body text-center">
+			    <h4 class="card-title">Juan López</h4>
+			    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+			    <a href="#" class="btn btn-primary">Ver perfil</a>
+			  </div>
+			</div>
+
+
+			<div class="col">
+							<div class="card mb-3" style="width:300px">
+			  <img class="card-img-top" src="images/avatar3.png" alt="Card image">
+			  <div class="card-body text-center">
+			    <h4 class="card-title">Juan López</h4>
+			    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+			    <a href="#" class="btn btn-primary">Ver perfil</a>
+			  </div>
+			</div>
+
+			<div class="col">
+							<div class="card mb-3" style="width:300px">
+			  <img class="card-img-top" src="images/avatar4.png" alt="Card image">
+			  <div class="card-body text-center">
+			    <h4 class="card-title">Juan López</h4>
+			    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+			    <a href="#" class="btn btn-primary">Ver perfil</a>
+			  </div>
+			</div>
+
+			<div class="col">
+							<div class="card mb-3" style="width:300px">
+			  <img class="card-img-top" src="images/avatar5.png" alt="Card image">
+			  <div class="card-body text-center">
+			    <h4 class="card-title">Juan López</h4>
+			    <p class="card-text">Desarrollador web. Experto en HTML, CSS y Bootstrap.</p>
+			    <a href="#" class="btn btn-primary">Ver perfil</a>
+			  </div>
+			</div>
+
+
+			</div>
+			</div>
+
+
+			  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
+
+

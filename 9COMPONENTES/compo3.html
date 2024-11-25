@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+	<title>compo3</title>
+	<style>
+
+	
+		
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		  <div class="row">
+        <div class="col">
+          <h3>Collapse simple con boton</h3>
+          <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            data-bs-target="#plegable1"
+          >
+            Plegable
+          </button>
+          <div id="plegable1" class="collapse show">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Accusantium, placeat maiores in doloribus odio quae fugiat
+            laudantium quod architecto distinctio rem minima voluptates, saepe
+            assumenda cupiditate repellendus enim ex animi.
+          </div>
+        </div>
+
+        <div class="col">
+          <h3>Collapse con enlace</h3>
+          <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+          <a
+            href="#plegable2"
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+          >
+            Plegable enlace
+          </a>
+          <div id="plegable2" class="collapse">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Accusantium, placeat maiores in doloribus odio quae fugiat
+            laudantium quod architecto distinctio rem minima voluptates, saepe
+            assumenda cupiditate repellendus enim ex animi.
+          </div>
+        </div>
+      </div>
+	</div>
+</body>
+</html>
+
+
