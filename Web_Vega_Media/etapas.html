@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>CES Vega Media</title>
+    <style>
+        .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0d6efd;
+        }
+        .etapa-header {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card-ciclo {
+            transition: transform 0.3s;
+        }
+        .card-ciclo:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo CES Vega Media" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="etapas.html">Etapas Educativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalaciones.html">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Etapas Educativas</h1>
+
+        <!-- Educación Básica -->
+        <div class="accordion" id="educacionBasica">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#infantil">
+                        Educación Infantil <span class="badge bg-primary ms-2">2-6 años</span>
+                    </button>
+                </h2>
+                <div id="infantil" class="accordion-collapse collapse show" data-bs-parent="#educacionBasica">
+                    <div class="accordion-body">
+                        <p>Esta etapa está dedicada al fomento y el desarrollo integral de personalidad individual...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Similares secciones para Primaria, ESO y FP Básica -->
+        </div>
+
+        <!-- Ciclos Formativos -->
+        <h2 class="text-center my-5">Ciclos Formativos</h2>
+        
+        <!-- Grado Medio -->
+        <div class="etapa-header">
+            <h3>Grado Medio <span class="badge bg-success">Formación Profesional</span></h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card card-ciclo h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalaciones Eléctricas y Automáticas</h5>
+                            <p class="card-text">2000 horas de formación...</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalElectrica">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más cards para otros ciclos -->
+            </div>
+        </div>
+
+        <!-- Modal ejemplo -->
+        <div class="modal fade" id="modalElectrica" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Instalaciones Eléctricas y Automáticas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido detallado del ciclo -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-geo-alt"></i> C/ Example, 123<br>
+                        <i class="bi bi-telephone"></i> 968 123 456<br>
+                        <i class="bi bi-envelope"></i> info@ces-vegamedia.es
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="aviso-legal.html" class="text-light">Aviso Legal</a></li>
+                        <li><a href="privacidad.html" class="text-light">Política de Privacidad</a></li>
+                        <li><a href="cookies.html" class="text-light">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2023 CES Vega Media. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

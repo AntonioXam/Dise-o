@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>CES Vega Media</title>
+    <style>
+        .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0d6efd;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo CES Vega Media" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="etapas.html">Etapas Educativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalaciones.html">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <!-- Alert informativo -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>¡Matrícula abierta!</strong> Consulta nuestras ofertas educativas para el próximo curso.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Carousel -->
+        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider1.jpg" class="d-block w-100" alt="Centro educativo">
+                    <div class="carousel-caption">
+                        <h2>Bienvenidos al CES Vega Media</h2>
+                        <p>Tu futuro comienza aquí</p>
+                    </div>
+                </div>
+                <!-- Agregar más items del carousel -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Carta de presentación -->
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Carta de Presentación</h2>
+                <p class="lead">El CES Vega Media es un centro concertado donde la enseñanza es totalmente gratuita...</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#masInfo">
+                    Leer más
+                </button>
+                <div class="collapse mt-3" id="masInfo">
+                    <!-- ...texto completo de la carta... -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards destacadas -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/infantil.jpg" class="card-img-top" alt="Educación Infantil">
+                    <div class="card-body">
+                        <h5 class="card-title">Educación Infantil <span class="badge bg-primary">Nuevo</span></h5>
+                        <p class="card-text">Desarrollo integral de la personalidad individual...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ...más cards... -->
+        </div>
+    </div>
+
+    <!-- Modal de bienvenida -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Bienvenido a CES Vega Media!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Gracias por visitar nuestro sitio web. Descubre todas nuestras ofertas educativas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para mostrar el modal automáticamente -->
+    <script>
+        window.addEventListener('load', () => {
+            new bootstrap.Modal(document.getElementById('welcomeModal')).show();
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-geo-alt"></i> C/ Example, 123<br>
+                        <i class="bi bi-telephone"></i> 968 123 456<br>
+                        <i class="bi bi-envelope"></i> info@ces-vegamedia.es
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="aviso-legal.html" class="text-light">Aviso Legal</a></li>
+                        <li><a href="privacidad.html" class="text-light">Política de Privacidad</a></li>
+                        <li><a href="cookies.html" class="text-light">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2023 CES Vega Media. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

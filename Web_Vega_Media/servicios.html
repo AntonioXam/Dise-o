@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>CES Vega Media</title>
+    <style>
+        .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0d6efd;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+        }
+        .parallax {
+            background-image: url('img/servicios-bg.jpg');
+            height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo CES Vega Media" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="etapas.html">Etapas Educativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalaciones.html">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section con parallax -->
+    <div class="parallax d-flex align-items-center justify-content-center text-white">
+        <div class="text-center">
+            <h1 class="display-4">Nuestros Servicios</h1>
+            <p class="lead">Comprometidos con la educación de calidad</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- Alert informativo -->
+        <div class="alert alert-primary alert-dismissible fade show mb-4" role="alert">
+            <i class="bi bi-info-circle-fill"></i> Todos nuestros servicios están incluidos en la matrícula
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Servicios principales -->
+        <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-book service-icon mb-3"></i>
+                        <h3 class="card-title">Biblioteca</h3>
+                        <p class="card-text">Espacio de estudio y consulta con recursos actualizados</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bibliotecaModal">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-laptop service-icon mb-3"></i>
+                        <h3 class="card-title">Aulas TIC</h3>
+                        <p class="card-text">Equipamiento tecnológico de última generación</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#aulasInfo">
+                            Detalles
+                        </button>
+                        <div class="collapse mt-3" id="aulasInfo">
+                            <ul class="list-group">
+                                <li class="list-group-item">Ordenadores actualizados</li>
+                                <li class="list-group-item">Software especializado</li>
+                                <li class="list-group-item">Conexión de alta velocidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ...más servicios... -->
+        </div>
+    </div>
+
+    <!-- Modal Biblioteca -->
+    <div class="modal fade" id="bibliotecaModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Biblioteca del Centro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nuestra biblioteca cuenta con más de 5000 volúmenes y áreas especializadas de estudio.</p>
+                    <!-- ...más contenido... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-geo-alt"></i> C/ Example, 123<br>
+                        <i class="bi bi-telephone"></i> 968 123 456<br>
+                        <i class="bi bi-envelope"></i> info@ces-vegamedia.es
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="aviso-legal.html" class="text-light">Aviso Legal</a></li>
+                        <li><a href="privacidad.html" class="text-light">Política de Privacidad</a></li>
+                        <li><a href="cookies.html" class="text-light">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2023 CES Vega Media. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
