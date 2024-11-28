@@ -159,48 +159,143 @@
 		<main class="mb-4">
 			<!-- Sección de Portafolio con Lightbox -->
 			<div class="row g-2 justify-content-center" id="portafolio">
-				<h2 class="text-center mb-4">Portafolio</h2>
-				<!-- Galería de imágenes con efecto lightbox -->
-				<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-					<a href="images/porta (1).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<!-- La clase ajustarImagen mantiene todas las imágenes con el mismo tamaño -->
-						<img src="images/porta (1).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="gamer">
-					</a>
+				<!-- Galería de imágenes con efecto modal -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (1).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="gamer" data-bs-toggle="modal" data-bs-target="#modal1">
 				</div>
-				<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-					<a href="images/porta (2).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (2).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="games">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (2).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="games" data-bs-toggle="modal" data-bs-target="#modal2">
 				</div>
-				<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-					<a href="images/porta (3).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (3).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="print">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (3).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="print" data-bs-toggle="modal" data-bs-target="#modal3">
 				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-4">
-					<a href="images/porta (5).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (5).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="drums">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (4).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="arcade" data-bs-toggle="modal" data-bs-target="#modal4">
 				</div>
-				<div class="col-6 col-sm-6 col-md-6 col-lg-4">
-					<a href="images/porta (4).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (4).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="arcade">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (5).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="drums" data-bs-toggle="modal" data-bs-target="#modal5">
 				</div>
-				<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-					<a href="images/porta (6).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (6).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="VR">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (6).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="VR" data-bs-toggle="modal" data-bs-target="#modal6">
 				</div>
-				<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-					<a href="images/porta (7).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (7).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="php">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (7).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="php" data-bs-toggle="modal" data-bs-target="#modal7">
 				</div>
-				<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-					<a href="images/porta (8).jpg" data-toggle="lightbox" data-gallery="portfolio-gallery">
-						<img src="images/porta (8).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="tablegames">
-					</a>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<img src="images/porta (8).jpg" class="img-fluid rounded shadow-lg transition-transform hover-scale ajustarImagen" alt="tablegames" data-bs-toggle="modal" data-bs-target="#modal8">
+				</div>
+			</div>
+
+			<!-- Modals -->
+			<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal1Label">Gamer</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (1).jpg" class="img-fluid" alt="gamer">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal2Label">Videojuegos</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (2).jpg" class="img-fluid" alt="games">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal3Label">Impresión 3D</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (3).jpg" class="img-fluid" alt="print">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal4Label">Arcade</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (4).jpg" class="img-fluid" alt="arcade">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal5Label">Drums</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (5).jpg" class="img-fluid" alt="drums">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal6Label">Realidad Virtual</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (6).jpg" class="img-fluid" alt="VR">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal7Label">Programación</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (7).jpg" class="img-fluid" alt="php">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content bg-dark text-white">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal8Label">Juegos de Mesa</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<img src="images/porta (8).jpg" class="img-fluid" alt="tablegames">
+						</div>
+					</div>
 				</div>
 			</div>
 
