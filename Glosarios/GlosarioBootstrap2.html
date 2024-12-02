@@ -1,0 +1,4117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Glosario Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+      .example-container {
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #f1f1f1; /* Fondo de color para mejor visualización */
+      }
+      .code-section {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .nav-section {
+        position: sticky;
+        top: 0;
+        background: white;
+        padding: 10px 0;
+        border-bottom: 1px solid #dee2e6;
+        margin-bottom: 20px;
+      }
+      pre code {
+        display: block;
+        padding: 1rem;
+        color: #212529;
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.875em;
+        white-space: pre-wrap;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+      .example-title {
+        background-color: #e9ecef; /* Fondo de color para los títulos de ejemplos */
+        padding: 10px;
+        border-radius: 4px;
+      }
+      section {
+        background-color: #f9f9f9; /* Fondo para las secciones */
+        max-width: 1500px; /* Ancho ampliado */
+        margin: 0 auto;
+        padding: 20px;
+      }
+      pre {
+        position: relative;
+      }
+      .copy-button {
+        position: absolute;
+        top: 10px;
+        right: 20px; /* Ajuste de posición para evitar superposición */
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        z-index: 1; /* Asegura que el botón esté por encima del código */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4">Glosario Bootstrap</h1>
+
+      <!-- Menú de navegación -->
+      <nav class="nav-section">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#textos">Textos y Tipografías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#imagenes-tablas">Imágenes y Tablas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#botones">Botones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#todos-los-inputs">Todos los inputs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#select">Ejemplo de Select</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dropdown">Dropdown</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#grupo-botones">Grupo de botones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#checkbox-ejemplos">Checkbox ejemplos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formularios">Formularios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formularios-validacion">Formularios Validación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#etiquetas-flotantes">Etiquetas Flotantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tamano-inputos">Tamaño Inputs</a>
+          </li>
+        </ul>
+      </nav>
+
+      
+
+      <!-- Sección de Textos y Tipografías -->
+      <section id="textos" class="mb-5">
+        <h2>Textos y Tipografías</h2>
+        <div class="example-container">
+          <h3 class="example-title">Tipografias</h3>
+
+          <!-- Ejemplo 1 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p>Para usar todo el espacio de la pantalla</p>
+              
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">class="container-fluid"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Ejemplo 2 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p>Comentaros secundarios</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">&lt;small&gt; y class="text-muted"&lt;/small&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Ejemplo 3 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p>Resaltar parrafos</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">class="lead"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row mb-4">
+            <div class="col-12">
+              <p class="fs-1"><mark>Resaltar Palabras</mark></p>
+              <pre><code class="language-html">&lt;mark&gt;&lt;/mark&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p class="fs-2"><s>Tachar Palabras</s></p>
+              <pre><code class="language-html">&lt;s&gt;&lt;/s&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p class="fs-3"><u>Subrayar Palabras</u></p>
+              <pre><code class="language-html">&lt;u&gt;&lt;/u&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p class="fs-4"><small>Tamaño Mínimo</small></p>
+              <pre><code class="language-html">&lt;small&gt;&lt;/small&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p class="fs-5"><strong>Negrita</strong></p>
+              <pre><code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p class="fs-6"><em>Cursiva</em></p>
+              <pre><code class="language-html">&lt;em&gt;&lt;/em&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p class="fs-6"><abbr title="Abreviatura">Abreviatura</abbr></p>
+              <pre><code class="language-html">&lt;abbr title="Abreviatura"&gt;Abreviatura&lt;/abbr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+        
+          </div>
+
+          
+          <hr />
+
+          <!-- Ejemplo 5 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p>Alinear texto a la izquierda</p>
+              <p class="text-center">Alinear texto al centro</p>
+              <p class="text-end">Alinear texto a la derecha</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">class="text-start"
+          class="text-center"
+          class="text-end"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Ejemplo 6 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p>Alinear segun el Tamaño</p>
+              <p>Alinear en 2 ocasiones</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">class="text-start text-sm-end"
+          class="text-center text-lg-end text-xl-start"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Ejemplo 7 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p class="text-lowercase">Minusculas</p>
+              <p class="text-uppercase">Mayusculas</p>
+              <p class="text-capitalize">Letra Capital</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">class="text-lowercase"
+          class="text-uppercase"
+          class="text-capitalize"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Ejemplo 8 -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <p class="fw-bold">Parrafo en negrita</p>
+              <p class="fw-light">Parrafo finito</p>
+              <p class="fw-italic">Italica</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12">
+              <pre><code class="language-html">class="fw-bold"
+          class="fw-light"
+          class="fw-italic"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+            <hr />
+
+            <div class="col-6">
+              <blockquote class="blockquote">
+                <p>Footer al parrafo lado izquierdo</p>
+                <footer class="blockquote-footer">Izquierdo</footer>
+              </blockquote>
+              <blockquote class="blockquote text-end">
+                <p>Footer al parrafo lado derecho</p>
+                <footer class="blockquote-footer">Derecho</footer>
+              </blockquote>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;blockquote class="blockquote"&gt;
+    &lt;p&gt;Texto&lt;/p&gt;
+    &lt;footer class="blockquote-footer"&gt;Izquierdo&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class="blockquote text-end"&gt;
+    &lt;p&gt;Texto&lt;/p&gt;
+    &lt;footer class="blockquote-footer"&gt;Izquierdo&lt;/footer&gt;
+&lt;/blockquote&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+
+            <hr />
+
+            <div class="col-6">
+              <p>Codigo en una linea</p>
+              <pre><code>&lt;code>&lt;/code></code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p>Bloques de Codigo</p>
+              <pre><code>&lt;pre>&lt;/pre></code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <p>Combinacion de Teclas</p>
+              <pre><code>&lt;kbd>&lt;/kbd></code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+           
+          </div> <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+        </div>
+       
+      </section>
+
+      <!-- Sección de Imágenes y Tablas -->
+      <section id="imagenes-tablas" class="mb-5">
+        <h2>Imágenes y Tablas</h2>
+        <div class="example-container">
+          <!-- Grupo de Ejemplos de Imágenes con su Código -->
+          <h3 class="example-title">Ejemplos de Imágenes</h3>
+          
+          <!-- Ejemplos visuales de imágenes -->
+          <div class="row mb-4">
+            <div class="col-md-3">
+              <img src="../4IMAGENES/images/perro1.jpg" class="rounded" alt="Imagen redondeada">
+              <p class="text-center mt-2">rounded</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../4IMAGENES/images/perro2.jpg" class="rounded-circle" alt="Imagen circular">
+              <p class="text-center mt-2">rounded-circle</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../4IMAGENES/images/gato1.jpg" class="img-thumbnail" alt="Imagen con thumbnail">
+              <p class="text-center mt-2">img-thumbnail</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../4IMAGENES/images/perro3.jpg" class="img-fluid" alt="Imagen fluida">
+              <p class="text-center mt-2">img-fluid</p>
+            </div>
+          </div>
+
+          <!-- Código de las clases de imágenes -->
+          <div class="row">
+            <div class="col-6">
+              <p>Imagen con bordes redondos</p>
+              <pre><code class="language-html">class="rounded"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <p>Imagen circular</p>
+              <pre><code class="language-html">class="rounded-circle"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <p>Añadiendo borde a la imagen</p>
+              <pre><code class="language-html">class="img-thumbnail"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <p>Imágenes responsive</p>
+              <pre><code class="language-html">class="img-fluid"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <p>Floatar imagen a la Izquierda</p>
+              <pre><code class="language-html">class="float-start"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <p>Floatar imagen a la Derecha</p>
+              <pre><code class="language-html">class="float-end"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <p>Para centrar la imagen</p>
+              <pre><code class="language-html">class="mx-auto d-block"</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Grupo de Ejemplos de Tablas con su Código -->
+          <h2 class="example-title">Ejemplos de Tablas</h2>
+
+          <!-- Tabla con Colores -->
+          <h4 class="mt-4">Tabla con Colores</h4>
+          <table class="table mb-4">
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Descripción</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <td>Primary</td>
+                <td>Fila en azul</td>
+                <td>1</td>
+              </tr>
+              <tr class="table-success">
+                <td>Success</td>
+                <td>Fila en verde</td>
+                <td>2</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Danger</td>
+                <td>Fila en rojo</td>
+                <td>3</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Warning</td>
+                <td>Fila en amarillo</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Tabla con Bordes -->
+          <h4 class="mt-4">Tabla con Bordes</h4>
+          <table class="table table-bordered mb-4">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Juan Pérez</td>
+                <td>juan@email.com</td>
+                <td>123-456-789</td>
+              </tr>
+              <tr>
+                <td>María García</td>
+                <td>maria@email.com</td>
+                <td>987-654-321</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Tabla con Hover -->
+          <h4 class="mt-4">Tabla con Hover y Striped</h4>
+          <table class="table table-hover table-striped mb-4">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Producto 1</td>
+                <td>$100</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Producto 2</td>
+                <td>$200</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Producto 3</td>
+                <td>$150</td>
+                <td>40</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Tabla Responsive -->
+          <h4 class="mt-4">Tabla Responsive</h4>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Column 1</th>
+                  <th>Column 2</th>
+                  <th>Column 3</th>
+                  <th>Column 4</th>
+                  <th>Column 5</th>
+                  <th>Column 6</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Código de las clases de tablas -->
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla básica</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla en colores oscuros</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table table-dark"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla alternando colores</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table table-striped"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla con bordes</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table table-bordered"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla sin bordes</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table table-borderless"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla compacta</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table table-sm"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla con hover</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;table class="table table-hover"&gt;
+            &lt;!-- contenido de la tabla --&gt;
+          &lt;/table&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Tabla responsive</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;div class="table-responsive"&gt;
+            &lt;table class="table"&gt;
+              &lt;!-- contenido de la tabla --&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Fila o celda color: Azul</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;tr class="table-primary"&gt;
+            &lt;!-- contenido de la fila --&gt;
+          &lt;/tr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Fila o celda color: Verde</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;tr class="table-success"&gt;
+            &lt;!-- contenido de la fila --&gt;
+          &lt;/tr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Fila o celda color: Rojo</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;tr class="table-danger"&gt;
+            &lt;!-- contenido de la fila --&gt;
+          &lt;/tr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Fila o celda color: Azul claro</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;tr class="table-info"&gt;
+            &lt;!-- contenido de la fila --&gt;
+          &lt;/tr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div a class="row mb-4">
+            <div class="col-6">
+              <p>Fila o celda color: Naranja</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;tr class="table-warning"&gt;
+            &lt;!-- contenido de la fila --&gt;
+          &lt;/tr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Fila o celda color: Gris</p>
+            </div>
+            <div class="col-6">
+              <pre><code class="language-html">&lt;tr class="table-secondary"&gt;
+            &lt;!-- contenido de la fila --&gt;
+          &lt;/tr&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+             <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+        </section>
+     
+        
+        <!-- Sección de Botones Ordenada -->
+        <section id="botones" class="mb-5">
+          <h2 id="botones">Botones</h2>
+          
+          <!-- Botones Básicos -->
+          <div class="row mb-4">
+            <div class="col-6">
+              <p><button type="button" class="btn">Básico</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn"&gt;Básico&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p><button type="button" class="btn btn-primary">Azul</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-primary"&gt;Azul&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Botones de Estado -->
+          <div class="row mb-4">
+            <div class="col-6">
+              <p><button type="button" class="btn btn-secondary">Gris</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-secondary"&gt;Gris&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p><button type="button" class="btn btn-success">Verde</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-success"&gt;Verde&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Botones de Información -->
+          <div class="row mb-4">
+            <div class="col-6">
+              <p><button type="button" class="btn btn-info">Azul Claro</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-info"&gt;Azul Claro&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p><button type="button" class="btn btn-warning">Naranja</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-warning"&gt;Naranja&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Botones de Peligro -->
+          <div class="row mb-4">
+            <div class="col-6">
+              <p><button type="button" class="btn btn-danger">Rojo</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-danger"&gt;Rojo&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p><button type="button" class="btn btn-link">Link</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Botones de Fondo -->
+          <div class="row mb-4">
+            <div class="col-6">
+              <p><button type="button" class="btn btn-dark">Negro</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-dark"&gt;Negro&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p><button type="button" class="btn btn-light">Blanco</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-light"&gt;Blanco&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Botones de Enlace y Entrada -->
+          <hr />
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>
+                <a href="#" role="button" class="btn btn-primary">Link</a>
+              </p>
+              <pre><code class="language-html">&lt;a href="#" role="button" class="btn btn-primary"&gt;Link&lt;/a&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p>
+                <input class="btn btn-primary" type="submit" value="Submit" />
+              </p>
+              <pre><code class="language-html">&lt;input class="btn btn-primary" type="submit" value="Submit" /&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>
+                <input class="btn btn-primary" type="reset" value="Reset" />
+              </p>
+              <pre><code class="language-html">&lt;input class="btn btn-primary" type="reset" value="Reset" /&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Botones con Outline -->
+          <hr />
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <p><button type="button" class="btn btn-outline-primary">Azul</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-outline-primary"&gt;Azul&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+            <div class="col-6">
+              <p><button type="button" class="btn btn-outline-secondary">Gris</button></p>
+              <pre><code class="language-html">&lt;button type="button" class="btn btn-outline-secondary"&gt;Gris&lt;/button&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+            </div>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+        </section>
+
+      <!-- Continua el mismo patrón para los demás botones -->
+
+
+            <hr />
+
+
+            <section id="dropdown" class="mb-5">
+              <h2 id="dropdown">Dropdown</h2>
+
+              <div class="col-6">
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    Boton DROPDOWN
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opcion 3</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="dropdown"&gt;
+              &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;
+                Boton DROPDOWN
+              &lt;/button&gt;
+              &lt;ul class="dropdown-menu"&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opcion 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opcion 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opcion 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <p>Añadir una cabecera al desplegable</p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;li&gt;&lt;h6 class="dropdown-header"&gt;Cabecera Dropdown&lt;/h6&gt;&lt;/li&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <p>Añadir un divisor</p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <p>Alinear opciones del menu a la derecha</p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;ul class="dropdown-menu dropdown-menu-end"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <p>Desplegable hacia arriba</p>
+                <p>Desplegable hacia la derecha</p>
+                <p>Desplegable hacia la izquierda</p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="dropup"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+                </pre>
+                <pre><code class="language-html">&lt;div class="dropend"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+                </pre>
+                <pre><code class="language-html">&lt;div class="dropstart"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+                </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary">1</button>
+                  <button type="button" class="btn btn-secondary">2</button>
+                  <button type="button" class="btn btn-secondary">3</button>
+                  <button type="button" class="btn btn-secondary">4</button>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="btn-group"&gt;
+              &lt;button type="button" class="btn btn-secondary"&gt;1&lt;/button&gt;
+              &lt;button type="button" class="btn btn-secondary"&gt;2&lt;/button&gt;
+              &lt;button type="button" class="btn btn-secondary"&gt;3&lt;/button&gt;
+              &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <div class="btn-toolbar">
+                  <div class="btn-group me-3">
+                    <button type="button" class="btn btn-primary">1</button>
+                    <button type="button" class="btn btn-primary">2</button>
+                    <button type="button" class="btn btn-primary">3</button>
+                    <button type="button" class="btn btn-primary">4</button>
+                  </div>
+
+                  <div class="btn-group me-3">
+                    <button type="button" class="btn btn-outline-primary">5</button>
+                    <button type="button" class="btn btn-outline-primary">6</button>
+                    <button type="button" class="btn btn-outline-primary">7</button>
+                    <button type="button" class="btn btn-outline-primary">8</button>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">9</button>
+                    <button type="button" class="btn btn-info">10</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="btn-toolbar"&gt;
+              &lt;div class="btn-group me-3"&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;1&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;2&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;3&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;4&lt;/button&gt;
+              &lt;/div&gt;
+
+              &lt;div class="btn-group me-3"&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;5&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;6&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;7&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-primary"&gt;8&lt;/button&gt;
+              &lt;/div&gt;
+
+              &lt;div class="btn-group"&gt;
+                &lt;button type="button" class="btn btn-info"&gt;9&lt;/button&gt;
+                &lt;button type="button" class="btn btn-info"&gt;10&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <p>Grupo de botones pequeño</p>
+                <p>Grupo de botones grande</p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="btn-group btn-group-sm"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+                </pre>
+                <pre><code class="language-html">&lt;div class="btn-group btn-group-lg"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+                </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <p>Grupo de botones vertical</p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="btn-group-vertical"&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+                </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-info">1</button>
+                  <button type="button" class="btn btn-info">2</button>
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-info dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="btn-group"&gt;
+              &lt;button type="button" class="btn btn-info"&gt;1&lt;/button&gt;
+              &lt;button type="button" class="btn btn-info"&gt;2&lt;/button&gt; 
+              &lt;div class="btn-group"&gt;
+                &lt;button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt;
+                  Dropdown
+                &lt;/button&gt;
+                &lt;ul class="dropdown-menu"&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+
+              <hr />
+
+              <div class="col-6">
+                <!-- Ejercicio: Grupo de botones en vertical con desplegables -->
+                <div class="btn-group-vertical">
+                  <div class="btn-group dropend">
+                    <button
+                      type="button"
+                      class="btn btn-info dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      Menu 1
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group dropend">
+                    <button
+                      type="button"
+                      class="btn btn-info dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      Menu 2
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                      <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                      <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group dropend">
+                    <button
+                      type="button"
+                      class="btn btn-info dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      Menu 3
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Enlace 1</a></li>
+                      <li><a class="dropdown-item" href="#">Enlace 2</a></li>
+                      <li><a class="dropdown-item" href="#">Enlace 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="btn-group-vertical"&gt;
+              &lt;div class="btn-group dropend"&gt;
+                &lt;button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt; Menu 1 &lt;/button&gt;
+                &lt;ul class="dropdown-menu"&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class="btn-group dropend"&gt;
+                &lt;button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt; Menu 2 &lt;/button&gt;
+                &lt;ul class="dropdown-menu"&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class="btn-group dropend"&gt;
+                &lt;button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"&gt; Menu 3 &lt;/button&gt;
+                &lt;ul class="dropdown-menu"&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Enlace 1&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Enlace 2&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Enlace 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+              </div>
+              <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+            </section>
+
+            <hr />
+
+            <section id="grupo-botones" class="mb-5">
+              <h2 id="grupo-botones">Grupo de botones</h2>
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="btn-group">
+                    <input class="btn-check" type="checkbox" id="cine" checked />
+                    <label class="btn btn-outline-primary" for="cine">Cine</label>
+
+                    <input class="btn-check" type="checkbox" id="music" checked />
+                    <label class="btn btn-outline-primary" for="music">Musica</label>
+
+                    <input class="btn-check" type="checkbox" id="sport" checked />
+                    <label class="btn btn-outline-primary" for="sport">Deportes</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <pre><code class="language-html">&lt;div class="btn-group"&gt;
+              &lt;input class="btn-check" type="checkbox" id="cine" checked /&gt;
+              &lt;label class="btn btn-outline-primary" for="cine"&gt;Cine&lt;/label&gt;
+
+              &lt;input class="btn-check" type="checkbox" id="music" checked /&gt;
+              &lt;label class="btn btn-outline-primary" for="music"&gt;Musica&lt;/label&gt;
+
+              &lt;input class="btn-check" type="checkbox" id="sport" checked /&gt;
+              &lt;label class="btn btn-outline-primary" for="sport"&gt;Deportes&lt;/label&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+                </div>
+
+                <hr />
+
+                <div class="col-6">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="ecivil" id="solter" />
+                    <label class="btn btn-outline-primary" for="solter">Soltero/a</label>
+
+                    <input class="btn-check" type="radio" name="ecivil" id="casad" />
+                    <label class="btn btn-outline-primary" for="casad">Casado/a</label>
+
+                    <input class="btn-check" type="radio" name="ecivil" id="otro" />
+                    <label class="btn btn-outline-primary" for="otro">Otro</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <pre><code class="language-html">&lt;div class="btn-group"&gt;
+              &lt;input class="btn-check" type="radio" name="ecivil" id="solter" /&gt;
+              &lt;label class="btn btn-outline-primary" for="solter"&gt;Soltero/a&lt;/label&gt;
+
+              &lt;input class="btn-check" type="radio" name="ecivil" id="casad" /&gt;
+              &lt;label class="btn btn-outline-primary" for="casad"&gt;Casado/a&lt;/label&gt;
+
+              &lt;input class="btn-check" type="radio" name="ecivil" id="otro" /&gt;
+              &lt;label class="btn btn-outline-primary" for="otro"&gt;Otro&lt;/label&gt;
+            &lt;/div&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+                </div>
+              </div>
+              <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+            </section>
+
+        <!-- Sección de Formularios -->
+        <section id="todos-los-inputs" class="mb-5">
+          <h2 id="todos-los-inputs">Todos los inputs</h2>
+          <div class="example-container">
+            <div class="row">
+              <div class="col-6">
+                <p><label class="form-label">Text: <input type="text" class="form-control" placeholder="Text" /></label></p>
+                <pre><code class="language-html">&lt;input type="text" class="form-control" placeholder="Text" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Email: <input type="email" class="form-control" placeholder="Email" /></label></p>
+                <pre><code class="language-html">&lt;input type="email" class="form-control" placeholder="Email" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Number: <input type="number" class="form-control" placeholder="Number" /></label></p>
+                <pre><code class="language-html">&lt;input type="number" class="form-control" placeholder="Number" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Date: <input type="date" class="form-control" placeholder="Date" /></label></p>
+                <pre><code class="language-html">&lt;input type="date" class="form-control" placeholder="Date" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Time: <input type="time" class="form-control" placeholder="Time" /></label></p>
+                <pre><code class="language-html">&lt;input type="time" class="form-control" placeholder="Time" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">URL: <input type="url" class="form-control" placeholder="URL" /></label></p>
+                <pre><code class="language-html">&lt;input type="url" class="form-control" placeholder="URL" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Teléfono: <input type="tel" class="form-control" placeholder="Teléfono" /></label></p>
+                <pre><code class="language-html">&lt;input type="tel" class="form-control" placeholder="Teléfono" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Search: <input type="search" class="form-control" placeholder="Search" /></label></p>
+                <pre><code class="language-html">&lt;input type="search" class="form-control" placeholder="Search" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Color: <input type="color" class="form-control" placeholder="Color" /></label></p>
+                <pre><code class="language-html">&lt;input type="color" class="form-control" placeholder="Color" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">File: <input type="file" class="form-control" placeholder="File" /></label></p>
+                <pre><code class="language-html">&lt;input type="file" class="form-control" placeholder="File" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Range: <input type="range" class="form-control" placeholder="Range" /></label></p>
+                <pre><code class="language-html">&lt;input type="range" class="form-control" placeholder="Range" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Hidden: <input type="hidden" class="form-control" placeholder="Hidden" /></label></p>
+                <pre><code class="language-html">&lt;input type="hidden" class="form-control" placeholder="Hidden" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Submit: <input type="submit" class="form-control" value="Submit" /></label></p>
+                <pre><code class="language-html">&lt;input type="submit" class="form-control" value="Submit" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Reset: <input type="reset" class="form-control" value="Reset" /></label></p>
+                <pre><code class="language-html">&lt;input type="reset" class="form-control" value="Reset" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Button: <input type="button" class="form-control" value="Button" /></label></p>
+                <pre><code class="language-html">&lt;input type="button" class="form-control" value="Button" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Checkbox: <input type="checkbox" class="form-check-input" /></label></p>
+                <pre><code class="language-html">&lt;input type="checkbox" class="form-check-input" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Radio: <input type="radio" class="form-check-input" /></label></p>
+                <pre><code class="language-html">&lt;input type="radio" class="form-check-input" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Disabled: <input type="text" class="form-control" disabled placeholder="Disabled" /></label></p>
+                <pre><code class="language-html">&lt;input type="text" class="form-control" disabled placeholder="Disabled" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+
+                <p><label class="form-label">Readonly: <input type="text" class="form-control" readonly placeholder="Readonly" /></label></p>
+                <pre><code class="language-html">&lt;input type="text" class="form-control" readonly placeholder="Readonly" /&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+        </section>
+
+        <hr>
+
+        <!-- select -->
+        <section id="select" class="mb-5">
+          <h2 id="select">Ejemplo de Select</h2>
+          <div class="example-container">
+            <div class="row">
+              <div class="col-6">
+                <p>
+                  <label class="form-label">Select:
+                    <select class="form-select">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </label>
+                </p>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;select class="form-select"&gt;
+  &lt;option selected&gt;Open this select menu&lt;/option&gt;
+  &lt;option value="1"&gt;One&lt;/option&gt;
+  &lt;option value="2"&gt;Two&lt;/option&gt;
+  &lt;option value="3"&gt;Three&lt;/select&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+       
+
+        <hr>
+
+ 
+            <h2 id="checkbox-ejemplos">Checkbox ejemplos</h2>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check1" checked>
+                  <label for="check1" class="form-check-label">Checkado</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check2">
+                  <label for="check2" class="form-check-label">Default</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check3" disabled>
+                  <label for="check3" class="form-check-label">Desactivado</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check4" checked disabled>
+                  <label for="check4" class="form-check-label">Checkado y desactivado</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check1" checked&gt;
+  &lt;label for="check1" class="form-check-label"&gt;Checkado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check2"&gt;
+  &lt;label for="check2" class="form-check-label"&gt;Default&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check3" disabled&gt;
+  &lt;label for="check3" class="form-check-label"&gt;Desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check4" checked disabled&gt;
+  &lt;label for="check4" class="form-check-label"&gt;Checkado y desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+
+            <hr>
+
+
+            <h2>Checkbox inline</h2>
+            <div class="row"></div>
+              <div class="col-6">
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" id="check5" checked>
+                  <label for="check5" class="form-check-label">Checkado</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" id="check6">
+                  <label for="check6" class="form-check-label">Default</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" id="check7" disabled>
+                  <label for="check7" class="form-check-label">Desactivado</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" class="form-check-input" id="check8" checked disabled>
+                  <label for="check8" class="form-check-label">Checkado y desactivado</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check5" checked&gt;
+  &lt;label for="check5" class="form-check-label"&gt;Checkado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check6"&gt;
+  &lt;label for="check6" class="form-check-label"&gt;Default&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check7" disabled&gt;
+  &lt;label for="check7" class="form-check-label"&gt;Desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check8" checked disabled&gt;
+  &lt;label for="check8" class="form-check-label"&gt;Checkado y desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2>Radio ejemplos</h2>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio1" name="radio" checked>
+                  <label for="radio1" class="form-check-label">Checkado</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="radio">
+                  <label for="radio2" class="form-check-label">Default</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio3" name="radio" disabled>
+                  <label for="radio3" class="form-check-label">Desactivado</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="radio" class="form-check-input" id="radio1" name="radio" checked&gt;
+  &lt;label for="radio1" class="form-check-label"&gt;Checkado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="radio" class="form-check-input" id="radio2" name="radio"&gt;
+  &lt;label for="radio2" class="form-check-label"&gt;Default&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check"&gt;
+  &lt;input type="radio" class="form-check-input" id="radio3" name="radio" disabled&gt;
+  &lt;label for="radio3" class="form-check-label"&gt;Desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+
+            <h5>Radio inline</h5>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="radio4" name="radio-inline" checked>
+                  <label for="radio4" class="form-check-label">Checkado</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="radio5" name="radio-inline">
+                  <label for="radio5" class="form-check-label">Default</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" id="radio6" name="radio-inline" disabled>
+                  <label for="radio6" class="form-check-label">Desactivado</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="radio" class="form-check-input" id="radio4" name="radio-inline" checked&gt;
+  &lt;label for="radio4" class="form-check-label"&gt;Checkado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="radio" class="form-check-input" id="radio5" name="radio-inline"&gt;
+  &lt;label for="radio5" class="form-check-label"&gt;Default&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-check-inline"&gt;
+  &lt;input type="radio" class="form-check-input" id="radio6" name="radio-inline" disabled&gt;
+  &lt;label for="radio6" class="form-check-label"&gt;Desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+
+            <h3>Switch ejemplos</h3>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch1" checked>
+                  <label for="switch1" class="form-check-label">Checkado</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch2">
+                  <label for="switch2" class="form-check-label">Default</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch3" disabled>
+                  <label for="switch3" class="form-check-label">Desactivado</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch4" checked disabled>
+                  <label for="switch4" class="form-check-label">Checkado y desactivado</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <pre><code class="language-html">&lt;div class="form-check form-switch"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="switch1" checked&gt;
+  &lt;label for="switch1" class="form-check-label"&gt;Checkado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-switch"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="switch2"&gt;
+  &lt;label for="switch2" class="form-check-label"&gt;Default&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-switch"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="switch3" disabled&gt;
+  &lt;label for="switch3" class="form-check-label"&gt;Desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+                <pre><code class="language-html">&lt;div class="form-check form-switch"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="switch4" checked disabled&gt;
+  &lt;label for="switch4" class="form-check-label"&gt;Checkado y desactivado&lt;/label&gt;
+&lt;/div&gt;</code>
+<button class="copy-button" onclick="copyCode(this)">Copiar</button>
+</pre>
+              </div>
+            </div>
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+          </div>
+        </section>
+      </div>
+
+
+      <section>
+        
+        <h2 id="formularios">Formularios</h2>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h2>Formulario vertical</h2>
+            <form action="">
+              <div class="mb-3">
+                <label for="user" class="form-label">Login</label>
+                <input type="text" class="form-control" id="user" name="user" placeholder="user">
+              </div>
+              <div class="mb-3">
+                <label for="passwd" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass">
+              </div>
+              <div><button class="btn btn-primary" type="submit">Sign in</button></div>
+            </form>
+            <pre><code class="language-html">&lt;h2&gt;Formulario vertical&lt;/h2&gt;
+        &lt;form action=""&gt;
+          &lt;div class="mb-3"&gt;
+            &lt;label for="user" class="form-label"&gt;Login&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="user" name="user" placeholder="user"&gt;
+          &lt;/div&gt;
+          &lt;div class="mb-3"&gt;
+            &lt;label for="passwd" class="form-label"&gt;Password&lt;/label&gt;
+            &lt;input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass"&gt;
+          &lt;/div&gt;
+          &lt;div&gt;&lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;&lt;/div&gt;
+        &lt;/form&gt;</code>
+          <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col">
+            <h2>Formulario en linea</h2>
+            <form action="">
+              <div class="row">
+                <div class="col-auto">
+                  <label for="user" class="col-form-label">Login</label>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="user" name="user" placeholder="user">
+                </div>
+                <div class="col-auto">
+                  <label for="passwd" class="col-form-label">Password</label>
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass">
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-primary" type="submit">Sign in</button>
+                </div>
+              </div>
+            </form>
+            <pre><code class="language-html">&lt;h2&gt;Formulario en linea&lt;/h2&gt;
+        &lt;form action=""&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-auto"&gt;
+              &lt;label for="user" class="col-form-label"&gt;Login&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="col"&gt;
+              &lt;input type="text" class="form-control" id="user" name="user" placeholder="user"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-auto"&gt;
+              &lt;label for="passwd" class="col-form-label"&gt;Password&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="col"&gt;
+              &lt;input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-auto"&gt;
+              &lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;</code>
+          <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col">
+            <h2>Formulario horizontal</h2>
+            <form action="">
+              <div class="row mb-3">
+                <label for="user" class="col-2 col-form-label">Login</label>
+                <div class="col-10">
+                  <input type="text" class="form-control" id="user" name="user" placeholder="user">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="passwd" class="col-2 col-form-label">Password</label>
+                <div class="col-10">
+                  <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">Sign in</div>
+                <div class="col-2">
+                  <button class="btn btn-primary" type="submit">Sign in</button>
+                </div>
+              </div>
+            </form>
+            <pre><code class="language-html">&lt;h2&gt;Formulario horizontal&lt;/h2&gt;
+        &lt;form action=""&gt;
+          &lt;div class="row mb-3"&gt;
+            &lt;label for="user" class="col-2 col-form-label"&gt;Login&lt;/label&gt;
+            &lt;div class="col-10"&gt;
+              &lt;input type="text" class="form-control" id="user" name="user" placeholder="user"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="row mb-3"&gt;
+            &lt;label for="passwd" class="col-2 col-form-label"&gt;Password&lt;/label&gt;
+            &lt;div class="col-10"&gt;
+              &lt;input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-2"&gt;Sign in&lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              &lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;</code>
+          <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+          </div>
+        </div>
+
+
+        <hr>
+
+        <h2 id="formularios-validacion">Formularios de validacion</h2>
+        <div class="row">
+          <div class="col">
+            <form action="" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="user" class="form-label">Login</label>
+                <input type="text" class="form-control" id="user" name="user" placeholder="user" required>
+                <div class="invalid-feedback">Por favor, introduce un usuario</div>
+              </div>
+              <div class="mb-3">
+                <label for="passwd" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass" required>
+                <div class="invalid-feedback">Por favor, introduce una contraseña</div>
+              </div>
+              <div><button class="btn btn-primary" type="submit">Sign in</button></div>
+            </form>
+            <pre><code class="language-html">&lt;h2&gt;Formulario de validación&lt;/h2&gt;
+        &lt;form action="" class="needs-validation" novalidate&gt;
+          &lt;div class="mb-3"&gt;
+            &lt;label for="user" class="form-label"&gt;Login&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="user" name="user" placeholder="user" required&gt;
+            &lt;div class="invalid-feedback"&gt;Por favor, introduce un usuario&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="mb-3"&gt;
+            &lt;label for="passwd" class="form-label"&gt;Password&lt;/label&gt;
+            &lt;input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass" required&gt;
+            &lt;div class="invalid-feedback"&gt;Por favor, introduce una contraseña&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div&gt;&lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;&lt;/div&gt;
+        &lt;/form&gt;</code>
+              
+          <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+
+          </div>
+        </div>  
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+
+
+        <hr>
+
+
+        <form action="">
+          <h2 id="etiquetas-flotantes">Etiquetas flotantes</h2>
+          <small>form-floating</small>
+          <!-- Usando el div form-floating -->
+          <!-- primero input antes que label -->
+          <!-- PLaceholder vacio para que haga la animación el label,  -->
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" name="" id="text" class="form-control" placeholder="">
+            <label for="text">User</label>
+          </div>
+
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" name="" id="passw" class="form-control" placeholder="">
+            <label for="passwd">Password</label>
+          </div>
+
+          <pre><code class="language-html">&lt;form action=""&gt;
+          &lt;h2&gt;Etiquetas flotantes&lt;/h2&gt;
+          &lt;small&gt;form-floating&lt;/small&gt;
+          &lt;!-- Usando el div form-floating --&gt;
+          &lt;!-- primero input antes que label --&gt;
+          &lt;!-- PLaceholder vacio para que haga la animación el label,  --&gt;
+          &lt;div class="form-floating mb-3 mt-3"&gt;
+            &lt;input type="text" name="" id="text" class="form-control" placeholder=""&gt;
+            &lt;label for="text"&gt;User&lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;div class="form-floating mb-3 mt-3"&gt;
+            &lt;input type="text" name="" id="passw" class="form-control" placeholder=""&gt;
+            &lt;label for="passwd"&gt;Password&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+
+        <br>
+        <hr>
+
+        <form action="" class="was-validated">
+          <h2>Validación</h2>
+          <small>form.was-validated</small>
+
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" name="" id="text" class="form-control" placeholder="" required>
+            <label for="text">User</label>
+            <div class="valid-feedback">Válido</div>
+            <div class="invalid-feedback">Por favor, rellena este campo</div>
+          </div>
+
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" name="" id="passw" class="form-control" placeholder="" required>
+            <label for="passwd">Password</label>
+            <div class="valid-feedback">Válido</div>
+            <div class="invalid-feedback">Por favor, rellena este campo</div>
+          </div>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" name="" id="check" class="form-check-input" required>
+            <label for="check" class="form-check-label">Acepto las condiciones y términos</label>
+            <div class="valid-feedback">Válido</div>
+            <div class="invalid-feedback">Por favor, acepta las condiciones antes</div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Aceptar</button>
+
+          <pre><code class="language-html">&lt;form action="" class="was-validated"&gt;
+          &lt;h2&gt;Validación&lt;/h2&gt;
+          &lt;small&gt;form.was-validated&lt;/small&gt;
+
+          &lt;div class="form-floating mb-3 mt-3"&gt;
+            &lt;input type="text" name="" id="text" class="form-control" placeholder="" required&gt;
+            &lt;label for="text"&gt;User&lt;/label&gt;
+            &lt;div class="valid-feedback"&gt;Válido&lt;/div&gt;
+            &lt;div class="invalid-feedback"&gt;Por favor, rellena este campo&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="form-floating mb-3 mt-3"&gt;
+            &lt;input type="text" name="" id="passw" class="form-control" placeholder="" required&gt;
+            &lt;label for="passwd"&gt;Password&lt;/label&gt;
+            &lt;div class="valid-feedback"&gt;Válido&lt;/div&gt;
+            &lt;div class="invalid-feedback"&gt;Por favor, rellena este campo&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="form-check mb-3"&gt;
+            &lt;input type="checkbox" name="" id="check" class="form-check-input" required&gt;
+            &lt;label for="check" class="form-check-label"&gt;Acepto las condiciones y términos&lt;/label&gt;
+            &lt;div class="valid-feedback"&gt;Válido&lt;/div&gt;
+            &lt;div class="invalid-feedback"&gt;Por favor, acepta las condiciones antes&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;button class="btn btn-primary" type="submit"&gt;Aceptar&lt;/button&gt;
+        &lt;/form&gt;</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+
+        <br>
+
+        <hr>
+
+        <!-- g-* horizontal y vertical //  g-x horizontal //  g-y vertical   //    gutters: Espacio entre los elementos-->
+
+        <!-- Formulario 1 -->
+        <form action="" class="row g-3">
+          <div class="col-6">
+            <label for="user">Usuario</label>
+            <input type="text" class="form-control" id="user" placeholder="Nombre de usuario">
+          </div>
+          <div class="col-6">
+            <label for="passwd">Contraseña</label>
+            <input type="password" class="form-control" id="passwd" placeholder="Contraseña">
+          </div>
+          <div class="col-6">
+            <input type="checkbox" name="privacidad" id="privacidad" class="form-check-input">
+            <label for="privacidad" class="form-check-label">Guardar usuario y constraseña en este equipo</label>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-primary" type="submit">Entrar</button>
+          </div>
+        </form>
+        <pre><code class="language-html">&lt;form action="" class="row g-3"&gt;
+          &lt;div class="col-6"&gt;
+            &lt;label for="user"&gt;Usuario&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="user" placeholder="Nombre de usuario"&gt;
+          &lt;/div&gt;
+          &lt;div class="col-6"&gt;
+            &lt;label for="passwd"&gt;Contraseña&lt;/label&gt;
+            &lt;input type="password" class="form-control" id="passwd" placeholder="Contraseña"&gt;
+          &lt;/div&gt;
+          &lt;div class="col-6"&gt;
+            &lt;input type="checkbox" name="privacidad" id="privacidad" class="form-check-input"&gt;
+            &lt;label for="privacidad" class="form-check-label"&gt;Guardar usuario y constraseña en este equipo&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="col-6"&gt;
+            &lt;button class="btn btn-primary" type="submit"&gt;Entrar&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;</code>
+        <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- Formulario 2 -->
+        <form action="" class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="user">Usuario</label>
+            <input type="text" class="form-control" id="user" placeholder="Nombre de usuario">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Email...">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="comment">Escribe tus comentarios...</label>
+            <textarea class="form-control" id="comment" rows="5" placeholder="Comentarios..."></textarea>
+          </div>
+          <div class="col-12 col-md-4">
+            <label for="nacionalidad">Nacionalidad</label>
+            <select class="form-select" id="nacionalidad">
+              <option value="1">Española</option>
+              <option value="2">Mexicana</option>
+              <option value="3">Argentina</option>
+              <option value="4">Chilena</option>
+              <option value="5">Colombiana</option>
+              <option value="6">Peruana</option>
+              <option value="7">Venezolana</option>
+            </select>
+          </div>
+          <div class="col-12  col-md-2">
+            <div class="form-label">Sexo</div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="sexo1" name="sexo">
+              <label for="sexo1" class="form-check-label">Hombre</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="sexo2" name="sexo">
+              <label for="sexo2" class="form-check-label">Mujer</label>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-auto mx-auto">
+            <input type="checkbox" class="form-check-input" id="aceptar">
+            <label for="aceptar" class="form-check-label">Acepto condiciones y términos de uso</label>
+          </div>
+          <div class="w-100"></div>
+          <div class="d-grid col-md-4 mx-auto">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </form>
+        <pre><code class="language-html">&lt;form action="" class="row g-3"&gt;
+          &lt;div class="col-12 col-md-6"&gt;
+            &lt;label for="user"&gt;Usuario&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="user" placeholder="Nombre de usuario"&gt;
+          &lt;/div&gt;
+          &lt;div class="col-12 col-md-6"&gt;
+            &lt;label for="email"&gt;Correo electrónico&lt;/label&gt;
+            &lt;input type="email" class="form-control" id="email" placeholder="Email..."&gt;
+          &lt;/div&gt;
+          &lt;div class="col-12 col-md-6"&gt;
+            &lt;label for="comment"&gt;Escribe tus comentarios...&lt;/label&gt;
+            &lt;textarea class="form-control" id="comment" rows="5" placeholder="Comentarios..."&lt;/textarea&gt;
+          &lt;/div&gt;
+          &lt;div class="col-12 col-md-4"&gt;
+            &lt;label for="nacionalidad"&gt;Nacionalidad&lt;/label&gt;
+            &lt;select class="form-select" id="nacionalidad"&gt;
+              &lt;option value="1"&gt;Española&lt;/option&gt;
+              &lt;option value="2"&gt;Mexicana&lt;/option&gt;
+              &lt;option value="3"&gt;Argentina&lt;/option&gt;
+              &lt;option value="4"&gt;Chilena&lt;/option&gt;
+              &lt;option value="5"&gt;Colombiana&lt;/option&gt;
+              &lt;option value="6"&gt;Peruana&lt;/option&gt;
+              &lt;option value="7"&gt;Venezolana&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div class="col-12  col-md-2"&gt;
+            &lt;div class="form-label"&gt;Sexo&lt;/div&gt;
+            &lt;div class="form-check"&gt;
+              &lt;input type="radio" class="form-check-input" id="sexo1" name="sexo"&gt;
+              &lt;label for="sexo1" class="form-check-label"&gt;Hombre&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="form-check"&gt;
+              &lt;input type="radio" class="form-check-input" id="sexo2" name="sexo"&gt;
+              &lt;label for="sexo2" class="form-check-label"&gt;Mujer&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="w-100"&gt;&lt;/div&gt;
+          &lt;div class="col-auto mx-auto"&gt;
+            &lt;input type="checkbox" class="form-check-input" id="aceptar"&gt;
+            &lt;label for="aceptar" class="form-check-label"&gt;Acepto condiciones y términos de uso&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="w-100"&gt;&lt;/div&gt;
+          &lt;div class="d-grid col-md-4 mx-auto"&gt;
+            &lt;button class="btn btn-primary" type="submit"&gt;Enviar&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;</code>
+        <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+
+				</form>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="row">
+          <div class="col">
+            <h2 id="tamano-inputos">Tamaños inputs</h2>
+            <br>
+            <form>
+              <input type="text" name="text1" class="form-control form-control-sm mb-3" placeholder="Input tamaño pequeño">
+              <pre><code class="language-html">&lt;input type="text" name="text1" class="form-control form-control-sm mb-3" placeholder="Input tamaño pequeño"&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <input type="text" name="text2" class="form-control mb-3" placeholder="Input tamaño normal">
+              <pre><code class="language-html">&lt;input type="text" name="text2" class="form-control mb-3" placeholder="Input tamaño normal"&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <input type="text" name="text3" class="form-control form-control-lg mb-3" placeholder="Input tamaño grande">
+              <pre><code class="language-html">&lt;input type="text" name="text3" class="form-control form-control-lg mb-3" placeholder="Input tamaño grande"&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <br><br>
+              <hr>
+              <br><br>
+
+              <!-- Input solo de lectura-->
+              <input type="text" name="text4" class="form-control mb-3" placeholder="Input solo de lectura" readonly>
+              <pre><code class="language-html">&lt;input type="text" name="text4" class="form-control mb-3" placeholder="Input solo de lectura" readonly&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <!-- Input deshabilitado-->
+              <input type="text" name="text5" class="form-control mb-3" placeholder="Input deshabilitado" disabled>
+              <pre><code class="language-html">&lt;input type="text" name="text5" class="form-control mb-3" placeholder="Input deshabilitado" disabled&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <div class="form-check">
+                <input type="checkbox" name="aceptar" id="aceptar" class="form-check-input mb-3" disabled checked>
+                <label for="aceptar" class="form-check-label">Acepto términos y condiciones</label>
+              </div>
+              <pre><code class="language-html">&lt;div class="form-check"&gt;
+          &lt;input type="checkbox" name="aceptar" id="aceptar" class="form-check-input mb-3" disabled checked&gt;
+          &lt;label for="aceptar" class="form-check-label"&gt;Acepto términos y condiciones&lt;/label&gt;
+        &lt;/div&gt;</code>
+                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <br><br>
+              <hr>
+              <br><br>
+
+          
+              <!-- input agrupado-->
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Usuario" name="nameUser">
+              </div>
+              <pre><code class="language-html">&lt;div class="input-group mb-3"&gt;
+                &lt;span class="input-group-text"&gt;@&lt;/span&gt;
+                &lt;input type="text" class="form-control" placeholder="Usuario" name="nameUser"&gt;
+              &lt;/div&gt;</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" name="emailUser" placeholder="Email">
+                <span class="input-group-text">@ces-vegamedia.es</span>
+              </div>
+              <pre><code class="language-html">&lt;div class="input-group mb-3"&gt;
+                &lt;input type="email" class="form-control" name="emailUser" placeholder="Email"&gt;
+                &lt;span class="input-group-text"&gt;@ces-vegamedia.es&lt;/span&gt;
+              &lt;/div&gt;</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <br><br>
+              <!-- input agrupado-->
+              <div class="input-group mb-3">
+                <span class="input-group-text">€</span>
+                <input type="text" class="form-control" placeholder="Precio" name="precio">
+                <span class="input-group-text">.00</span>
+              </div>
+              <pre><code class="language-html">&lt;div class="input-group mb-3"&gt;
+                &lt;span class="input-group-text"&gt;€&lt;/span&gt;
+                &lt;input type="text" class="form-control" placeholder="Precio" name="precio"&gt;
+                &lt;span class="input-group-text"&gt;.00&lt;/span&gt;
+              &lt;/div&gt;</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Cliente</span>
+                <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+              </div>
+              <pre><code class="language-html">&lt;div class="input-group mb-3"&gt;
+                &lt;span class="input-group-text"&gt;Cliente&lt;/span&gt;
+                &lt;input type="text" class="form-control" placeholder="Nombre" name="nombre"&gt;
+                &lt;input type="text" class="form-control" placeholder="Apellido" name="apellido"&gt;
+              &lt;/div&gt;</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar..." name="buscar">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+              </div>
+              <pre><code class="language-html">&lt;div class="input-group mb-3"&gt;
+                &lt;input type="text" class="form-control" placeholder="Buscar..." name="buscar"&gt;
+                &lt;button class="btn btn-primary" type="submit"&gt;Buscar&lt;/button&gt;
+              &lt;/div&gt;</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+              <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+
+              <br><br>
+              <hr>
+              <br><br>
+
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <label for="passwd" class="col-form-label">Password</label>
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass">
+                </div>
+                <div class="col-auto">
+                  <small class="form-text">Mínimo 8 caracteres</small>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="row align-items-center"&gt;
+                &lt;div class="col-auto"&gt;
+                  &lt;label for="passwd" class="col-form-label"&gt;Password&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="col"&gt;
+                  &lt;input type="password" class="form-control" id="passwd" name="passwd" placeholder="Pass"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-auto"&gt;
+                  &lt;small class="form-text"&gt;Mínimo 8 caracteres&lt;/small&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              </pre>
+
+
+						<br><br>
+						<hr>
+						<br><br>
+
+            <div class="mb-3">
+              <label for="user" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="user" name="user" placeholder="Nombre de usuario">
+              <small class="form-text text-muted">El nombre de usuario no debe contener espacios</small>
+            </div>
+            <div class="mb-3">
+              <label for="passwd" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Contraseña">
+              <small class="form-text text-muted">La contraseña debe tener al menos 8 caracteres</small>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary">Enviar</button>
+            </div>
+            <pre><code class="language-html">
+              &lt;div class="mb-3"&gt;
+                &lt;label for="user" class="form-label"&gt;Usuario&lt;/label&gt;
+                &lt;input type="text" class="form-control" id="user" name="user" placeholder="Nombre de usuario"&gt;
+                &lt;small class="form-text text-muted"&gt;El nombre de usuario no debe contener espacios&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;div class="mb-3"&gt;
+                &lt;label for="passwd" class="form-label"&gt;Contraseña&lt;/label&gt;
+                &lt;input type="password" class="form-control" id="passwd" name="passwd" placeholder="Contraseña"&gt;
+                &lt;small class="form-text text-muted"&gt;La contraseña debe tener al menos 8 caracteres&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;div class="mb-3"&gt;
+                &lt;button class="btn btn-primary"&gt;Enviar&lt;/button&gt;
+              &lt;/div&gt;
+            </code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+
+				</form>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+
+          <hr>
+
+        <h2>Formulario de inicio de sesion</h2>
+        <style>
+          .inicio {
+            background-color: #deffef;
+            border: 1px solid #eaf4ef;
+            text-align: center;
+          }
+        </style>
+        <div class="row justify-content-center align-items-center ">
+          <div class="inicio col-7 col-sm-8 col-md-6 col-lg-5 col-xl-4 g-4">
+            <div class="col-12 mb-3 mt-3">
+              <img src="../7FORMULARIOS/img/logo-ces-vegamedia.jpg" alt="VegaMedia" title="Vega Media" class="img-fluid" width="30%">
+            </div>
+            <div class="col-12 mb-3">
+              <h3>Inicio de sesión</h3>
+            </div>
+            <form action="#" class="was-validated">
+              <div class="col-12 form-floating mb-3 mt-3">
+                <input type="text" name="" id="text" class="form-control" placeholder="">
+                <label for="text">Ususario</label>
+                <small class="form-text">(Ejemplo: alumno.daw@ces-vegamedia.es)</small>
+              </div>
+              <div class="col-12 form-floating mb-3 mt-3">
+                <input type="text" name="" id="passw" class="form-control" placeholder="">
+                <label for="passwd">Contraseña</label>
+              </div>
+              <div class="d-grid col-12 mb-3">
+                <button class="btn btn-success btn-lg">INICIAR SESIÓN</button>
+              </div>
+              <div class="d-grid col-12 mb-3">
+                <small class="form-text">¿No tienes cuenta aún?</small>
+                <button class="btn btn-outline-success btn-lg">CREAR CUENTA</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <pre><code class="language-html">
+        &lt;h2&gt;Formulario de inicio de sesion&lt;/h2&gt;
+        &lt;style&gt;
+          .inicio {
+            background-color: #deffef;
+            border: 1px solid #eaf4ef;
+            text-align: center;
+          }
+        &lt;/style&gt;
+        &lt;div class="row justify-content-center align-items-center"&gt;
+          &lt;div class="inicio col-7 col-sm-8 col-md-6 col-lg-5 col-xl-4 g-4"&gt;
+            &lt;div class="col-12 mb-3 mt-3"&gt;
+              &lt;img src="../7FORMULARIOS/img/logo-ces-vegamedia.jpg" alt="VegaMedia" title="Vega Media" class="img-fluid" width="30%"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-12 mb-3"&gt;
+              &lt;h3&gt;Inicio de sesión&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;form action="#" class="was-validated"&gt;
+              &lt;div class="col-12 form-floating mb-3 mt-3"&gt;
+                &lt;input type="text" name="" id="text" class="form-control" placeholder=""&gt;
+                &lt;label for="text"&gt;Ususario&lt;/label&gt;
+                &lt;small class="form-text"&gt;(Ejemplo: alumno.daw@ces-vegamedia.es)&lt;/small&gt;
+              &lt;/div&gt;
+              &lt;div class="col-12 form-floating mb-3 mt-3"&gt;
+                &lt;input type="text" name="" id="passw" class="form-control" placeholder=""&gt;
+                &lt;label for="passwd"&gt;Contraseña&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class="d-grid col-12 mb-3"&gt;
+                &lt;button class="btn btn-success btn-lg"&gt;INICIAR SESIÓN&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="d-grid col-12 mb-3"&gt;
+                &lt;small class="form-text"&gt;¿No tienes cuenta aún?&lt;/small&gt;
+                &lt;button class="btn btn-outline-success btn-lg"&gt;CREAR CUENTA&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+
+        </code>
+       <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+
+      </pre>
+       
+        <br><br>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Subir al inicio</button>
+
+        <br><br>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 g-5">
+            <header class="col-12 text-center">
+              <img src="../7FORMULARIOS/img/amazon.png" alt="amazon" title="amazon" class="img-fluid" width="50%">
+            </header>
+            <section class="col-12 mt-3">
+              <div class="inicio bg-white border border-1 border-light border-2 rounded-3 p-3">
+                <div class="col-12 mb-3">
+                  <h2>Iniciar sesión</h2>
+                </div>
+                <div class="col-12">
+                  <form action="#">
+                    <div class="col-12 mb-3">
+                      <label for="correo" class="form-label"><b>Dirección de e-mail o número de teléfono móvil</b></label>
+                      <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                    <div class="d-grid col-12 mb-3">
+                      <button class="btn btn-warning">Continuar</button>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <small class="fw-light"><b>Al continuar, aceptas las <a href="#">Condiciones de uso y venta</a> de Amazon. Consulta nuestro <a href="#">Aviso de privacidad</a>, nuestro <a href="#">Aviso sobre cookies</a> y nuestro <a href="#">Aviso sobre anuncios basados en intereses</a>.</b></small>
+                    </div>
+                    <div class="col-12 mb-4">
+                      <div class="dropdown">
+                        <button class="btn btn-link text-decoration-none" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          ¿Necesitas ayuda?
+                        </button>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                      <small class="fw-bold">¿Compras para tu empresa?</small>
+                    </div>
+                    <div class="col-12 mb-4">
+                      <small><a class="text-decoration-none" href="#">Comprar a Amazon Business</a></small>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <pre><code class="language-html">
+        &lt;div class="row justify-content-center"&gt;
+          &lt;div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 g-5"&gt;
+            &lt;header class="col-12 text-center"&gt;
+              &lt;img src="img/amazon.png" alt="amazon" title="amazon" class="img-fluid" width="50%"&gt;
+            &lt;/header&gt;
+            &lt;section class="col-12 mt-3"&gt;
+              &lt;div class="inicio bg-white border border-1 border-light border-2 rounded-3 p-3"&gt;
+                &lt;div class="col-12 mb-3"&gt;
+                  &lt;h2&gt;Iniciar sesión&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class="col-12"&gt;
+                  &lt;form action="#"&gt;
+                    &lt;div class="col-12 mb-3"&gt;
+                      &lt;label for="correo" class="form-label"&gt;&lt;b&gt;Dirección de e-mail o número de teléfono móvil&lt;/b&gt;&lt;/label&gt;
+                      &lt;input type="email" class="form-control" id="correo" name="correo" required&gt;
+                    &lt;/div&gt;
+                    &lt;div class="d-grid col-12 mb-3"&gt;
+                      &lt;button class="btn btn-warning"&gt;Continuar&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-12 mb-3"&gt;
+                      &lt;small class="fw-light"&gt;&lt;b&gt;Al continuar, aceptas las &lt;a href="#"&gt;Condiciones de uso y venta&lt;/a&gt; de Amazon. Consulta nuestro &lt;a href="#"&gt;Aviso de privacidad&lt;/a&gt;, nuestro &lt;a href="#"&gt;Aviso sobre cookies&lt;/a&gt; y nuestro &lt;a href="#"&gt;Aviso sobre anuncios basados en intereses&lt;/a&gt;.&lt;/b&gt;&lt;/small&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-12 mb-4"&gt;
+                      &lt;div class="dropdown"&gt;
+                        &lt;button class="btn btn-link text-decoration-none" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                          ¿Necesitas ayuda?
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;div class="col-12"&gt;
+                      &lt;small class="fw-bold"&gt;¿Compras para tu empresa?&lt;/small&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-12 mb-4"&gt;
+                      &lt;small&gt;&lt;a class="text-decoration-none" href="#"&gt;Comprar a Amazon Business&lt;/a&gt;&lt;/small&gt;
+                    &lt;/div&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/section&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+        <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <style>
+          .google {
+            background-color: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            border-radius: 30px;
+          }
+        </style>
+        <div class="row justify-content-center align-items-center ">
+          <div class="google col-10 mt-5 g-5">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="col-12 m-4 mb-4">
+                  <img src="../7FORMULARIOS/img/logoGoogle1.png" alt="google" class="img-fluid" width="9%">
+                </div>
+                <div class="col-12 mb-4">
+                  <h1>Crea una cuenta de Google</h1>
+                </div>
+                <div class="col-12">
+                  <h5>Introduce tu nombre</h5>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mt-5">
+                <div class="form-floating col-12 mb-4 mt-5">
+                  <input name="nombre" type="text" class="form-control" placeholder="" required>
+                  <label for="nombre">Nombre</label>
+                </div>
+                <div class="form-floating col-12">
+                  <input name="apellido" type="text" class="form-control" placeholder="">
+                  <label for="apellido">Apellidos (opcional)</label>
+                </div>
+                <div class="col-12 mt-5 text-end mb-4">
+                  <button class="btn btn-info rounded-pill">Siguiente</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>  <br>
+        <pre><code class="language-html">
+        &lt;div class="row justify-content-center align-items-center vh-100"&gt;
+          &lt;div class="google col-10 mt-5 g-5"&gt;
+            &lt;div class="row"&gt;
+              &lt;div class="col-12 col-lg-6"&gt;
+                &lt;div class="col-12 m-4 mb-4"&gt;
+                  &lt;img src="img/logoGoogle1.png" alt="google" class="img-fluid" width="9%"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-12 mb-4"&gt;
+                  &lt;h1&gt;Crea una cuenta de Google&lt;/h1&gt;
+                &lt;/div&gt;
+                &lt;div class="col-12"&gt;
+                  &lt;h5&gt;Introduce tu nombre&lt;/h5&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="col-12 col-lg-6 mt-5"&gt;
+                &lt;div class="form-floating col-12 mb-4 mt-5"&gt;
+                  &lt;input name="nombre" type="text" class="form-control" placeholder="" required&gt;
+                  &lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="form-floating col-12"&gt;
+                  &lt;input name="apellido" type="text" class="form-control" placeholder=""&gt;
+                  &lt;label for="apellido"&gt;Apellidos (opcional)&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="col-12 mt-5 text-end mb-4"&gt;
+                  &lt;button class="btn btn-info rounded-pill"&gt;Siguiente&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+        <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+        </pre>
+
+        <hr>
+
+        <div class="col-6">
+          <h3>Menu horizontal</h3>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6">
+          <pre>
+&lt;h3&gt;Menu horizontal&lt;/h3&gt;
+&lt;ul class="nav"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        </div>
+
+        <hr>
+
+        <div class="col-6">
+
+          <h3>Menu horizontal central</h3>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+<hr>
+
+        <div class="col-6">
+          <pre>
+&lt;h3&gt;Menu horizontal central&lt;/h3&gt;
+&lt;ul class="nav justify-content-center"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        </div>
+
+        
+        <div class="col-6">
+
+          <h3>Menu vertical</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Menu vertical&lt;/h3&gt;
+&lt;ul class="nav flex-column"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+
+  <h3>Menu pestaña</h3>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+
+</div>
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu pestaña&lt;/h3&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+
+  <h3>Menu pildoras</h3>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+</div>
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu pildoras&lt;/h3&gt;
+  &lt;ul class="nav nav-pills"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;  
+  
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+
+  <h3>Menu justificado</h3>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+
+</div>
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu justificado&lt;/h3&gt;
+  &lt;ul class="nav nav-pills nav-justified"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+  
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+
+  <h3>Menu fill</h3>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+
+</div>
+
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu fill&lt;/h3&gt;
+  &lt;ul class="nav nav-tabs nav-justified"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;    
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Meu dropdown</h3>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        data-bs-toggle="dropdown"
+        href="#"
+        >Dropdown</a
+      >
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Meu dropdown&lt;/h3&gt;
+  &lt;ul class="nav nav-pills"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item dropdown"&gt;
+      &lt;a
+        class="nav-link dropdown-toggle"
+        data-bs-toggle="dropdown"
+        href="#"
+      &gt;Dropdown&lt;/a&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt; 
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Menu dropdawn tabs</h3>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        data-bs-toggle="dropdown"
+        href="#"
+        >Dropdown</a
+      >
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+</div>
+
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu dropdawn tabs&lt;/h3&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item dropdown"&gt;
+      &lt;a
+        class="nav-link dropdown-toggle"
+        data-bs-toggle="dropdown"
+        href="#"
+      &gt;Dropdown&lt;/a&gt;
+      &lt;ul class="dropdown-menu"&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Menu dinamico</h3>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#home"
+        >Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane container active" id="home">...</div>
+    <div class="tab-pane container fade" id="menu1">...</div>
+    <div class="tab-pane container fade" id="menu2">...</div>
+  </div>
+
+</div>
+
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu dinamico tabs&lt;/h3&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" data-bs-toggle="tab" href="#home"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-bs-toggle="tab" href="#menu1"&gt;Menu 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-bs-toggle="tab" href="#menu2"&gt;Menu 2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane container active" id="home"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane container fade" id="menu1"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane container fade" id="menu2"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+    
+</pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Menu dinamico tabs</h3>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home"
+        >Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane container active" id="home">...</div>
+    <div class="tab-pane container fade" id="menu1">...</div>
+    <div class="tab-pane container fade" id="menu2">...</div>
+  </div>
+
+</div>
+
+
+<div class="col-6">
+<pre>
+  &lt;h3&gt;Menu dinamico&lt;/h3&gt;
+
+  &lt;ul class="nav nav-pills"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" data-bs-toggle="pill" href="#home"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-bs-toggle="pill" href="#menu1"&gt;Menu 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-bs-toggle="pill" href="#menu2"&gt;Menu 2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+
+  &lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane container active" id="home"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane container fade" id="menu1"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane container fade" id="menu2"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+  
+</pre>
+</div>
+
+<hr>
+
+<h2>Alertas</h2>
+<div class="col-6">
+  <h3>Alertas</h3>
+          <div class="alert alert-success">
+            <strong>Success!</strong> Indicates a successful or positive action.
+          </div>
+          <div class="alert alert-info">
+            <strong>Info!</strong> This alert box could indicate a neutral
+            informative change or action.
+          </div>
+          <div class="alert alert-warning">
+            <strong>Warning!</strong> This alert box could indicate a warning
+            that might need attention.
+          </div>
+          <div class="alert alert-danger">
+            <strong>Danger!</strong> This alert box could indicate a dangerous
+            or potentially negative action.
+          </div>
+          <div class="alert alert-primary">
+            <strong>Primary!</strong> Indicates an important action.
+          </div>
+          <div class="alert alert-secondary">
+            <strong>Secondary!</strong> Indicates a slightly less important
+            action.
+          </div>
+          <div class="alert alert-dark">
+            <strong>Dark!</strong> Dark grey alert.
+          </div>
+          <div class="alert alert-light">
+            <strong>Light!</strong> Light grey alert.
+          </div>
+</div>
+
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Alertas&lt;/h3&gt;
+&lt;div class="alert alert-success"&gt;
+  &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; This alert box could indicate a neutral
+  informative change or action.
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; This alert box could indicate a warning
+  that might need attention.
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; This alert box could indicate a dangerous
+  or potentially negative action.
+&lt;/div&gt;
+&lt;div class="alert alert-primary"&gt;
+  &lt;strong&gt;Primary!&lt;/strong&gt; Indicates an important action.
+&lt;/div&gt;
+&lt;div class="alert alert-secondary"&gt;
+  &lt;strong&gt;Secondary!&lt;/strong&gt; Indicates a slightly less important
+  action.
+&lt;/div&gt;
+&lt;div class="alert alert-dark"&gt;
+  &lt;strong&gt;Dark!&lt;/strong&gt; Dark grey alert.
+&lt;/div&gt;
+&lt;div class="alert alert-light"&gt;
+  &lt;strong&gt;Light!&lt;/strong&gt; Light grey alert.
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<div class="col-6">
+  <h3>Alertas con enlaces</h3>
+  <div class="alert alert-danger">
+    <strong>Peligro!</strong> Cuidado con el contenido.
+    <a href="#" class="alert-link">Pincha aquí para más detalles</a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Advertencia!</strong> Debe leer
+    <a href="#" class="alert-link">este mensaje</a> antes de continuar.
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Alertas con enlaces&lt;/h3&gt;
+&lt;div class="alert alert-danger"&gt;
+  &lt;strong&gt;Peligro!&lt;/strong&gt; Cuidado con el contenido.
+  &lt;a href="#" class="alert-link"&gt;Pincha aquí para más detalles&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;
+  &lt;strong&gt;Advertencia!&lt;/strong&gt; Debe leer
+  &lt;a href="#" class="alert-link"&gt;este mensaje&lt;/a&gt; antes de continuar.
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Alertas de cierre</h3>
+
+          <div class="alert alert-success alert-dismissible">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+            Haz click sobre el simbolo "X" a la derecha para cerrarme.
+          </div>
+          <h4>Para desbanecer</h4>
+          <div class="alert alert-info alert-dismissible fade show">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+            Verás un efecto de atenuación al cerrar este mensaje.
+          </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Alertas de cierre&lt;/h3&gt;
+
+&lt;div class="alert alert-success alert-dismissible"&gt;
+  &lt;button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+  &gt;&lt;/button&gt;
+  Haz click sobre el simbolo "X" a la derecha para cerrarme.
+&lt;/div&gt;
+
+&lt;h4&gt;Para desbanecer&lt;/h4&gt;
+&lt;div class="alert alert-info alert-dismissible fade show"&gt;
+  &lt;button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+  &gt;&lt;/button&gt;
+  Verás un efecto de atenuación al cerrar este mensaje.
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h1>Encabezado H1 <span class="badge bg-secondary">New</span></h1>
+  <h2>Encabezado H2 <span class="badge bg-secondary">New</span></h2>
+  <h3>Encabezado H3 <span class="badge bg-secondary">New</span></h3>
+  <h4>Encabezado H4 <span class="badge bg-secondary">New</span></h4>
+  <h5>Encabezado H5 <span class="badge bg-secondary">New</span></h5>
+  <h6>Encabezado H6 <span class="badge bg-secondary">New</span></h6>
+</div>
+<div class="col-6">
+  <pre>
+&lt;h1&gt;Encabezado H1 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Encabezado H2 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Encabezado H3 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;Encabezado H4 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Encabezado H5 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Encabezado H6 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h6&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3><span class="badge bg-primary">Primary</span></h3>
+  <h3><span class="badge bg-secondary">Secondary</span></h3>
+  <h3><span class="badge bg-success">Success</span></h3>
+  <h3><span class="badge bg-danger">Danger</span></h3>
+  <h3><span class="badge bg-warning">Warning</span></h3>
+  <h3><span class="badge bg-info text-dark">Info</span></h3>
+  <h3><span class="badge bg-light text-dark">Light</span></h3>
+  <h3><span class="badge bg-dark">Dark</span></h3>
+</div>
+<div class="col-6">
+  <pre>
+&lt;h3&gt;&lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-secondary"&gt;Secondary&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-success"&gt;Success&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-danger"&gt;Danger&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-warning"&gt;Warning&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-info text-dark"&gt;Info&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-light text-dark"&gt;Light&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge bg-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3><span class="badge rounded-pill bg-primary">Primary</span></h3>
+  <h3>
+    <span class="badge rounded-pill bg-secondary">Secondary</span>
+  </h3>
+  <h3><span class="badge rounded-pill bg-success">Success</span></h3>
+  <h3><span class="badge rounded-pill bg-danger">Danger</span></h3>
+  <h3><span class="badge rounded-pill bg-warning">Warning</span></h3>
+  <h3>
+    <span class="badge rounded-pill bg-info text-dark">Info</span>
+  </h3>
+  <h3>
+    <span class="badge rounded-pill bg-light text-dark">Light</span>
+  </h3>
+  <h3><span class="badge rounded-pill bg-dark">Dark</span></h3>
+
+</div>
+<div class="col-6">
+  <pre>
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-secondary"&gt;Secondary&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-success"&gt;Success&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-danger"&gt;Danger&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-warning"&gt;Warning&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-info text-dark"&gt;Info&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-light text-dark"&gt;Light&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="badge rounded-pill bg-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <button type="button" class="btn btn-outline-secondary">
+    Notificaciones <span class="badge bg-danger">8</span>
+  </button>
+  <button type="button" class="btn btn-primary">
+    Mensajes <span class="badge bg-light text-dark">12</span>
+  </button>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;button type="button" class="btn btn-outline-secondary"&gt;
+  Notificaciones &lt;span class="badge bg-danger"&gt;8&lt;/span&gt;
+&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;
+  Mensajes &lt;span class="badge bg-light text-dark"&gt;12&lt;/span&gt;
+&lt;/button&gt;
+
+  </pre>
+</div>
+
+<div class="col-6">
+  <button type="button" class="btn btn-primary position-relative">
+    Recibidos
+    <span
+      class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"
+      >+99</span
+    >
+  </button>
+
+  <button type="button" class="btn btn-primary position-relative">
+    Alertas
+    <span
+      class="badge rounded-circle p-2 border border-light bg-danger position-absolute top-0 start-100 translate-middle"
+    ></span>
+  </button>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;button type="button" class="btn btn-primary position-relative"&gt;
+  Recibidos
+  &lt;span
+    class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"&gt;+99&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary position-relative"&gt;
+  Alertas
+  &lt;span
+    class="badge rounded-circle p-2 border bg-danger position-absolute top-0 start-100 translate-middle"&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+  </pre>
+</div>
+
+<div class="col-6"> <h3>Tarjetas</h3>
+  <div class="card">
+    <div class="card-body">Basic card</div>
+  </div></div>
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Tarjetas&lt;/h3&gt;
+&lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="card">
+    <div class="card-header">Header</div>
+    <div class="card-body">Content</div>
+    <div class="card-footer">Footer</div>
+  </div>
+
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;Header&lt;/div&gt;
+  &lt;div class="card-body"&gt;Content&lt;/div&gt;
+  &lt;div class="card-footer"&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="card mb-3">
+    <div class="card-body">Basic card</div>
+  </div>
+  <br />
+  <div class="card bg-primary text-white">
+    <div class="card-body">Primary card</div>
+  </div>
+  <br />
+  <div class="card bg-success text-white">
+    <div class="card-body">Success card</div>
+  </div>
+  <br />
+  <div class="card bg-info text-white">
+    <div class="card-body">Info card</div>
+  </div>
+  <br />
+  <div class="card bg-warning text-white">
+    <div class="card-body">Warning card</div>
+  </div>
+  <br />
+  <div class="card bg-danger text-white">
+    <div class="card-body">Danger card</div>
+  </div>
+  <br />
+  <div class="card bg-secondary text-white">
+    <div class="card-body">Secondary card</div>
+  </div>
+  <br />
+  <div class="card bg-dark text-white">
+    <div class="card-body">Dark card</div>
+  </div>
+  <br />
+  <div class="card bg-light text-dark">
+    <div class="card-body">Light card</div>
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class="card mb-3"&gt;
+  &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-primary text-white"&gt;
+  &lt;div class="card-body"&gt;Primary card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-success text-white"&gt;
+  &lt;div class="card-body"&gt;Success card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-info text-white"&gt;
+  &lt;div class="card-body"&gt;Info card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-warning text-white"&gt;
+  &lt;div class="card-body"&gt;Warning card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-danger text-white"&gt;
+  &lt;div class="card-body"&gt;Danger card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-secondary text-white"&gt;
+  &lt;div class="card-body"&gt;Secondary card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-dark text-white"&gt;
+  &lt;div class="card-body"&gt;Dark card&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class="card bg-light text-dark"&gt;
+  &lt;div class="card-body"&gt;Light card&lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="card border-danger">
+    <div class="card-body">Borde danger y texto a la izquierda</div>
+  </div>
+  <div class="card border-primary">
+    <div class="card-body text-center">
+      Borde primary y texto al centro
+    </div>
+  </div>
+  <div class="card border-info">
+    <div class="card-body text-end">
+      Borde info y texto a la derecha
+    </div>
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class="card border-danger"&gt;
+  &lt;div class="card-body"&gt;Borde danger y texto a la izquierda&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card border-primary"&gt;
+  &lt;div class="card-body text-center"&gt;
+    Borde primary y texto al centro
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card border-info"&gt;
+  &lt;div class="card-body text-end"&gt;
+    Borde info y texto a la derecha
+  &lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="card bg-primary text-white w-100 mb-3">
+    <div class="card-body text-end">Tamaño 100%</div>
+  </div>
+
+  <div class="card bg-primary text-white w-75 mb-3">
+    <div class="card-body text-end">Tamaño 75%</div>
+  </div>
+
+  <div class="card bg-primary text-white w-50 mb-3">
+    <div class="card-body text-end">Tamaño 50%</div>
+  </div>
+
+  <div class="card bg-primary text-white w-25 mb-3">
+    <div class="card-body text-end">Tamaño 25%</div>
+  </div>
+
+  <div class="card bg-primary text-white" style="width: 300px">
+    <div class="card-body text-end">Tamaño de 300px</div>
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class="card bg-primary text-white w-100 mb-3"&gt;
+  &lt;div class="card-body text-end"&gt;Tamaño 100%&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card bg-primary text-white w-75 mb-3"&gt;
+  &lt;div class="card-body text-end"&gt;Tamaño 75%&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card bg-primary text-white w-50 mb-3"&gt;
+  &lt;div class="card-body text-end"&gt;Tamaño 50%&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card bg-primary text-white w-25 mb-3"&gt;
+  &lt;div class="card-body text-end"&gt;Tamaño 25%&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card bg-primary text-white" style="width: 300px"&gt;
+  &lt;div class="card-body text-end"&gt;Tamaño de 300px&lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Titulo</h4>
+      <p class="card-text">
+        Ejemplo de texto. Puedes escribir lo que quieras
+      </p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Otro link</a>
+    </div>
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h4 class="card-title"&gt;Titulo&lt;/h4&gt;
+    &lt;p class="card-text"&gt;
+      Ejemplo de texto. Puedes escribir lo que quieras
+    &lt;/p&gt;
+    &lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+    &lt;a href="#" class="card-link"&gt;Otro link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="card w-25 mb-2">
+    <img
+      class="card-img-top"
+      src="../fotos/images/avatar2.png"
+      alt="Juan López"
+    />
+    <div class="card-body text-center">
+      <h4 class="card-title">Juan López</h4>
+      <p class="card-text">Desarrollador de videojuegos Indies.</p>
+      <a href="#" class="btn btn-primary">Ver perfil</a>
+    </div>
+  </div>
+
+  <div class="card w-25">
+    <div class="card-body text-center">
+      <h4 class="card-title">Juana López</h4>
+      <p class="card-text">Desarrolladora de videojuegos Indies.</p>
+      <a href="#" class="btn btn-primary">Ver perfil</a>
+    </div>
+    <img
+      class="card-img-top"
+      src="../fotos/images/avatar5.png"
+      alt="Juana López"
+    />
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class="card w-25 mb-2"&gt;
+  &lt;img
+    class="card-img-top"
+    src="../fotos/images/avatar2.png"
+    alt="Juan López"
+  /&gt;
+  &lt;div class="card-body text-center"&gt;
+    &lt;h4 class="card-title"&gt;Juan López&lt;/h4&gt;
+    &lt;p class="card-text"&gt;Desarrollador de videojuegos Indies.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card w-25"&gt;
+  &lt;div class="card-body text-center"&gt;
+    &lt;h4 class="card-title"&gt;Juana López&lt;/h4&gt;
+    &lt;p class="card-text"&gt;Desarrolladora de videojuegos Indies.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;img
+    class="card-img-top"
+    src="../fotos/images/avatar5.png"
+    alt="Juana López"
+  /&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Collapse simple con boton</h3>
+          <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            data-bs-target="#plegable1"
+          >
+            Plegable
+          </button>
+          <div id="plegable1" class="collapse show">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Accusantium, placeat maiores in doloribus odio quae fugiat
+            laudantium quod architecto distinctio rem minima voluptates, saepe
+            assumenda cupiditate repellendus enim ex animi.
+          </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Collapse simple con boton&lt;/h3&gt;
+&lt;p&gt;Haz click sobre el bot&oacute;n para mostrar/ocultar el contenido&lt;/p&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-primary&quot;
+  data-bs-toggle=&quot;collapse&quot;
+  data-bs-target=&quot;#plegable1&quot;
+&gt;
+  Plegable
+&lt;/button&gt;
+&lt;div id=&quot;plegable1&quot; class=&quot;collapse show&quot;&gt;
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  Accusantium, placeat maiores in doloribus odio quae fugiat
+  laudantium quod architecto distinctio rem minima voluptates, saepe
+  assumenda cupiditate repellendus enim ex animi.
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <h3>Collapse con enlace</h3>
+  <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+  <a
+    href="#plegable2"
+    class="btn btn-primary"
+    data-bs-toggle="collapse"
+  >
+    Plegable enlace
+  </a>
+  <div id="plegable2" class="collapse">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Accusantium, placeat maiores in doloribus odio quae fugiat
+    laudantium quod architecto distinctio rem minima voluptates, saepe
+    assumenda cupiditate repellendus enim ex animi.
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;h3&gt;Collapse con enlace&lt;/h3&gt;
+&lt;p&gt;Haz click sobre el bot&oacute;n para mostrar/ocultar el contenido&lt;/p&gt;
+&lt;a
+  href=&quot;#plegable2&quot;
+  class=&quot;btn btn-primary&quot;
+  data-bs-toggle=&quot;collapse&quot;
+&gt;
+  Plegable enlace
+&lt;/a&gt;
+&lt;div id=&quot;plegable2&quot; class=&quot;collapse&quot;&gt;
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  Accusantium, placeat maiores in doloribus odio quae fugiat
+  laudantium quod architecto distinctio rem minima voluptates, saepe
+  assumenda cupiditate repellendus enim ex animi.
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div class="accordion" id="EjemploAcordeon">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#plegableUno"
+        >
+          Accordion Item Uno
+        </button>
+      </div>
+      <div
+        id="plegableUno"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#EjemploAcordeon"
+      >
+        <div class="accordion-body">
+          Este es el <strong>primer item</strong> del acordeón. Se muestra
+          por defecto.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#plegableDos"
+        >
+          Accordion Item Dos
+        </button>
+      </div>
+      <div
+        id="plegableDos"
+        class="accordion-collapse collapse"
+        data-bs-parent="#EjemploAcordeon"
+      >
+        <div class="accordion-body">
+          Este es el <strong>segundo item</strong> del acordeón. Se
+          muestra oculto por defecto.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#plegableTres"
+        >
+          Accordion Item Tres
+        </button>
+      </div>
+      <div
+        id="plegableTres"
+        class="accordion-collapse collapse"
+        data-bs-parent="#EjemploAcordeon"
+      >
+        <div class="accordion-body">
+          Este es el <strong>tercer item</strong> del acordeón. Se muestra
+          oculto por defecto.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div class=&quot;accordion&quot; id=&quot;EjemploAcordeon&quot;&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;
+    &lt;div class=&quot;accordion-header&quot;&gt;
+      &lt;button
+        class=&quot;accordion-button&quot;
+        type=&quot;button&quot;
+        data-bs-toggle=&quot;collapse&quot;
+        data-bs-target=&quot;#plegableUno&quot;
+      &gt;
+        Accordion Item Uno
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      id=&quot;plegableUno&quot;
+      class=&quot;accordion-collapse collapse show&quot;
+      data-bs-parent=&quot;#EjemploAcordeon&quot;
+    &gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        Este es el &lt;strong&gt;primer item&lt;/strong&gt; del acordeón. Se muestra
+        por defecto.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;accordion-item&quot;&gt;
+    &lt;div class=&quot;accordion-header&quot;&gt;
+      &lt;button
+        class=&quot;accordion-button collapsed&quot;
+        type=&quot;button&quot;
+        data-bs-toggle=&quot;collapse&quot;
+        data-bs-target=&quot;#plegableDos&quot;
+      &gt;
+        Accordion Item Dos
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      id=&quot;plegableDos&quot;
+      class=&quot;accordion-collapse collapse&quot;
+      data-bs-parent=&quot;#EjemploAcordeon&quot;
+    &gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        Este es el &lt;strong&gt;segundo item&lt;/strong&gt; del acordeón. Se
+        muestra oculto por defecto.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;accordion-item&quot;&gt;
+    &lt;div class=&quot;accordion-header&quot;&gt;
+      &lt;button
+        class=&quot;accordion-button collapsed&quot;
+        type=&quot;button&quot;
+        data-bs-toggle=&quot;collapse&quot;
+        data-bs-target=&quot;#plegableTres&quot;
+      &gt;
+        Accordion Item Tres
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      id=&quot;plegableTres&quot;
+      class=&quot;accordion-collapse collapse&quot;
+      data-bs-parent=&quot;#EjemploAcordeon&quot;
+    &gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        Este es el &lt;strong&gt;tercer item&lt;/strong&gt; del acordeón. Se muestra
+        oculto por defecto.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="../fotos/images/vegamedia01.jpg"
+          alt="Los Angeles"
+          class="d-block w-100"
+        />
+        <div class="carousel-caption" style="color: red">
+          <h4>C.E.S. Vega Media</h4>
+          <p>Ctra. Mula, 37 - Alguazas (Murcia)</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../fotos/images/vegamedia02.jpg"
+          alt="Chicago"
+          class="d-block w-100"
+        />
+        <div class="carousel-caption">
+          <h4>Patio de Infantil</h4>
+          <p>3, 4 5 años</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../fotos/images/vegamedia03.jpg"
+          alt="New York"
+          class="d-block w-100"
+        />
+        <div class="carousel-caption">
+          <h4>Instalaciones deportivas</h4>
+          <p>Campo de fútbol municipal de Alguazas</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="2"
+      ></button>
+    </div>
+  </div>
+
+  <hr />
+</div>
+<div class="col-6">
+  <pre>
+    &lt;div id=&quot;demo&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+  &lt;!-- The slideshow/carousel --&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      &lt;img
+        src=&quot;../fotos/images/vegamedia01.jpg&quot;
+        alt=&quot;Los Angeles&quot;
+        class=&quot;d-block w-100&quot;
+      /&gt;
+      &lt;div class=&quot;carousel-caption&quot; style=&quot;color: red&quot;&gt;
+        &lt;h4&gt;C.E.S. Vega Media&lt;/h4&gt;
+        &lt;p&gt;Ctra. Mula, 37 - Alguazas (Murcia)&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;img
+        src=&quot;../fotos/images/vegamedia02.jpg&quot;
+        alt=&quot;Chicago&quot;
+        class=&quot;d-block w-100&quot;
+      /&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        &lt;h4&gt;Patio de Infantil&lt;/h4&gt;
+        &lt;p&gt;3, 4 5 años&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;img
+        src=&quot;../fotos/images/vegamedia03.jpg&quot;
+        alt=&quot;New York&quot;
+        class=&quot;d-block w-100&quot;
+      /&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        &lt;h4&gt;Instalaciones deportivas&lt;/h4&gt;
+        &lt;p&gt;Campo de fútbol municipal de Alguazas&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Left and right controls/icons --&gt;
+  &lt;button
+    class=&quot;carousel-control-prev&quot;
+    type=&quot;button&quot;
+    data-bs-target=&quot;#demo&quot;
+    data-bs-slide=&quot;prev&quot;
+  &gt;
+    &lt;span class=&quot;carousel-control-prev-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button
+    class=&quot;carousel-control-next&quot;
+    type=&quot;button&quot;
+    data-bs-target=&quot;#demo&quot;
+    data-bs-slide=&quot;next&quot;
+  &gt;
+    &lt;span class=&quot;carousel-control-next-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Indicators/dots --&gt;
+  &lt;div class=&quot;carousel-indicators&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      data-bs-target=&quot;#demo&quot;
+      data-bs-slide-to=&quot;0&quot;
+      class=&quot;active&quot;
+    &gt;&lt;/button&gt;
+    &lt;button
+      type=&quot;button&quot;
+      data-bs-target=&quot;#demo&quot;
+      data-bs-slide-to=&quot;1&quot;
+    &gt;&lt;/button&gt;
+    &lt;button
+      type=&quot;button&quot;
+      data-bs-target=&quot;#demo&quot;
+      data-bs-slide-to=&quot;2&quot;
+    &gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6">
+          <!-- Button to Open the Modal -->
+          <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          Open modal
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">Modal body..</div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+<div class="col-6">
+  <pre>
+    &lt;!-- Button to Open the Modal --&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-primary&quot;
+  data-bs-toggle=&quot;modal&quot;
+  data-bs-target=&quot;#myModal&quot;
+&gt;
+  Open modal
+&lt;/button&gt;
+
+&lt;!-- The Modal --&gt;
+&lt;div class=&quot;modal&quot; id=&quot;myModal&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;!-- Modal Header --&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Heading&lt;/h4&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;btn-close&quot;
+          data-bs-dismiss=&quot;modal&quot;
+        &gt;&lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Modal body --&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;Modal body..&lt;/div&gt;
+
+      &lt;!-- Modal footer --&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;btn btn-danger&quot;
+          data-bs-dismiss=&quot;modal&quot;
+        &gt;
+          Close
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+  </pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+
+<hr>
+
+<div class="col-6"></div>
+<div class="col-6">
+  <pre></pre>
+</div>
+      </section>
+
+      <script>
+        function copyCode(button) {
+          const code = button.previousElementSibling.innerText;
+          navigator.clipboard.writeText(code).then(() => {
+            button.textContent = 'Copiado';
+            setTimeout(() => { button.textContent = 'Copiar'; }, 2000);
+          });
+        }
+      </script>
+    
+  </body>
+</html>
