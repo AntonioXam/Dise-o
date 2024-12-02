@@ -100,6 +100,44 @@
             </div>
             
             <!-- Similares secciones para Primaria, ESO y FP Básica -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#primaria">
+                        Educación Primaria <span class="badge bg-info ms-2">6-12 años</span>
+                    </button>
+                </h2>
+                <div id="primaria" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
+                    <div class="accordion-body">
+                        <p>Etapa fundamental que proporciona a los alumnos una educación común que haga posible la adquisición de elementos básicos culturales...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eso">
+                        Educación Secundaria <span class="badge bg-warning ms-2">12-16 años</span>
+                    </button>
+                </h2>
+                <div id="eso" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
+                    <div class="accordion-body">
+                        <p>Etapa obligatoria y gratuita que completa la educación básica. Proporciona formación orientada al desarrollo de las capacidades...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fpbasica">
+                        FP Básica <span class="badge bg-secondary ms-2">+15 años</span>
+                    </button>
+                </h2>
+                <div id="fpbasica" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
+                    <div class="accordion-body">
+                        <p>Ciclos formativos de 2 años dirigidos a alumnos que no han completado la ESO y quieren proseguir sus estudios hacia la FP...</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Ciclos Formativos -->
@@ -121,6 +159,28 @@
                     </div>
                 </div>
                 <!-- Más cards para otros ciclos -->
+            <div class="col">
+                <div class="card card-ciclo h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión Administrativa</h5>
+                        <p class="card-text">2000 horas de formación especializada en administración.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAdmin">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-ciclo h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
+                        <p class="card-text">2000 horas de formación en desarrollo web.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalDAW">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -134,6 +194,100 @@
                     </div>
                     <div class="modal-body">
                         <!-- Contenido detallado del ciclo -->
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Este ciclo formativo de grado medio te prepara para realizar instalaciones eléctricas y automáticas en edificios y entornos industriales.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Montaje y mantenimiento de instalaciones eléctricas</li>
+                        <li>Instalaciones domóticas y automatizadas</li>
+                        <li>Instalaciones solares fotovoltaicas</li>
+                        <li>Máquinas eléctricas</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Instalador-mantenedor electricista</li>
+                        <li>Electricista industrial</li>
+                        <li>Instalador de sistemas domóticos</li>
+                        <li>Técnico en instalaciones de energía solar fotovoltaica</li>
+                    </ul>
+
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-success">Solicitar información</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Gestión Administrativa -->
+    <div class="modal fade" id="modalAdmin" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gestión Administrativa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Formación en tareas administrativas y gestión empresarial, preparándote para trabajar en cualquier departamento administrativo.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Gestión administrativa de compra-venta</li>
+                        <li>Gestión de recursos humanos</li>
+                        <li>Contabilidad y tesorería</li>
+                        <li>Tratamiento de documentación y archivo</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Auxiliar administrativo</li>
+                        <li>Gestor de cobros y pagos</li>
+                        <li>Empleado de atención al cliente</li>
+                        <li>Administrativo comercial</li>
+                    </ul>
+
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-success">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Desarrollo de Aplicaciones Web -->
+    <div class="modal fade" id="modalDAW" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sistemas Microinformáticos y Redes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Formación en instalación y mantenimiento de sistemas informáticos y redes locales, preparándote para el sector TI.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Montaje y mantenimiento de equipos</li>
+                        <li>Sistemas operativos y redes</li>
+                        <li>Aplicaciones ofimáticas</li>
+                        <li>Seguridad informática</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Técnico en sistemas microinformáticos</li>
+                        <li>Administrador de redes locales</li>
+                        <li>Técnico de soporte informático</li>
+                        <li>Reparador de equipos</li>
+                    </ul>
+
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-success">Solicitar información</a>
                     </div>
                 </div>
             </div>
