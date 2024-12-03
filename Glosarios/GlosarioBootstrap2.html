@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Glosario Bootstrap</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
     <style>
       .example-container {
         border: 1px solid #dee2e6;
@@ -115,48 +112,29 @@
           <li class="nav-item">
             <a class="nav-link" href="#tamano-inputos">Tamaño Inputs</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menus">Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#collapse">Collapse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#accordion">Accordion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#alertas">Alertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tarjetas">Tarjetas</a>
+          </li>
         </ul>
       </nav>
 
       
-
-      <!-- Sección de Textos y Tipografías -->
-      <section id="textos" class="mb-5">
-        <h2>Textos y Tipografías</h2>
-        <div class="example-container">
-          <h3 class="example-title">Tipografias</h3>
-
-          <!-- Ejemplo 1 -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <p>Para usar todo el espacio de la pantalla</p>
-              
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-12">
-              <pre><code class="language-html">class="container-fluid"</code>
-                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
-              </pre>
-            </div>
-          </div>
-
-          <hr />
-
-          <!-- Ejemplo 2 -->
-          <div class="row mb-4">
-            <div class="col-12">
-              <p>Comentaros secundarios</p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-12">
-              <pre><code class="language-html">&lt;small&gt; y class="text-muted"&lt;/small&gt;</code>
-                <button class="copy-button" onclick="copyCode(this)">Copiar</button>
-              </pre>
-            </div>
-          </div>
-
+  
           <hr />
 
           <!-- Ejemplo 3 -->
@@ -2479,7 +2457,7 @@
         </div>
 
         <div class="col-6">
-          <pre>
+          <pre><code class="language-html">
 &lt;h3&gt;Menu horizontal&lt;/h3&gt;
 &lt;ul class="nav"&gt;
   &lt;li class="nav-item"&gt;
@@ -2495,35 +2473,34 @@
     &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-</pre>
+</code>
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+          </pre>
         </div>
 
         <hr>
 
-        <div class="col-6">
-
-          <h3>Menu horizontal central</h3>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-
-<hr>
-
-        <div class="col-6">
-          <pre>
-&lt;h3&gt;Menu horizontal central&lt;/h3&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3 id="menus">Menu horizontal central</h3>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="menus"&gt;Menu horizontal central&lt;/h3&gt;
 &lt;ul class="nav justify-content-center"&gt;
   &lt;li class="nav-item"&gt;
     &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
@@ -2538,32 +2515,35 @@
     &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-</pre>
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
         </div>
 
-        
-        <div class="col-6">
+        <hr>
 
-          <h3>Menu vertical</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Menu vertical&lt;/h3&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu vertical</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu vertical&lt;/h3&gt;
 &lt;ul class="nav flex-column"&gt;
   &lt;li class="nav-item"&gt;
     &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
@@ -2578,450 +2558,450 @@
     &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-
-  <h3>Menu pestaña</h3>
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-
-</div>
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu pestaña&lt;/h3&gt;
-  &lt;ul class="nav nav-tabs"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-
-  <h3>Menu pildoras</h3>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-
-</div>
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu pildoras&lt;/h3&gt;
-  &lt;ul class="nav nav-pills"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;  
-  
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-
-  <h3>Menu justificado</h3>
-  <ul class="nav nav-pills nav-justified">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-
-
-</div>
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu justificado&lt;/h3&gt;
-  &lt;ul class="nav nav-pills nav-justified"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-
-  <h3>Menu fill</h3>
-  <ul class="nav nav-tabs nav-justified">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-
-</div>
-
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu fill&lt;/h3&gt;
-  &lt;ul class="nav nav-tabs nav-justified"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;    
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <h3>Meu dropdown</h3>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a
-        class="nav-link dropdown-toggle"
-        data-bs-toggle="dropdown"
-        href="#"
-        >Dropdown</a
-      >
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Link 1</a></li>
-        <li><a class="dropdown-item" href="#">Link 2</a></li>
-        <li><a class="dropdown-item" href="#">Link 3</a></li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</div>
-
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Meu dropdown&lt;/h3&gt;
-  &lt;ul class="nav nav-pills"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item dropdown"&gt;
-      &lt;a
-        class="nav-link dropdown-toggle"
-        data-bs-toggle="dropdown"
-        href="#"
-      &gt;Dropdown&lt;/a&gt;
-      &lt;ul class="dropdown-menu"&gt;
-        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt; 
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <h3>Menu dropdawn tabs</h3>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a
-        class="nav-link dropdown-toggle"
-        data-bs-toggle="dropdown"
-        href="#"
-        >Dropdown</a
-      >
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Link 1</a></li>
-        <li><a class="dropdown-item" href="#">Link 2</a></li>
-        <li><a class="dropdown-item" href="#">Link 3</a></li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-
-</div>
-
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu dropdawn tabs&lt;/h3&gt;
-  &lt;ul class="nav nav-tabs"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item dropdown"&gt;
-      &lt;a
-        class="nav-link dropdown-toggle"
-        data-bs-toggle="dropdown"
-        href="#"
-      &gt;Dropdown&lt;/a&gt;
-      &lt;ul class="dropdown-menu"&gt;
-        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <h3>Menu dinamico</h3>
-
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link active" data-bs-toggle="pill" href="#home"
-        >Home</a
-      >
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
-    </li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div class="tab-pane container active" id="home">...</div>
-    <div class="tab-pane container fade" id="menu1">...</div>
-    <div class="tab-pane container fade" id="menu2">...</div>
-  </div>
-
-</div>
-
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu dinamico tabs&lt;/h3&gt;
-  &lt;ul class="nav nav-tabs"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" data-bs-toggle="tab" href="#home"&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" data-bs-toggle="tab" href="#menu1"&gt;Menu 1&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" data-bs-toggle="tab" href="#menu2"&gt;Menu 2&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;div class="tab-content"&gt;
-    &lt;div class="tab-pane container active" id="home"&gt;...&lt;/div&gt;
-    &lt;div class="tab-pane container fade" id="menu1"&gt;...&lt;/div&gt;
-    &lt;div class="tab-pane container fade" id="menu2"&gt;...&lt;/div&gt;
-  &lt;/div&gt;
-    
-</pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <h3>Menu dinamico tabs</h3>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-bs-toggle="tab" href="#home"
-        >Home</a
-      >
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
-    </li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div class="tab-pane container active" id="home">...</div>
-    <div class="tab-pane container fade" id="menu1">...</div>
-    <div class="tab-pane container fade" id="menu2">...</div>
-  </div>
-
-</div>
-
-
-<div class="col-6">
-<pre>
-  &lt;h3&gt;Menu dinamico&lt;/h3&gt;
-
-  &lt;ul class="nav nav-pills"&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link active" data-bs-toggle="pill" href="#home"&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" data-bs-toggle="pill" href="#menu1"&gt;Menu 1&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class="nav-item"&gt;
-      &lt;a class="nav-link" data-bs-toggle="pill" href="#menu2"&gt;Menu 2&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-
-  &lt;div class="tab-content"&gt;
-    &lt;div class="tab-pane container active" id="home"&gt;...&lt;/div&gt;
-    &lt;div class="tab-pane container fade" id="menu1"&gt;...&lt;/div&gt;
-    &lt;div class="tab-pane container fade" id="menu2"&gt;...&lt;/div&gt;
-  &lt;/div&gt;
-  
-</pre>
-</div>
-
-<hr>
-
-<h2>Alertas</h2>
-<div class="col-6">
-  <h3>Alertas</h3>
-          <div class="alert alert-success">
-            <strong>Success!</strong> Indicates a successful or positive action.
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
           </div>
-          <div class="alert alert-info">
-            <strong>Info!</strong> This alert box could indicate a neutral
-            informative change or action.
-          </div>
-          <div class="alert alert-warning">
-            <strong>Warning!</strong> This alert box could indicate a warning
-            that might need attention.
-          </div>
-          <div class="alert alert-danger">
-            <strong>Danger!</strong> This alert box could indicate a dangerous
-            or potentially negative action.
-          </div>
-          <div class="alert alert-primary">
-            <strong>Primary!</strong> Indicates an important action.
-          </div>
-          <div class="alert alert-secondary">
-            <strong>Secondary!</strong> Indicates a slightly less important
-            action.
-          </div>
-          <div class="alert alert-dark">
-            <strong>Dark!</strong> Dark grey alert.
-          </div>
-          <div class="alert alert-light">
-            <strong>Light!</strong> Light grey alert.
-          </div>
-</div>
+        </div>
 
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Alertas&lt;/h3&gt;
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu pestaña</h3>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu pestaña&lt;/h3&gt;
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu pildoras</h3>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu pildoras&lt;/h3&gt;
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu justificado</h3>
+            <ul class="nav nav-pills nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu justificado&lt;/h3&gt;
+&lt;ul class="nav nav-pills nav-justified"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu fill</h3>
+            <ul class="nav nav-tabs nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu fill&lt;/h3&gt;
+&lt;ul class="nav nav-tabs nav-justified"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Meu dropdown</h3>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Dropdown</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Meu dropdown&lt;/h3&gt;
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item dropdown"&gt;
+    &lt;a
+      class="nav-link dropdown-toggle"
+      data-bs-toggle="dropdown"
+      href="#"
+    &gt;Dropdown&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu dropdawn tabs</h3>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Dropdown</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu dropdawn tabs&lt;/h3&gt;
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item dropdown"&gt;
+    &lt;a
+      class="nav-link dropdown-toggle"
+      data-bs-toggle="dropdown"
+      href="#"
+    &gt;Dropdown&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3 id="collapse">Menu dinamico</h3>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="home">...</div>
+              <div class="tab-pane container fade" id="menu1">...</div>
+              <div class="tab-pane container fade" id="menu2">...</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="collapse"&gt;Menu dinamico tabs&lt;/h3&gt;
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" data-bs-toggle="tab" href="#home"&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" data-bs-toggle="tab" href="#menu1"&gt;Menu 1&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" data-bs-toggle="tab" href="#menu2"&gt;Menu 2&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab-content"&gt;
+  &lt;div class="tab-pane container active" id="home"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane container fade" id="menu1"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane container fade" id="menu2"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Menu dinamico tabs</h3>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="home">...</div>
+              <div class="tab-pane container fade" id="menu1">...</div>
+              <div class="tab-pane container fade" id="menu2">...</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Menu dinamico&lt;/h3&gt;
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" data-bs-toggle="pill" href="#home"&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" data-bs-toggle="pill" href="#menu1"&gt;Menu 1&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" data-bs-toggle="pill" href="#menu2"&gt;Menu 2&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab-content"&gt;
+  &lt;div class="tab-pane container active" id="home"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane container fade" id="menu1"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane container fade" id="menu2"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3 id="alertas">Alertas</h3>
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Alertas</h3>
+            <div class="alert alert-success">
+              <strong>Success!</strong> Indicates a successful or positive action.
+            </div>
+            <div class="alert alert-info">
+              <strong>Info!</strong> This alert box could indicate a neutral
+              informative change or action.
+            </div>
+            <div class="alert alert-warning">
+              <strong>Warning!</strong> This alert box could indicate a warning
+              that might need attention.
+            </div>
+            <div class="alert alert-danger">
+              <strong>Danger!</strong> This alert box could indicate a dangerous
+              or potentially negative action.
+            </div>
+            <div class="alert alert-primary">
+              <strong>Primary!</strong> Indicates an important action.
+            </div>
+            <div class="alert alert-secondary">
+              <strong>Secondary!</strong> Indicates a slightly less important
+              action.
+            </div>
+            <div class="alert alert-dark">
+              <strong>Dark!</strong> Dark grey alert.
+            </div>
+            <div class="alert alert-light">
+              <strong>Light!</strong> Light grey alert.
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="alertas"&gt;Alertas&lt;/h3&gt;
 &lt;div class="alert alert-success"&gt;
   &lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
 &lt;/div&gt;
@@ -3050,24 +3030,29 @@
 &lt;div class="alert alert-light"&gt;
   &lt;strong&gt;Light!&lt;/strong&gt; Light grey alert.
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<div class="col-6">
-  <h3>Alertas con enlaces</h3>
-  <div class="alert alert-danger">
-    <strong>Peligro!</strong> Cuidado con el contenido.
-    <a href="#" class="alert-link">Pincha aquí para más detalles</a>.
-  </div>
-  <div class="alert alert-warning">
-    <strong>Advertencia!</strong> Debe leer
-    <a href="#" class="alert-link">este mensaje</a> antes de continuar.
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Alertas con enlaces&lt;/h3&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Alertas con enlaces</h3>
+            <div class="alert alert-danger">
+              <strong>Peligro!</strong> Cuidado con el contenido.
+              <a href="#" class="alert-link">Pincha aquí para más detalles</a>.
+            </div>
+            <div class="alert alert-warning">
+              <strong>Advertencia!</strong> Debe leer
+              <a href="#" class="alert-link">este mensaje</a> antes de continuar.
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Alertas con enlaces&lt;/h3&gt;
 &lt;div class="alert alert-danger"&gt;
   &lt;strong&gt;Peligro!&lt;/strong&gt; Cuidado con el contenido.
   &lt;a href="#" class="alert-link"&gt;Pincha aquí para más detalles&lt;/a&gt;.
@@ -3076,37 +3061,38 @@
   &lt;strong&gt;Advertencia!&lt;/strong&gt; Debe leer
   &lt;a href="#" class="alert-link"&gt;este mensaje&lt;/a&gt; antes de continuar.
 &lt;/div&gt;
-
-  </pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <h3>Alertas de cierre</h3>
-
-          <div class="alert alert-success alert-dismissible">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-            ></button>
-            Haz click sobre el simbolo "X" a la derecha para cerrarme.
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
           </div>
-          <h4>Para desbanecer</h4>
-          <div class="alert alert-info alert-dismissible fade show">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-            ></button>
-            Verás un efecto de atenuación al cerrar este mensaje.
-          </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Alertas de cierre&lt;/h3&gt;
+        </div>
 
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Alertas de cierre</h3>
+            <div class="alert alert-success alert-dismissible">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+              ></button>
+              Haz click sobre el simbolo "X" a la derecha para cerrarme.
+            </div>
+            <h4>Para desbanecer</h4>
+            <div class="alert alert-info alert-dismissible fade show">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+              ></button>
+              Verás un efecto de atenuación al cerrar este mensaje.
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Alertas de cierre&lt;/h3&gt;
 &lt;div class="alert alert-success alert-dismissible"&gt;
   &lt;button
     type="button"
@@ -3115,7 +3101,6 @@
   &gt;&lt;/button&gt;
   Haz click sobre el simbolo "X" a la derecha para cerrarme.
 &lt;/div&gt;
-
 &lt;h4&gt;Para desbanecer&lt;/h4&gt;
 &lt;div class="alert alert-info alert-dismissible fade show"&gt;
   &lt;button
@@ -3125,46 +3110,52 @@
   &gt;&lt;/button&gt;
   Verás un efecto de atenuación al cerrar este mensaje.
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <h1>Encabezado H1 <span class="badge bg-secondary">New</span></h1>
-  <h2>Encabezado H2 <span class="badge bg-secondary">New</span></h2>
-  <h3>Encabezado H3 <span class="badge bg-secondary">New</span></h3>
-  <h4>Encabezado H4 <span class="badge bg-secondary">New</span></h4>
-  <h5>Encabezado H5 <span class="badge bg-secondary">New</span></h5>
-  <h6>Encabezado H6 <span class="badge bg-secondary">New</span></h6>
-</div>
-<div class="col-6">
-  <pre>
+        <div class="row mb-4">
+          <div class="col-6">
+            <h1>Encabezado H1 <span class="badge bg-secondary">New</span></h1>
+            <h2>Encabezado H2 <span class="badge bg-secondary">New</span></h2>
+            <h3>Encabezado H3 <span class="badge bg-secondary">New</span></h3>
+            <h4>Encabezado H4 <span class="badge bg-secondary">New</span></h4>
+            <h5>Encabezado H5 <span class="badge bg-secondary">New</span></h5>
+            <h6>Encabezado H6 <span class="badge bg-secondary">New</span></h6>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
 &lt;h1&gt;Encabezado H1 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h1&gt;
 &lt;h2&gt;Encabezado H2 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt;
 &lt;h3&gt;Encabezado H3 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h3&gt;
 &lt;h4&gt;Encabezado H4 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h4&gt;
 &lt;h5&gt;Encabezado H5 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h5&gt;
 &lt;h6&gt;Encabezado H6 &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;&lt;/h6&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <h3><span class="badge bg-primary">Primary</span></h3>
-  <h3><span class="badge bg-secondary">Secondary</span></h3>
-  <h3><span class="badge bg-success">Success</span></h3>
-  <h3><span class="badge bg-danger">Danger</span></h3>
-  <h3><span class="badge bg-warning">Warning</span></h3>
-  <h3><span class="badge bg-info text-dark">Info</span></h3>
-  <h3><span class="badge bg-light text-dark">Light</span></h3>
-  <h3><span class="badge bg-dark">Dark</span></h3>
-</div>
-<div class="col-6">
-  <pre>
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3><span class="badge bg-primary">Primary</span></h3>
+            <h3><span class="badge bg-secondary">Secondary</span></h3>
+            <h3><span class="badge bg-success">Success</span></h3>
+            <h3><span class="badge bg-danger">Danger</span></h3>
+            <h3><span class="badge bg-warning">Warning</span></h3>
+            <h3><span class="badge bg-info text-dark">Info</span></h3>
+            <h3><span class="badge bg-light text-dark">Light</span></h3>
+            <h3><span class="badge bg-dark">Dark</span></h3>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
 &lt;h3&gt;&lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge bg-secondary"&gt;Secondary&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge bg-success"&gt;Success&lt;/span&gt;&lt;/h3&gt;
@@ -3173,30 +3164,33 @@
 &lt;h3&gt;&lt;span class="badge bg-info text-dark"&gt;Info&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge bg-light text-dark"&gt;Light&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge bg-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;
-  </pre>
-</div>
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="col-6">
-  <h3><span class="badge rounded-pill bg-primary">Primary</span></h3>
-  <h3>
-    <span class="badge rounded-pill bg-secondary">Secondary</span>
-  </h3>
-  <h3><span class="badge rounded-pill bg-success">Success</span></h3>
-  <h3><span class="badge rounded-pill bg-danger">Danger</span></h3>
-  <h3><span class="badge rounded-pill bg-warning">Warning</span></h3>
-  <h3>
-    <span class="badge rounded-pill bg-info text-dark">Info</span>
-  </h3>
-  <h3>
-    <span class="badge rounded-pill bg-light text-dark">Light</span>
-  </h3>
-  <h3><span class="badge rounded-pill bg-dark">Dark</span></h3>
-
-</div>
-<div class="col-6">
-  <pre>
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3><span class="badge rounded-pill bg-primary">Primary</span></h3>
+            <h3>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+            </h3>
+            <h3><span class="badge rounded-pill bg-success">Success</span></h3>
+            <h3><span class="badge rounded-pill bg-danger">Danger</span></h3>
+            <h3><span class="badge rounded-pill bg-warning">Warning</span></h3>
+            <h3>
+              <span class="badge rounded-pill bg-info text-dark">Info</span>
+            </h3>
+            <h3>
+              <span class="badge rounded-pill bg-light text-dark">Light</span>
+            </h3>
+            <h3><span class="badge rounded-pill bg-dark">Dark</span></h3>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
 &lt;h3&gt;&lt;span class="badge rounded-pill bg-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge rounded-pill bg-secondary"&gt;Secondary&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge rounded-pill bg-success"&gt;Success&lt;/span&gt;&lt;/h3&gt;
@@ -3205,51 +3199,57 @@
 &lt;h3&gt;&lt;span class="badge rounded-pill bg-info text-dark"&gt;Info&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge rounded-pill bg-light text-dark"&gt;Light&lt;/span&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;span class="badge rounded-pill bg-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <button type="button" class="btn btn-outline-secondary">
-    Notificaciones <span class="badge bg-danger">8</span>
-  </button>
-  <button type="button" class="btn btn-primary">
-    Mensajes <span class="badge bg-light text-dark">12</span>
-  </button>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;button type="button" class="btn btn-outline-secondary"&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <button type="button" class="btn btn-outline-secondary">
+              Notificaciones <span class="badge bg-danger">8</span>
+            </button>
+            <button type="button" class="btn btn-primary">
+              Mensajes <span class="badge bg-light text-dark">12</span>
+            </button>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;button type="button" class="btn btn-outline-secondary"&gt;
   Notificaciones &lt;span class="badge bg-danger"&gt;8&lt;/span&gt;
 &lt;/button&gt;
 &lt;button type="button" class="btn btn-primary"&gt;
   Mensajes &lt;span class="badge bg-light text-dark"&gt;12&lt;/span&gt;
 &lt;/button&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <div class="row mb-4">
+          <div class="col-6">
+            <button type="button" class="btn btn-primary position-relative">
+              Recibidos
+              <span
+                class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"
+                >+99</span
+              >
+            </button>
 
-<div class="col-6">
-  <button type="button" class="btn btn-primary position-relative">
-    Recibidos
-    <span
-      class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"
-      >+99</span
-    >
-  </button>
-
-  <button type="button" class="btn btn-primary position-relative">
-    Alertas
-    <span
-      class="badge rounded-circle p-2 border border-light bg-danger position-absolute top-0 start-100 translate-middle"
-    ></span>
-  </button>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;button type="button" class="btn btn-primary position-relative"&gt;
+            <button type="button" class="btn btn-primary position-relative">
+              Alertas
+              <span
+                class="badge rounded-circle p-2 border border-light bg-danger position-absolute top-0 start-100 translate-middle"
+              ></span>
+            </button>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;button type="button" class="btn btn-primary position-relative"&gt;
   Recibidos
   &lt;span
     class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"&gt;+99&lt;/span&gt;
@@ -3260,87 +3260,97 @@
   &lt;span
     class="badge rounded-circle p-2 border bg-danger position-absolute top-0 start-100 translate-middle"&gt;&lt;/span&gt;
 &lt;/button&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
-
-<div class="col-6"> <h3>Tarjetas</h3>
-  <div class="card">
-    <div class="card-body">Basic card</div>
-  </div></div>
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Tarjetas&lt;/h3&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3 id="tarjetas">Tarjetas</h3>
+            <div class="card">
+              <div class="card-body">Basic card</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="tarjetas"&gt;Tarjetas&lt;/h3&gt;
 &lt;div class="card"&gt;
   &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <div class="card">
-    <div class="card-header">Header</div>
-    <div class="card-body">Content</div>
-    <div class="card-footer">Footer</div>
-  </div>
-
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class="card"&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-header">Header</div>
+              <div class="card-body">Content</div>
+              <div class="card-footer">Footer</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;div class="card"&gt;
   &lt;div class="card-header"&gt;Header&lt;/div&gt;
   &lt;div class="card-body"&gt;Content&lt;/div&gt;
   &lt;div class="card-footer"&gt;Footer&lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <div class="card mb-3">
-    <div class="card-body">Basic card</div>
-  </div>
-  <br />
-  <div class="card bg-primary text-white">
-    <div class="card-body">Primary card</div>
-  </div>
-  <br />
-  <div class="card bg-success text-white">
-    <div class="card-body">Success card</div>
-  </div>
-  <br />
-  <div class="card bg-info text-white">
-    <div class="card-body">Info card</div>
-  </div>
-  <br />
-  <div class="card bg-warning text-white">
-    <div class="card-body">Warning card</div>
-  </div>
-  <br />
-  <div class="card bg-danger text-white">
-    <div class="card-body">Danger card</div>
-  </div>
-  <br />
-  <div class="card bg-secondary text-white">
-    <div class="card-body">Secondary card</div>
-  </div>
-  <br />
-  <div class="card bg-dark text-white">
-    <div class="card-body">Dark card</div>
-  </div>
-  <br />
-  <div class="card bg-light text-dark">
-    <div class="card-body">Light card</div>
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class="card mb-3"&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card mb-3">
+              <div class="card-body">Basic card</div>
+            </div>
+            <br />
+            <div class="card bg-primary text-white">
+              <div class="card-body">Primary card</div>
+            </div>
+            <br />
+            <div class="card bg-success text-white">
+              <div class="card-body">Success card</div>
+            </div>
+            <br />
+            <div class="card bg-info text-white">
+              <div class="card-body">Info card</div>
+            </div>
+            <br />
+            <div class="card bg-warning text-white">
+              <div class="card-body">Warning card</div>
+            </div>
+            <br />
+            <div class="card bg-danger text-white">
+              <div class="card-body">Danger card</div>
+            </div>
+            <br />
+            <div class="card bg-secondary text-white">
+              <div class="card-body">Secondary card</div>
+            </div>
+            <br />
+            <div class="card bg-dark text-white">
+              <div class="card-body">Dark card</div>
+            </div>
+            <br />
+            <div class="card bg-light text-dark">
+              <div class="card-body">Light card</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;div class="card mb-3"&gt;
   &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -3375,30 +3385,33 @@
 &lt;div class="card bg-light text-dark"&gt;
   &lt;div class="card-body"&gt;Light card&lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <div class="card border-danger">
-    <div class="card-body">Borde danger y texto a la izquierda</div>
-  </div>
-  <div class="card border-primary">
-    <div class="card-body text-center">
-      Borde primary y texto al centro
-    </div>
-  </div>
-  <div class="card border-info">
-    <div class="card-body text-end">
-      Borde info y texto a la derecha
-    </div>
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class="card border-danger"&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card border-danger">
+              <div class="card-body">Borde danger y texto a la izquierda</div>
+            </div>
+            <div class="card border-primary">
+              <div class="card-body text-center">
+                Borde primary y texto al centro
+              </div>
+            </div>
+            <div class="card border-info">
+              <div class="card-body text-end">
+                Borde info y texto a la derecha
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;div class="card border-danger"&gt;
   &lt;div class="card-body"&gt;Borde danger y texto a la izquierda&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="card border-primary"&gt;
@@ -3411,36 +3424,39 @@
     Borde info y texto a la derecha
   &lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card bg-primary text-white w-100 mb-3">
+              <div class="card-body text-end">Tamaño 100%</div>
+            </div>
 
-<div class="col-6">
-  <div class="card bg-primary text-white w-100 mb-3">
-    <div class="card-body text-end">Tamaño 100%</div>
-  </div>
+            <div class="card bg-primary text-white w-75 mb-3">
+              <div class="card-body text-end">Tamaño 75%</div>
+            </div>
 
-  <div class="card bg-primary text-white w-75 mb-3">
-    <div class="card-body text-end">Tamaño 75%</div>
-  </div>
+            <div class="card bg-primary text-white w-50 mb-3">
+              <div class="card-body text-end">Tamaño 50%</div>
+            </div>
 
-  <div class="card bg-primary text-white w-50 mb-3">
-    <div class="card-body text-end">Tamaño 50%</div>
-  </div>
+            <div class="card bg-primary text-white w-25 mb-3">
+              <div class="card-body text-end">Tamaño 25%</div>
+            </div>
 
-  <div class="card bg-primary text-white w-25 mb-3">
-    <div class="card-body text-end">Tamaño 25%</div>
-  </div>
-
-  <div class="card bg-primary text-white" style="width: 300px">
-    <div class="card-body text-end">Tamaño de 300px</div>
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class="card bg-primary text-white w-100 mb-3"&gt;
+            <div class="card bg-primary text-white" style="width: 300px">
+              <div class="card-body text-end">Tamaño de 300px</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;div class="card bg-primary text-white w-100 mb-3"&gt;
   &lt;div class="card-body text-end"&gt;Tamaño 100%&lt;/div&gt;
 &lt;/div&gt;
 
@@ -3459,27 +3475,30 @@
 &lt;div class="card bg-primary text-white" style="width: 300px"&gt;
   &lt;div class="card-body text-end"&gt;Tamaño de 300px&lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Titulo</h4>
-      <p class="card-text">
-        Ejemplo de texto. Puedes escribir lo que quieras
-      </p>
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Otro link</a>
-    </div>
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class="card"&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Titulo</h4>
+                <p class="card-text">
+                  Ejemplo de texto. Puedes escribir lo que quieras
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Otro link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;div class="card"&gt;
   &lt;div class="card-body"&gt;
     &lt;h4 class="card-title"&gt;Titulo&lt;/h4&gt;
     &lt;p class="card-text"&gt;
@@ -3489,42 +3508,45 @@
     &lt;a href="#" class="card-link"&gt;Otro link&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card w-25 mb-2">
+              <img
+                class="card-img-top"
+                src="../fotos/images/avatar2.png"
+                alt="Juan López"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Juan López</h4>
+                <p class="card-text">Desarrollador de videojuegos Indies.</p>
+                <a href="#" class="btn btn-primary">Ver perfil</a>
+              </div>
+            </div>
 
-<div class="col-6">
-  <div class="card w-25 mb-2">
-    <img
-      class="card-img-top"
-      src="../fotos/images/avatar2.png"
-      alt="Juan López"
-    />
-    <div class="card-body text-center">
-      <h4 class="card-title">Juan López</h4>
-      <p class="card-text">Desarrollador de videojuegos Indies.</p>
-      <a href="#" class="btn btn-primary">Ver perfil</a>
-    </div>
-  </div>
-
-  <div class="card w-25">
-    <div class="card-body text-center">
-      <h4 class="card-title">Juana López</h4>
-      <p class="card-text">Desarrolladora de videojuegos Indies.</p>
-      <a href="#" class="btn btn-primary">Ver perfil</a>
-    </div>
-    <img
-      class="card-img-top"
-      src="../fotos/images/avatar5.png"
-      alt="Juana López"
-    />
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class="card w-25 mb-2"&gt;
+            <div class="card w-25">
+              <div class="card-body text-center">
+                <h4 class="card-title">Juana López</h4>
+                <p class="card-text">Desarrolladora de videojuegos Indies.</p>
+                <a href="#" class="btn btn-primary">Ver perfil</a>
+              </div>
+              <img
+                class="card-img-top"
+                src="../fotos/images/avatar5.png"
+                alt="Juana López"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;div class="card w-25 mb-2"&gt;
   &lt;img
     class="card-img-top"
     src="../fotos/images/avatar2.png"
@@ -3549,33 +3571,36 @@
     alt="Juana López"
   /&gt;
 &lt;/div&gt;
-
-  </pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <h3>Collapse simple con boton</h3>
-          <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="collapse"
-            data-bs-target="#plegable1"
-          >
-            Plegable
-          </button>
-          <div id="plegable1" class="collapse show">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium, placeat maiores in doloribus odio quae fugiat
-            laudantium quod architecto distinctio rem minima voluptates, saepe
-            assumenda cupiditate repellendus enim ex animi.
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
           </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Collapse simple con boton&lt;/h3&gt;
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3 id="collapse">Collapse simple con boton</h3>
+            <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              data-bs-target="#plegable1"
+            >
+              Plegable
+            </button>
+            <div id="plegable1" class="collapse show">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium, placeat maiores in doloribus odio quae fugiat
+              laudantium quod architecto distinctio rem minima voluptates, saepe
+              assumenda cupiditate repellendus enim ex animi.
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="collapse"&gt;Collapse simple con boton&lt;/h3&gt;
 &lt;p&gt;Haz click sobre el bot&oacute;n para mostrar/ocultar el contenido&lt;/p&gt;
 &lt;button
   type=&quot;button&quot;
@@ -3591,32 +3616,35 @@
   laudantium quod architecto distinctio rem minima voluptates, saepe
   assumenda cupiditate repellendus enim ex animi.
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="col-6">
-  <h3>Collapse con enlace</h3>
-  <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
-  <a
-    href="#plegable2"
-    class="btn btn-primary"
-    data-bs-toggle="collapse"
-  >
-    Plegable enlace
-  </a>
-  <div id="plegable2" class="collapse">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Accusantium, placeat maiores in doloribus odio quae fugiat
-    laudantium quod architecto distinctio rem minima voluptates, saepe
-    assumenda cupiditate repellendus enim ex animi.
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;h3&gt;Collapse con enlace&lt;/h3&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Collapse con enlace</h3>
+            <p>Haz click sobre el botón para mostrar/ocultar el contenido</p>
+            <a
+              href="#plegable2"
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+            >
+              Plegable enlace
+            </a>
+            <div id="plegable2" class="collapse">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium, placeat maiores in doloribus odio quae fugiat
+              laudantium quod architecto distinctio rem minima voluptates, saepe
+              assumenda cupiditate repellendus enim ex animi.
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3&gt;Collapse con enlace&lt;/h3&gt;
 &lt;p&gt;Haz click sobre el bot&oacute;n para mostrar/ocultar el contenido&lt;/p&gt;
 &lt;a
   href=&quot;#plegable2&quot;
@@ -3631,87 +3659,92 @@
   laudantium quod architecto distinctio rem minima voluptates, saepe
   assumenda cupiditate repellendus enim ex animi.
 &lt;/div&gt;
-
-  </pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <div class="accordion" id="EjemploAcordeon">
-    <div class="accordion-item">
-      <div class="accordion-header">
-        <button
-          class="accordion-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#plegableUno"
-        >
-          Accordion Item Uno
-        </button>
-      </div>
-      <div
-        id="plegableUno"
-        class="accordion-collapse collapse show"
-        data-bs-parent="#EjemploAcordeon"
-      >
-        <div class="accordion-body">
-          Este es el <strong>primer item</strong> del acordeón. Se muestra
-          por defecto.
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="accordion-item">
-      <div class="accordion-header">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#plegableDos"
-        >
-          Accordion Item Dos
-        </button>
-      </div>
-      <div
-        id="plegableDos"
-        class="accordion-collapse collapse"
-        data-bs-parent="#EjemploAcordeon"
-      >
-        <div class="accordion-body">
-          Este es el <strong>segundo item</strong> del acordeón. Se
-          muestra oculto por defecto.
-        </div>
-      </div>
-    </div>
+        <hr>
 
-    <div class="accordion-item">
-      <div class="accordion-header">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#plegableTres"
-        >
-          Accordion Item Tres
-        </button>
-      </div>
-      <div
-        id="plegableTres"
-        class="accordion-collapse collapse"
-        data-bs-parent="#EjemploAcordeon"
-      >
-        <div class="accordion-body">
-          Este es el <strong>tercer item</strong> del acordeón. Se muestra
-          oculto por defecto.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div class=&quot;accordion&quot; id=&quot;EjemploAcordeon&quot;&gt;
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3 id="accordion">Accordion</h3>
+            <div class="accordion" id="EjemploAcordeon">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#plegableUno"
+                  >
+                    Accordion Item Uno
+                  </button>
+                </div>
+                <div
+                  id="plegableUno"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#EjemploAcordeon"
+                >
+                  <div class="accordion-body">
+                    Este es el <strong>primer item</strong> del acordeón. Se muestra
+                    por defecto.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#plegableDos"
+                  >
+                    Accordion Item Dos
+                  </button>
+                </div>
+                <div
+                  id="plegableDos"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#EjemploAcordeon"
+                >
+                  <div class="accordion-body">
+                    Este es el <strong>segundo item</strong> del acordeón. Se
+                    muestra oculto por defecto.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#plegableTres"
+                  >
+                    Accordion Item Tres
+                  </button>
+                </div>
+                <div
+                  id="plegableTres"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#EjemploAcordeon"
+                >
+                  <div class="accordion-body">
+                    Este es el <strong>tercer item</strong> del acordeón. Se muestra
+                    oculto por defecto.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="accordion"&gt;Accordion&lt;/h3&gt;
+&lt;div class=&quot;accordion&quot; id=&quot;EjemploAcordeon&quot;&gt;
   &lt;div class=&quot;accordion-item&quot;&gt;
     &lt;div class=&quot;accordion-header&quot;&gt;
       &lt;button
@@ -3781,95 +3814,100 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
-  </pre>
-</div>
-
-<hr>
-
-<div class="col-6">
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="../fotos/images/vegamedia01.jpg"
-          alt="Los Angeles"
-          class="d-block w-100"
-        />
-        <div class="carousel-caption" style="color: red">
-          <h4>C.E.S. Vega Media</h4>
-          <p>Ctra. Mula, 37 - Alguazas (Murcia)</p>
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="../fotos/images/vegamedia02.jpg"
-          alt="Chicago"
-          class="d-block w-100"
-        />
-        <div class="carousel-caption">
-          <h4>Patio de Infantil</h4>
-          <p>3, 4 5 años</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="../fotos/images/vegamedia03.jpg"
-          alt="New York"
-          class="d-block w-100"
-        />
-        <div class="carousel-caption">
-          <h4>Instalaciones deportivas</h4>
-          <p>Campo de fútbol municipal de Alguazas</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Left and right controls/icons -->
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#demo"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#demo"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon"></span>
-    </button>
+        <hr>
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide-to="0"
-        class="active"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide-to="1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide-to="2"
-      ></button>
-    </div>
-  </div>
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3 id="carousel">Carousel</h3>
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../fotos/images/vegamedia01.jpg"
+                    alt="Los Angeles"
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption" style="color: red">
+                    <h4>C.E.S. Vega Media</h4>
+                    <p>Ctra. Mula, 37 - Alguazas (Murcia)</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../fotos/images/vegamedia02.jpg"
+                    alt="Chicago"
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h4>Patio de Infantil</h4>
+                    <p>3, 4 5 años</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../fotos/images/vegamedia03.jpg"
+                    alt="New York"
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h4>Instalaciones deportivas</h4>
+                    <p>Campo de fútbol municipal de Alguazas</p>
+                  </div>
+                </div>
+              </div>
 
-  <hr />
-</div>
-<div class="col-6">
-  <pre>
-    &lt;div id=&quot;demo&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+            </div>
+
+            <hr />
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+&lt;h3 id="carousel"&gt;Carousel&lt;/h3&gt;
+&lt;div id=&quot;demo&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
   &lt;!-- The slideshow/carousel --&gt;
   &lt;div class=&quot;carousel-inner&quot;&gt;
     &lt;div class=&quot;carousel-item active&quot;&gt;
@@ -3945,162 +3983,732 @@
     &gt;&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+</code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
 
-  </pre>
-</div>
+        <hr>
 
-<hr>
+        <div class="row mb-4">
+          <div class="col-6">
+            <!-- Button to Open the Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Open modal
+            </button>
 
-<div class="col-6">
-          <!-- Button to Open the Modal -->
-          <button
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <p>Modal body..</p>
+                    <p>Este es un texto de ejemplo de modal body.</p>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ejemplo corregido del modal -->
+            <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título del Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Contenido del modal -->
+                    <p>Este es el contenido correcto del modal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+        &lt;!-- Button to Open the Modal --&gt;
+        &lt;button
           type="button"
           class="btn btn-primary"
           data-bs-toggle="modal"
           data-bs-target="#myModal"
-        >
+        &gt;
           Open modal
-        </button>
+        &lt;/button&gt;
 
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
-                <button
+        &lt;!-- The Modal --&gt;
+        &lt;div class="modal" id="myModal"&gt;
+          &lt;div class="modal-dialog"&gt;
+            &lt;div class="modal-content"&gt;
+              &lt;!-- Modal Header --&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;h4 class="modal-title"&gt;Modal Heading&lt;/h4&gt;
+                &lt;button
                   type="button"
                   class="btn-close"
                   data-bs-dismiss="modal"
-                ></button>
-              </div>
+                &gt;&lt;/button&gt;
+              &lt;/div&gt;
 
-              <!-- Modal body -->
-              <div class="modal-body">Modal body..</div>
+              &lt;!-- Modal body --&gt;
+              &lt;div class="modal-body"&gt;
+                &lt;p&gt;Modal body..&lt;/p&gt;
+                &lt;p&gt;Este es un texto de ejemplo de modal body.&lt;/p&gt;
+              &lt;/div&gt;
 
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button
+              &lt;!-- Modal footer --&gt;
+              &lt;div class="modal-footer"&gt;
+                &lt;button
                   type="button"
                   class="btn btn-danger"
                   data-bs-dismiss="modal"
-                >
+                &gt;
                   Close
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Ejemplo corregido del modal --&gt;
+        &lt;div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+          &lt;div class="modal-dialog"&gt;
+            &lt;div class="modal-content"&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Título del Modal&lt;/h5&gt;
+                &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"&gt;&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-body"&gt;
+                &lt;!-- Contenido del modal --&gt;
+                &lt;p&gt;Este es el contenido correcto del modal.&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary"&gt;Guardar cambios&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+            </code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <hr>
+
+       
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 25%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar bg-warning"
+                role="progressbar"
+                style="width: 100%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+              &lt;div class="progress"&gt;
+                &lt;div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 25%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                &gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;br /&gt;
+              &lt;div class="progress"&gt;
+                &lt;div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                &gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;br /&gt;
+              &lt;div class="progress"&gt;
+                &lt;div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                &gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;br /&gt;
+              &lt;div class="progress"&gt;
+                &lt;div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                &gt;&lt;/div&gt;
+              &lt;/div&gt;
+
+            </code>
+
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Navbar Básico</h3>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Marca</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarBasic"
+                aria-controls="navbarBasic"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarBasic">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Enlace</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+        &lt;h3&gt;Navbar Básico&lt;/h3&gt;
+        &lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+          &lt;a class="navbar-brand" href="#"&gt;Marca&lt;/a&gt;
+          &lt;button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBasic"
+            aria-controls="navbarBasic"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          &gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;div class="collapse navbar-collapse" id="navbarBasic"&gt;
+            &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link active" aria-current="page" href="#"&gt;Inicio&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Enlace&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Contacto&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+            </code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Navbar con Dropdown</h3>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Mi Sitio</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarDropdown"
+                aria-controls="navbarDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Diseño</a></li>
+                      <li><a class="dropdown-item" href="#">Desarrollo</a></li>
+                      <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+        &lt;h3&gt;Navbar con Dropdown&lt;/h3&gt;
+        &lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+          &lt;a class="navbar-brand" href="#"&gt;Mi Sitio&lt;/a&gt;
+          &lt;button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarDropdown"
+            aria-controls="navbarDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          &gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;div class="collapse navbar-collapse" id="navbarDropdown"&gt;
+            &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link active" aria-current="page" href="#"&gt;Inicio&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item dropdown"&gt;
+                &lt;a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                &gt;
+                  Servicios
+                &lt;/a&gt;
+                &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Diseño&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Desarrollo&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Marketing&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Contacto&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+            </code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Navbar Fijo al Top</h3>
+            <nav class="navbar navbar-expand-lg navbar-light bg-">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fijo Top</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarFixed"
+                  aria-controls="navbarFixed"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarFixed">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Características</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Precios</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div style="margin-top: 70px;">
+              <!-- Content to demonstrate fixed navbar -->
+              <p>Contenido de la página...</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <pre><code class="language-html">
+        &lt;h3&gt;Navbar Fijo al Top&lt;/h3&gt;
+        &lt;nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"&gt;
+          &lt;div class="container-fluid"&gt;
+            &lt;a class="navbar-brand" href="#"&gt;Fijo Top&lt;/a&gt;
+            &lt;button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFixed"
+              aria-controls="navbarFixed"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            &gt;
+              &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarFixed"&gt;
+              &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link active" aria-current="page" href="#"&gt;Inicio&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link" href="#"&gt;Características&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                  &lt;a class="nav-link" href="#"&gt;Precios&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+        &lt;div style="margin-top: 70px;"&gt;
+          &lt;!-- Content to demonstrate fixed navbar --&gt;
+          &lt;p&gt;Contenido de la página...&lt;/p&gt;
+        &lt;/div&gt;
+            </code>
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            </pre>
+          </div>
+        </div>
+
+
+        <hr>
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <h3>Modal con Formulario</h3>
+            <!-- Button to Open the Modal -->
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#formModal"
+            >
+              Abrir Modal de Formulario
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="formModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h5 class="modal-title">Formulario de Contacto</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Enviar
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-</div>
-<div class="col-6">
-  <pre>
-    &lt;!-- Button to Open the Modal --&gt;
-&lt;button
-  type=&quot;button&quot;
-  class=&quot;btn btn-primary&quot;
-  data-bs-toggle=&quot;modal&quot;
-  data-bs-target=&quot;#myModal&quot;
-&gt;
-  Open modal
-&lt;/button&gt;
+          <div class="col-6">
+            <pre><code class="language-html">
+        &lt;div class="row mb-4"&gt;
+          &lt;div class="col-6"&gt;
+            &lt;h3&gt;Modal con Formulario&lt;/h3&gt;
+            &lt;!-- Button to Open the Modal --&gt;
+            &lt;button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#formModal"
+            &gt;
+              Abrir Modal de Formulario
+            &lt;/button&gt;
 
-&lt;!-- The Modal --&gt;
-&lt;div class=&quot;modal&quot; id=&quot;myModal&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;!-- Modal Header --&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;h4 class=&quot;modal-title&quot;&gt;Modal Heading&lt;/h4&gt;
+            &lt;!-- The Modal --&gt;
+            &lt;div class="modal" id="formModal"&gt;
+              &lt;div class="modal-dialog"&gt;
+                &lt;div class="modal-content"&gt;
+                  &lt;!-- Modal Header --&gt;
+                  &lt;div class="modal-header"&gt;
+                    &lt;h5 class="modal-title"&gt;Formulario de Contacto&lt;/h5&gt;
+                    &lt;button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    &gt;&lt;/button&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Modal body --&gt;
+                  &lt;div class="modal-body"&gt;
+                    &lt;form&gt;
+                      &lt;div class="mb-3"&gt;
+                        &lt;label for="nombre" class="form-label"&gt;Nombre&lt;/label&gt;
+                        &lt;input type="text" class="form-control" id="nombre" /&gt;
+                      &lt;/div&gt;
+                      &lt;div class="mb-3"&gt;
+                        &lt;label for="email" class="form-label"&gt;Correo Electrónico&lt;/label&gt;
+                        &lt;input type="email" class="form-control" id="email" /&gt;
+                      &lt;/div&gt;
+                      &lt;div class="mb-3"&gt;
+                        &lt;label for="mensaje" class="form-label"&gt;Mensaje&lt;/label&gt;
+                        &lt;textarea class="form-control" id="mensaje" rows="3"&gt;&lt;/textarea&gt;
+                      &lt;/div&gt;
+                    &lt;/form&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Modal footer --&gt;
+                  &lt;div class="modal-footer"&gt;
+                    &lt;button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    &gt;
+                      Enviar
+                    &lt;/button&gt;
+                    &lt;button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    &gt;
+                      Cerrar
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col-6"&gt;
+            &lt;pre&gt;&lt;code class="language-html"&gt;
+        &lt;!-- Modal con Formulario --&gt;
         &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn-close&quot;
-          data-bs-dismiss=&quot;modal&quot;
-        &gt;&lt;/button&gt;
-      &lt;/div&gt;
-
-      &lt;!-- Modal body --&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;Modal body..&lt;/div&gt;
-
-      &lt;!-- Modal footer --&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button
-          type=&quot;button&quot;
-          class=&quot;btn btn-danger&quot;
-          data-bs-dismiss=&quot;modal&quot;
+          type="button"
+          class="btn btn-secondary"
+          data-bs-toggle="modal"
+          data-bs-target="#formModal"
         &gt;
-          Close
+          Abrir Modal de Formulario
         &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 
-  </pre>
+        &lt;div class="modal" id="formModal"&gt;
+          &lt;div class="modal-dialog"&gt;
+            &lt;div class="modal-content"&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title"&gt;Formulario de Contacto&lt;/h5&gt;
+                &lt;button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                &gt;&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-body"&gt;
+                &lt;form&gt;
+                  &lt;div class="mb-3"&gt;
+                    &lt;label for="nombre" class="form-label"&gt;Nombre&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="nombre" /&gt;
+                  &lt;/div&gt;
+                  &lt;div class="mb-3"&gt;
+                    &lt;label for="email" class="form-label"&gt;Correo Electrónico&lt;/label&gt;
+                    &lt;input type="email" class="form-control" id="email" /&gt;
+                  &lt;/div&gt;
+                  &lt;div class="mb-3"&gt;
+                    &lt;label for="mensaje" class="form-label"&gt;Mensaje&lt;/label&gt;
+                    &lt;textarea class="form-control" id="mensaje" rows="3"&gt;&lt;/textarea&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-footer"&gt;
+                &lt;button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                &gt;
+                  Enviar
+                &lt;/button&gt;
+                &lt;button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                &gt;
+                  Cerrar
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+            &lt;/code&gt;
+            &lt;button class="copy-button" onclick="copyCode(this)"&gt;Copiar&lt;/button&gt;
+            &lt;/pre&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        <hr>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Enlaces a 8NAVS</h3>
+          <ul>
+            <li><a href="8NAVS/navs.html">Página 1</a></li>
+            <li><a href="8NAVS/navbar_1.html">Página 1</a></li>
+            <li><a href="8NAVS/navbar_2.html">Página 2</a></li>
+            <li><a href="8NAVS/navbar_3.html">Página 3</a></li>
+            <li><a href="8NAVS/navbar_4.html">Página 4</a></li>
+            <li><a href="8NAVS/navbar_5.html">Página 5</a></li>
+            <li><a href="8NAVS/navbar_6.html">Página 6</a></li>
+            <li><a href="8NAVS/navbar_7.html">Página 7</a></li>
+            <li><a href="8NAVS/navbar_8.html">Página 8</a></li>
+            <li><a href="8NAVS/navbar_9.html">Página 9</a></li>
+            <li><a href="8NAVS/navbar_10.html">Página 10</a></li>
+            <li><a href="8NAVS/navbar_11.html">Página 11</a></li>
+            <li><a href="8NAVS/navbar_12.html">Página 12</a></li>
+            <li><a href="8NAVS/navbar_13.html">Página 13</a></li>
+          </ul>
+      </div>
 </div>
+
 
 <hr>
 
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
 
-<hr>
 
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
 
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
-
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
-
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
-
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
-
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
-
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
-
-<hr>
-
-<div class="col-6"></div>
-<div class="col-6">
-  <pre></pre>
-</div>
       </section>
 
       <script>
