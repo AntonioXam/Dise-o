@@ -5,432 +5,455 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>CES Vega Media</title>
-    <style>
-        .social-icons a {
-            color: #ffffff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #28a745;
-        }
-        .etapa-header {
-            background-color: #f8f9fa;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .card-ciclo {
-            transition: transform 0.3s;
-        }
-        .card-ciclo:hover {
-            transform: translateY(-5px);
-        }
-        body {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        .navbar-wh {
-            background-color: #333333;
-        }
-        .navbar .nav-link {
-            color: #ffffff;
-        }
-        .navbar .nav-link.active {
-            color: #28a745;
-        }
-        .navbar .nav-link:hover {
-            color: #28a745;
-        }
-        .footer {
-            background-color: #333333;
-            color: #ffffff;
-        }
-        .navbar-toggler {
-            border-color: #ffffff;
-        }
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-wh sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="logosVM/logoVM_verde.jpg" class="rounded
-                " alt="Logo CES Vega Media" height="60">
+                <img src="logosVM/grifo.png" class="rounded" alt="Logo CES Vega Media" height="50">
             </a>
-            <h4 class="text-center text-white ">Etapas Educativas</h4>
+            <h3 class="text-white">C.E.S Vega Media</h3>
+         
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="etapas.html"><i class="bi bi-book"></i> Etapas Educativas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="instalaciones.html"><i class="bi bi-building"></i> Instalaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="bi bi-gear"></i> Servicios</a></li>
-                    <i class="bi bi-gear"></i>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="etapas.html">
+                            <i class="bi bi-book-fill"></i> Etapas Educativas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">
+                            <i class="bi bi-building"></i> Instalaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="bi bi-gear-fill"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Alert informativo -->
+    <div class="container-fluid px-4">
+        <div class="content-wrapper">
+            <div class="alert alert-info alert-dismissible fade show custom-alert" role="alert">
+                <strong>¡Matrícula abierta!</strong> Consulta nuestras ofertas educativas para el próximo curso.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    </div>
 
-    <div class="container my-5">
-        
+    <div class="container-fluid px-4">
+        <div class="content-wrapper">
+            <!-- Educación Básica -->
+            <div class="accordion" id="educacionBasica">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#infantil">
+                            <b>Educación Infantil</b> <span class="badge bg-primary ms-2">2-6 años</span>
+                        </button>
+                    </h2>
+                    <div id="infantil" class="accordion-collapse collapse show" data-bs-parent="#educacionBasica">
+                        <div class="accordion-body bg-body-tertiary">
+                            <p>Esta etapa está dedicada al fomento y el desarrollo <strong>integral de personalidad individual</strong> de cada uno de nuestros alumnos mediante la promoción de las <em>habilidades sociales, emocionales, cognitivas y motrices básicas</em>.</p>
+                            <p>Nuestro <strong>proyecto propio</strong> es adaptable a las características de cada grupo y alumno, siendo el niño el que <em>marca la dinámica según sus necesidades, intereses y capacidades</em>.</p>
+                            <img class="img-fluid" src="images/etapainfantil.jpg" alt="Intantil">
+                            <h4 class="mt-2"><u>Información</u></h4>
+                            <ul>
+                                <li>Horario de <b>9:00</b> a <b>14:00</b> horas.</li>
+                                <li><b>Uniforme escolar</b></li>
+                                <li><b>Servicio de guardería gratuito</b> en reuniones de aula.</li>
+                                <li><u>Desayunos saludables</u>: En el aula y con recomendaciones para un almuerzo equilibrado.</li>
+                                <li><u>Educación de calidad</u> con <b>proyectos didácticos únicos</b> elaborado por el equipo docente del Centro.</li>
+                                <li><b>Blog escolar</b>, donde se comparten las experiencias y emociones que vivimos en el aula diariamente.</li>
+                            </ul>
+                            <div class=" ms-3 mt-3">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalInfantil">
+                                    Programa de Educación Infantil
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Educación Básica -->
-        <div class="accordion" id="educacionBasica">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#infantil">
-                        <b>Educación Infantil</b> <span class="badge bg-primary ms-2">2-6 años</span>
-                    </button>
-                </h2>
-                <div id="infantil" class="accordion-collapse collapse show" data-bs-parent="#educacionBasica">
-                    <div class="accordion-body bg-body-tertiary">
-                        <p>Esta etapa está dedicada al fomento y el desarrollo <strong>integral de personalidad individual</strong> de cada uno de nuestros alumnos mediante la promoción de las <em>habilidades sociales, emocionales, cognitivas y motrices básicas</em>.</p>
-                        <p>Nuestro <strong>proyecto propio</strong> es adaptable a las características de cada grupo y alumno, siendo el niño el que <em>marca la dinámica según sus necesidades, intereses y capacidades</em>.</p>
-                        <img class="img-fluid" src="images/etapainfantil.jpg" alt="Intantil">
-                        <h4 class="mt-2"><u>Información</u></h4>
-                        <ul>
-                            <li>Horario de <b>9:00</b> a <b>14:00</b> horas.</li>
-                            <li><b>Uniforme escolar</b></li>
-                            <li><b>Servicio de guardería gratuito</b> en reuniones de aula.</li>
-                            <li><u>Desayunos saludables</u>: En el aula y con recomendaciones para un almuerzo equilibrado.</li>
-                            <li><u>Educación de calidad</u> con <b>proyectos didácticos únicos</b> elaborado por el equipo docente del Centro.</li>
-                            <li><b>Blog escolar</b>, donde se comparten las experiencias y emociones que vivimos en el aula diariamente.</li>
-                        </ul>
-                        <div class=" ms-3 mt-3">
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalInfantil">
-                                Más información
-                            </button>
+              
+
+                <!-- Similares secciones para Primaria, ESO y FP Básica -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#primaria">
+                            <b>Educación Primaria</b> <span class="badge bg-info ms-2">6-12 años</span>
+                        </button>
+                    </h2>
+                    <div id="primaria" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
+                        <div class="accordion-body bg-body-tertiary">
+                            <p>Esta etapa está dedicada al desarrollo del interés por aprender y al fomento de la cultura general. Los alumnos alcanzarán su capacidad deductiva, inductiva y lógica a través de la propia experimentación. La evaluación del alumnado se realiza de manera continua valorando así en mayor medida el esfuerzo diario en lugar del resultado de una prueba única.</p>
+                            <p>Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que marca la dinámica según sus necesidades, intereses y capacidades. Formación básica e integral de calidad con proyectos únicos de 6 a 12 años.</p>
+                            <img class="img-fluid" src="images/etapaPrimaria.jpg" alt="Primaria">
+                            <h4 class="mt-2"><u>Información</u></h4>
+                            <ul>
+                                <li>Horario de 9:00 a 14:00 horas.</li>
+                                <li>Uniforme escolar</li>
+                                <li>Servicio de guardería gratuito en reuniones de aula.</li>
+                                <li>Desayunos saludables: En el aula y con recomendaciones para un almuerzo equilibrado.</li>
+                                <li>Educación de calidad con proyectos didácticos únicos elaborado por el equipo docente del Centro. </li>
+                                <li>Blog escolar, donde se comparten las experiencias y emociones que vivimos en el aula diariamente.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eso">
+                            Educación Secundaria <span class="badge bg-warning ms-2">12-16 años</span>
+                        </button>
+                    </h2>
+                    <div id="eso" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
+                        <div class="accordion-body bg-body-tertiary">
+                            <p>La Educación Secundaria Obligatoria (ESO) es una etapa educativa obligatoria y gratuita que completa la educación básica. Comprende cuatro cursos académicos que se realizarán ordinariamente entre los 12 y los 16 años de edad.</p>
+                            
+                            <img class="img-fluid" src="images/etapaESO.jpg" alt="ESO">
+                            
+                            <h4 class="mt-2"><u>Características principales</u></h4>
+                            <ul>
+                                <li>Promoción del aprendizaje significativo y competencial</li>
+                                <li>Atención personalizada y seguimiento continuo</li>
+                                <li>Uso de nuevas tecnologías en el aula</li>
+                                <li>Programa bilingüe en algunas materias</li>
+                                <li>Actividades extraescolares y complementarias</li>
+                            </ul>
+
+                            <h4><u>Materias destacadas</u></h4>
+                            <ul>
+                                <li>Lengua Castellana y Literatura</li>
+                                <li>Matemáticas</li>
+                                <li>Primera Lengua Extranjera (Inglés)</li>
+                                <li>Geografía e Historia</li>
+                                <li>Biología y Geología</li>
+                                <li>Física y Química</li>
+                                <li>Educación Física</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fpbasica">
+                            FP Básica <span class="badge bg-secondary ms-2">+15 años</span>
+                        </button>
+                    </h2>
+                    <div id="fpbasica" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
+                        <div class="accordion-body bg-body-tertiary">
+                            <p>La Formación Profesional Básica está dirigida a alumnos entre 15 y 17 años que no han completado la ESO y desean continuar sus estudios hacia un campo profesional.</p>
+                            
+                            <img class="img-fluid" src="images/etapaFPB.jpg" alt="FP Básica">
+                            
+                            <h4 class="mt-2"><u>Títulos ofertados</u></h4>
+                            <ul>
+                                <li><strong>Informática y Comunicaciones</strong>
+                                    <ul>
+                                        <li>Duración: 2 años (2000 horas)</li>
+                                        <li>Prácticas en empresas incluidas</li>
+                                        <li>Título oficial de Técnico Básico</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Electricidad y Electrónica</strong>
+                                    <ul>
+                                        <li>Duración: 2 años (2000 horas)</li>
+                                        <li>Formación práctica en talleres</li>
+                                        <li>Acceso directo a Grado Medio</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="alert alert-info">
+                                <i class="bi bi-info-circle"></i> Al finalizar estos estudios, podrás obtener el título de Graduado en ESO y acceder a Ciclos Formativos de Grado Medio.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-          
-
-            <!-- Similares secciones para Primaria, ESO y FP Básica -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#primaria">
-                        <b>Educación Primaria</b> <span class="badge bg-info ms-2">6-12 años</span>
-                    </button>
-                </h2>
-                <div id="primaria" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
-                    <div class="accordion-body bg-body-tertiary">
-                        <p>Esta etapa está dedicada al desarrollo del interés por aprender y al fomento de la cultura general. Los alumnos alcanzarán su capacidad deductiva, inductiva y lógica a través de la propia experimentación. La evaluación del alumnado se realiza de manera continua valorando así en mayor medida el esfuerzo diario en lugar del resultado de una prueba única.</p>
-                        <p>Nuestro proyecto propio es adaptable a las características de cada grupo y alumno, siendo el niño el que marca la dinámica según sus necesidades, intereses y capacidades. Formación básica e integral de calidad con proyectos únicos de 6 a 12 años.</p>
-                        <img class="img-fluid" src="images/etapaPrimaria.jpg" alt="Primaria">
-                        <h4 class="mt-2"><u>Información</u></h4>
-                        <ul>
-                            <li>Horario de 9:00 a 14:00 horas.</li>
-                            <li>Uniforme escolar</li>
-                            <li>Servicio de guardería gratuito en reuniones de aula.</li>
-                            <li>Desayunos saludables: En el aula y con recomendaciones para un almuerzo equilibrado.</li>
-                            <li>Educación de calidad con proyectos didácticos únicos elaborado por el equipo docente del Centro. </li>
-                            <li>Blog escolar, donde se comparten las experiencias y emociones que vivimos en el aula diariamente.</li>
-                        </ul>
-
+            <!-- Ciclos Formativos -->
+            <h2 class="text-center my-5">Ciclos Formativos</h2>
+            
+            <!-- Grado Medio -->
+            <div class="etapa-header">
+                <h3>Grado Medio <span class="badge bg-success">Formación Profesional</span></h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+                    <div class="col">
+                        <div class="card card-ciclo h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Instalaciones Eléctricas y Automáticas</h5>
+                                <p class="card-text">2000 horas de formación...</p>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalElectrica">
+                                    Más información
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eso">
-                        Educación Secundaria <span class="badge bg-warning ms-2">12-16 años</span>
-                    </button>
-                </h2>
-                <div id="eso" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
-                    <div class="accordion-body bg-body-tertiary">
-                        <p>Etapa obligatoria y gratuita que completa la educación básica. Proporciona formación orientada al desarrollo de las capacidades...</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fpbasica">
-                        FP Básica <span class="badge bg-secondary ms-2">+15 años</span>
-                    </button>
-                </h2>
-                <div id="fpbasica" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
-                    <div class="accordion-body bg-body-tertiary">
-                        <p>Ciclos formativos de 2 años dirigidos a alumnos que no han completado la ESO y quieren proseguir sus estudios hacia la FP...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-       
-         
-
-        <!-- Ciclos Formativos -->
-        <h2 class="text-center my-5">Ciclos Formativos</h2>
-        
-        <!-- Grado Medio -->
-        <div class="etapa-header">
-            <h3>Grado Medio <span class="badge bg-success">Formación Profesional</span></h3>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+                    <!-- Más cards para otros ciclos -->
                 <div class="col">
                     <div class="card card-ciclo h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Instalaciones Eléctricas y Automáticas</h5>
-                            <p class="card-text">2000 horas de formación...</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalElectrica">
+                            <h5 class="card-title">Gestión Administrativa</h5>
+                            <p class="card-text">2000 horas de formación especializada en administración.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAdmin">
                                 Más información
                             </button>
                         </div>
                     </div>
                 </div>
-                <!-- Más cards para otros ciclos -->
-            <div class="col">
-                <div class="card card-ciclo h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Gestión Administrativa</h5>
-                        <p class="card-text">2000 horas de formación especializada en administración.</p>
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAdmin">
-                            Más información
-                        </button>
+                <div class="col">
+                    <div class="card card-ciclo h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
+                            <p class="card-text">2000 horas de formación en desarrollo web.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalDAW">
+                                Más información
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-ciclo h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
-                        <p class="card-text">2000 horas de formación en desarrollo web.</p>
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalDAW">
-                            Más información
-                        </button>
-                    </div>
                 </div>
-            </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modales-->
+    <!-- Modales-->
 
-        <!-- Modal Infantil -->
-        <div class="modal fade" id="modalInfantil" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Programa de Educación Infantil</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h6>Psicomotricidad</h6>
-                                <p>Dividida en dos sesiones semanales:</p>
-                                <ul>
-                                    <li>Psicomotricidad</li>
-                                    <li>Psicomotricidad en inglés</li>
-                                </ul>
+    <!-- Modal Infantil -->
+    <div class="modal fade" id="modalInfantil" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Programa de Educación Infantil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Psicomotricidad</h6>
+                            <p>Dividida en dos sesiones semanales:</p>
+                            <ul>
+                                <li>Psicomotricidad</li>
+                                <li>Psicomotricidad en inglés</li>
+                            </ul>
 
-                                <h6>Inglés</h6>
-                                <p>Se aprovecha la música, la psicomotricidad y los apoyos para el fomento del inglés, además de las horas establecidas para el mismo.</p>
+                            <h6>Inglés</h6>
+                            <p>Se aprovecha la música, la psicomotricidad y los apoyos para el fomento del inglés, además de las horas establecidas para el mismo.</p>
 
-                                <h6>Actividades especiales</h6>
-                                <ul>
-                                    <li>Cientode: Visita de un científico</li>
-                                    <li>Semana temática</li>
-                                    <li>Olimpiada solidaria</li>
-                                    <li>Día de convivencia familiar</li>
-                                    <li>Visitas de familiares al aula</li>
-                                    <li>Excursiones</li>
-                                </ul>
+                            <h6>Actividades especiales</h6>
+                            <ul>
+                                <li>Cientode: Visita de un científico</li>
+                                <li>Semana temática</li>
+                                <li>Olimpiada solidaria</li>
+                                <li>Día de convivencia familiar</li>
+                                <li>Visitas de familiares al aula</li>
+                                <li>Excursiones</li>
+                            </ul>
 
-                                <h6>Inteligencia emocional</h6>
-                                <p>Planconco, un robot sin hábitos ni sentimientos positivos, vendrá todos los viernes al cole para que le ayudemos a mejorar.</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h6>Creatividad</h6>
-                                <p>Proyectos para su desarrollo:</p>
-                                <ul>
-                                    <li>Actividades musicales diarias</li>
-                                    <li>Música en inglés</li>
-                                    <li>Cuaderno de arte</li>
-                                    <li>Teatro y títeres</li>
-                                </ul>
+                            <h6>Inteligencia emocional</h6>
+                            <p>Planconco, un robot sin hábitos ni sentimientos positivos, vendrá todos los viernes al cole para que le ayudemos a mejorar.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Creatividad</h6>
+                            <p>Proyectos para su desarrollo:</p>
+                            <ul>
+                                <li>Actividades musicales diarias</li>
+                                <li>Música en inglés</li>
+                                <li>Cuaderno de arte</li>
+                                <li>Teatro y títeres</li>
+                            </ul>
 
-                                <h6>TICs</h6>
-                                <ul>
-                                    <li>Pizarra digital</li>
-                                    <li>Ordenador</li>
-                                    <li>Hilo musical</li>
-                                    <li>Ipad</li>
-                                </ul>
+                            <h6>TICs</h6>
+                            <ul>
+                                <li>Pizarra digital</li>
+                                <li>Ordenador</li>
+                                <li>Hilo musical</li>
+                                <li>Ipad</li>
+                            </ul>
 
-                                <h6>La semana y sus temas</h6>
-                                <ul>
-                                    <li><strong>Lunes:</strong> Animación a la lectura: Cuentacuentos y préstamo de libros</li>
-                                    <li><strong>Martes:</strong> Medio ambiente, reciclaje y salud ambiental</li>
-                                    <li><strong>Miércoles:</strong> Salud, hábitos básicos. Día de la fruta</li>
-                                    <li><strong>Jueves:</strong> Curiosidades, ciencia y experimentos</li>
-                                    <li><strong>Viernes:</strong> Emociones: Inteligencia emocional habilidades sociales</li>
-                                </ul>
-                            </div>
+                            <h6>La semana y sus temas</h6>
+                            <ul>
+                                <li><strong>Lunes:</strong> Animación a la lectura: Cuentacuentos y préstamo de libros</li>
+                                <li><strong>Martes:</strong> Medio ambiente, reciclaje y salud ambiental</li>
+                                <li><strong>Miércoles:</strong> Salud, hábitos básicos. Día de la fruta</li>
+                                <li><strong>Jueves:</strong> Curiosidades, ciencia y experimentos</li>
+                                <li><strong>Viernes:</strong> Emociones: Inteligencia emocional habilidades sociales</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Modal Eléctronica-->
-        <div class="modal fade" id="modalElectrica" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Instalaciones Eléctricas y Automáticas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Contenido detallado del ciclo -->
-                    <h6>Descripción del Ciclo:</h6>
-                    <p>Este ciclo formativo de grado medio te prepara para realizar instalaciones eléctricas y automáticas en edificios y entornos industriales.</p>
-
-                    <h6>Competencias que adquirirás:</h6>
-                    <ul>
-                        <li>Montaje y mantenimiento de instalaciones eléctricas</li>
-                        <li>Instalaciones domóticas y automatizadas</li>
-                        <li>Instalaciones solares fotovoltaicas</li>
-                        <li>Máquinas eléctricas</li>
-                    </ul>
-
-                    <h6>Salidas Profesionales:</h6>
-                    <ul>
-                        <li>Instalador-mantenedor electricista</li>
-                        <li>Electricista industrial</li>
-                        <li>Instalador de sistemas domóticos</li>
-                        <li>Técnico en instalaciones de energía solar fotovoltaica</li>
-                    </ul>
-
-                    <div class="text-center mt-3">
-                        <a href="#" class="btn btn-success">Solicitar información</a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <!-- Modal Gestión Administrativa -->
-    <div class="modal fade" id="modalAdmin" tabindex="-1">
+    <!-- Modal Eléctronica-->
+    <div class="modal fade" id="modalElectrica" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Gestión Administrativa</h5>
+                    <h5 class="modal-title">Instalaciones Eléctricas y Automáticas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Descripción del Ciclo:</h6>
-                    <p>Formación en tareas administrativas y gestión empresarial, preparándote para trabajar en cualquier departamento administrativo.</p>
+                    <!-- Contenido detallado del ciclo -->
+                <h6>Descripción del Ciclo:</h6>
+                <p>Este ciclo formativo de grado medio te prepara para realizar instalaciones eléctricas y automáticas en edificios y entornos industriales.</p>
 
-                    <h6>Competencias que adquirirás:</h6>
-                    <ul>
-                        <li>Gestión administrativa de compra-venta</li>
-                        <li>Gestión de recursos humanos</li>
-                        <li>Contabilidad y tesorería</li>
-                        <li>Tratamiento de documentación y archivo</li>
-                    </ul>
+                <h6>Competencias que adquirirás:</h6>
+                <ul>
+                    <li>Montaje y mantenimiento de instalaciones eléctricas</li>
+                    <li>Instalaciones domóticas y automatizadas</li>
+                    <li>Instalaciones solares fotovoltaicas</li>
+                    <li>Máquinas eléctricas</li>
+                </ul>
 
-                    <h6>Salidas Profesionales:</h6>
-                    <ul>
-                        <li>Auxiliar administrativo</li>
-                        <li>Gestor de cobros y pagos</li>
-                        <li>Empleado de atención al cliente</li>
-                        <li>Administrativo comercial</li>
-                    </ul>
+                <h6>Salidas Profesionales:</h6>
+                <ul>
+                    <li>Instalador-mantenedor electricista</li>
+                    <li>Electricista industrial</li>
+                    <li>Instalador de sistemas domóticos</li>
+                    <li>Técnico en instalaciones de energía solar fotovoltaica</li>
+                </ul>
 
-                    <div class="text-center mt-3">
-                        <a href="#" class="btn btn-success">Solicitar información</a>
-                    </div>
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-success">Solicitar información</a>
+                </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal Desarrollo de Aplicaciones Web -->
-    <div class="modal fade" id="modalDAW" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Sistemas Microinformáticos y Redes</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Descripción del Ciclo:</h6>
-                    <p>Formación en instalación y mantenimiento de sistemas informáticos y redes locales, preparándote para el sector TI.</p>
+<!-- Modal Gestión Administrativa -->
+<div class="modal fade" id="modalAdmin" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Gestión Administrativa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Descripción del Ciclo:</h6>
+                <p>Formación en tareas administrativas y gestión empresarial, preparándote para trabajar en cualquier departamento administrativo.</p>
 
-                    <h6>Competencias que adquirirás:</h6>
-                    <ul>
-                        <li>Montaje y mantenimiento de equipos</li>
-                        <li>Sistemas operativos y redes</li>
-                        <li>Aplicaciones ofimáticas</li>
-                        <li>Seguridad informática</li>
-                    </ul>
+                <h6>Competencias que adquirirás:</h6>
+                <ul>
+                    <li>Gestión administrativa de compra-venta</li>
+                    <li>Gestión de recursos humanos</li>
+                    <li>Contabilidad y tesorería</li>
+                    <li>Tratamiento de documentación y archivo</li>
+                </ul>
 
-                    <h6>Salidas Profesionales:</h6>
-                    <ul>
-                        <li>Técnico en sistemas microinformáticos</li>
-                        <li>Administrador de redes locales</li>
-                        <li>Técnico de soporte informático</li>
-                        <li>Reparador de equipos</li>
-                    </ul>
+                <h6>Salidas Profesionales:</h6>
+                <ul>
+                    <li>Auxiliar administrativo</li>
+                    <li>Gestor de cobros y pagos</li>
+                    <li>Empleado de atención al cliente</li>
+                    <li>Administrativo comercial</li>
+                </ul>
 
-                    <div class="text-center mt-3">
-                        <a href="#" class="btn btn-success">Solicitar información</a>
-                    </div>
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-success">Solicitar información</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-     <!-- Footer -->
-     <footer class="footer py-4">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-4 mb-4">
-                <h5>Contacto</h5>
-                <p>
-                    <i class="bi bi-geo-alt"></i> Ctra. De Mula, 37 – Alguazas. 30560 – Murcia<br>
-                    <i class="bi bi-telephone"></i> 968 620 913<br>
-                    <i class="bi bi-envelope"></i> vegamedia@ces-vegamedia.es
-                </p>
+<!-- Modal Desarrollo de Aplicaciones Web -->
+<div class="modal fade" id="modalDAW" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sistemas Microinformáticos y Redes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="col-md-4 text-center mb-4">
-                <h5>Redes Sociales</h5>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
-                    <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+            <div class="modal-body">
+                <h6>Descripción del Ciclo:</h6>
+                <p>Formación en instalación y mantenimiento de sistemas informáticos y redes locales, preparándote para el sector TI.</p>
+
+                <h6>Competencias que adquirirás:</h6>
+                <ul>
+                    <li>Montaje y mantenimiento de equipos</li>
+                    <li>Sistemas operativos y redes</li>
+                    <li>Aplicaciones ofimáticas</li>
+                    <li>Seguridad informática</li>
+                </ul>
+
+                <h6>Salidas Profesionales:</h6>
+                <ul>
+                    <li>Técnico en sistemas microinformáticos</li>
+                    <li>Administrador de redes locales</li>
+                    <li>Técnico de soporte informático</li>
+                    <li>Reparador de equipos</li>
+                </ul>
+
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-success">Solicitar información</a>
                 </div>
-            </div> 
-            <div class="col-md-4 text-center mb-4">
-                <a href="index.html">
-                    <img src="logosVM/logoVMfooter.png" alt="Logo CES Vega Media" height="50">
-                </a>
             </div>
-        </div>
-        <hr>
-        <div class="text-center">
-            <small>&copy; 2024 CES Vega Media. Todos los derechos reservados.</small>
         </div>
     </div>
+</div>
+
+ <!-- Footer -->
+ <footer class="footer py-4">
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-4 mb-4">
+            <h5>Contacto</h5>
+            <p>
+                <i class="bi bi-geo-alt"></i> Ctra. De Mula, 37 – Alguazas. 30560 – Murcia<br>
+                <i class="bi bi-telephone"></i> 968 620 913<br>
+                <i class="bi bi-envelope"></i> vegamedia@ces-vegamedia.es
+            </p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+            <h5>Redes Sociales</h5>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div> 
+        <div class="col-md-4 text-center mb-4">
+            <a href="index.html">
+                <img src="logosVM/logoVMfooter.png" alt="Logo CES Vega Media" height="50">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="text-center">
+        <small>&copy; 2024 CES Vega Media. Todos los derechos reservados.</small>
+    </div>
+</div>
 </footer>
 </body>
 </html>

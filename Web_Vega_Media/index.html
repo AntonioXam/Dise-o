@@ -5,71 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>CES Vega Media</title>
-    <style>
-        body {
-            background-color: #ffffff; /* Fondo blanco */
-            color: #333333; /* Texto gris oscuro */
-        }
-        .navbar-wh {
-            background-color: #333333; /* Navbar gris oscuro */
-        }
-        .navbar .nav-link {
-            color: #ffffff; /* Enlaces blancos */
-        }
-        .navbar .nav-link.active {
-            color: #28a745; /* Enlace activo verde */
-        }
-
-        .navbar .nav-link:hover {
-            color: #28a745; /* Enlaces verdes al pasar el cursor */
-        }
-        .btn-success {
-            background-color: #28a745; /* Botones verdes */
-            border-color: #28a745;
-        }
-        .btn-success:hover {
-            background-color: #218838;
-            border-color: #1e7e34;
-        }
-        .alert-success {
-            background-color: #d4edda;
-            color: #155724;
-            border-color: #c3e6cb;
-        }
-        .footer {
-            background-color: #333333; /* Footer gris oscuro */
-            color: #ffffff; /* Texto blanco */
-        }
-        .social-icons a {
-            color: #ffffff;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #28a745; /* Iconos sociales verdes al pasar el cursor */
-        }
-        .carousel-item img {
-            height: 500px;
-            object-fit: cover;
-        }
-        .navbar-toggler {
-            border-color: #ffffff;
-        }
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-wh sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="logosVM/logoVM_verde.jpg" class="rounded
-                " alt="Logo CES Vega Media" height="60">
+                <img src="logosVM/grifo.png" class="rounded" alt="Logo CES Vega Media" height="50">
             </a>
             <h3 class="text-white">C.E.S Vega Media</h3>
          
@@ -78,119 +23,108 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="etapas.html"><i class="bi bi-book"></i> Etapas Educativas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="instalaciones.html"><i class="bi bi-building"></i> Instalaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="bi bi-gear"></i> Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house-door-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="etapas.html">
+                            <i class="bi bi-book-fill"></i> Etapas Educativas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">
+                            <i class="bi bi-building"></i> Instalaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="bi bi-gear-fill"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <div class="container my-5">
-        <!-- Alert informativo -->
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>¡Matrícula abierta!</strong> Consulta nuestras ofertas educativas para el próximo curso.
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <!-- Video Hero Section -->
+    <div class="video-hero">
+        <video autoplay muted loop id="portadaVideo">
+            <source src="videos/introvegamedia.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <h1 class="display-1">C.E.S Vega Media</h1>
+            <p class="lead">Tu futuro comienza aquí</p>
+            <a href="#contenido" class="btn btn-success btn-lg mt-4">Descubre más</a>
         </div>
-
-        <!-- Carousel -->
-        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
-            </div>
-            <div class="rounded-3 carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/vegamedia01.jpg" class="d-block w-100" alt="Centro educativo">
-                    <div class="carousel-caption">
-                        <h2>Bienvenidos al CES Vega Media</h2>
-                        <p>Tu futuro comienza aquí</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vegamedia02.jpg" class="d-block w-100" alt="Centro educativo">
-                    <div class="carousel-caption">
-                        <h2>Parque Infantil</h2>
-                        <p>Un lugar seguro para los más pequeños</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vegamedia03.jpg" class="d-block w-100" alt="Centro educativo">
-                    <div class="carousel-caption">
-                       <h2>Campo de Fútbol</h2>
-                         <p>¡Apúntate a nuestro equipo!</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+        <div class="scroll-down">
+            <i class="bi bi-chevron-double-down fs-2"></i>
         </div>
     </div>
 
-        <!-- Carta de presentación -->
-        <div class="row mb-5 mt-3 ">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Carta de Presentación</h2>
-                <p class="lead">El <b>CES Vega Media</b> es un centro concertado donde la enseñanza esfuerzo <em>totalmente gratuita...</em></p>
-                <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#masInfo">
-                    Leer más
-                </button>
-                <div class="collapse mt-3 text-start" id="masInfo">
-                <p>El <strong>CES Vega Media</strong> es un centro concertado donde la enseñanza es <em>totalmente gratuita</em>, gestionado por una 
-                cooperativa de profesores con vocación por la formación, que forman una <strong>plantilla estable</strong> imprescindible para 
-                conseguir un verdadero trabajo de equipo.</p>
+    <!-- Contenido principal -->
+    <div id="contenido" class="presentation-section">
+        <div class="container-fluid px-4">
+            <!-- Carta de presentación y Proyecto Educativo -->
+            <div class="row mb-4 mt-3">
+                <div class="col-12">
+                    <div class="content-section mb-5">
+                        <h3 class="section-title">Carta de Presentación</h3>
+                        <p>El <strong>CES Vega Media</strong> es un centro concertado donde la enseñanza es <em>totalmente gratuita</em>, gestionado por una 
+                        cooperativa de profesores con vocación por la formación, que forman una <strong>plantilla estable</strong> imprescindible para 
+                        conseguir un verdadero trabajo de equipo.</p>
 
-                <p>Hemos crecido y seguimos creciendo por nuestro <strong>Proyecto Cooperativo</strong>, dónde las personas y una fuerte apuesta 
-                por un <em>proyecto de calidad</em>, son los elementos fundamentales de nuestra organización.</p>
+                        <p>Hemos crecido y seguimos creciendo por nuestro <strong>Proyecto Cooperativo</strong>, dónde las personas y una fuerte apuesta 
+                        por un <em>proyecto de calidad</em>, son los elementos fundamentales de nuestra organización.</p>
 
-                <p>El <strong>C.E.S. Vega Media</strong> es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio 
-                dónde compartimos muchas cosas con otras Cooperativas pero dónde también tenemos nuestra <em>propia identidad</em> 
-                que nos hace diferentes.</p>
+                        <p>El <strong>C.E.S. Vega Media</strong> es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio 
+                        dónde compartimos muchas cosas con otras Cooperativas pero dónde también tenemos nuestra <em>propia identidad</em> 
+                        que nos hace diferentes.</p>
 
-                <p>Aquí se mezclan la <strong>experiencia, madurez y estabilidad</strong> que aportan los socios más antiguos, con la <em>frescura y la 
-                ilusión</em> que nos traen las últimas generaciones, pero todos con un denominador común: "<strong>Seguir trabajando por 
-                nuestro Centro, por una mayor calidad en nuestros servicios</strong>, siendo flexibles a los cambios constantes de la 
-                sociedad para adaptarnos a ellos en las mejores condiciones".</p>
+                        <p>Aquí se mezclan la <strong>experiencia, madurez y estabilidad</strong> que aportan los socios más antiguos, con la <em>frescura y la 
+                        ilusión</em> que nos traen las últimas generaciones, pero todos con un denominador común: "<strong>Seguir trabajando por 
+                        nuestro Centro, por una mayor calidad en nuestros servicios</strong>, siendo flexibles a los cambios constantes de la 
+                        sociedad para adaptarnos a ellos en las mejores condiciones".</p>
 
-                <p>Por todo ello, estamos y seguiremos estando al <strong>servicio de nuestra Comunidad Educativa</strong>.</p>
+                        <p>Por todo ello, estamos y seguiremos estando al <strong>servicio de nuestra Comunidad Educativa</strong>.</p>
 
-                <p>El órgano responsable de la alta gestión de la cooperativa, es el <strong>Consejo Rector</strong> que está formado por siete 
-                personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.</p>
+                        <p>El órgano responsable de la alta gestión de la cooperativa, es el <strong>Consejo Rector</strong> que está formado por siete 
+                        personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.</p>
+                    </div>
 
-                <iframe class="rounded-3 col-12" width="800px" height="400px" src="https://www.youtube.com/embed/5UAOIlSOYPE" title="CES Vega Media" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="content-section mb-5">
+                        <h3 class="section-title">Proyecto Educativo</h3>
+                        <p>Nuestro proyecto educativo se basa en los siguientes principios:</p>
+                        
+                        <h4 class="subsection-title">Misión</h4>
+                        <p>Formar personas capaces de integrarse en la sociedad actual de manera responsable y competente, 
+                        desarrollando al máximo sus capacidades individuales en un marco de respeto y colaboración.</p>
 
-                            
-                            
-                </div>
-                                
-            </div>
-        </div>
+                        <h4 class="subsection-title">Valores</h4>
+                        <ul class="values-list">
+                            <li><strong>Respeto:</strong> Base fundamental de la convivencia.</li>
+                            <li><strong>Responsabilidad:</strong> Como compromiso personal y social.</li>
+                            <li><strong>Esfuerzo:</strong> Como medio para alcanzar metas.</li>
+                            <li><strong>Innovación:</strong> Adaptándonos a los cambios tecnológicos y sociales.</li>
+                            <li><strong>Compromiso:</strong> Con la educación y el desarrollo personal del alumnado.</li>
+                        </ul>
 
-       
-
-    <!-- Modal de bienvenida -->
-    <div class="modal fade " id="welcomeModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">¡Bienvenido a CES Vega Media!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Gracias por visitar nuestro sitio web. Descubre todas nuestras ofertas educativas.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendido</button>
+                        <h4 class="subsection-title">Objetivos Educativos</h4>
+                        <ul class="objectives-list">
+                            <li>Desarrollar la capacidad de los alumnos para regular su propio aprendizaje.</li>
+                            <li>Fomentar el trabajo en equipo y la cooperación.</li>
+                            <li>Impulsar la innovación educativa y las nuevas tecnologías.</li>
+                            <li>Promover la formación integral del alumnado.</li>
+                            <li>Favorecer la inclusión y la atención a la diversidad.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,8 +132,17 @@
 
     <!-- Script para mostrar el modal automáticamente -->
     <script>
-        window.addEventListener('load', () => {
-            new bootstrap.Modal(document.getElementById('welcomeModal')).show();
+        document.querySelector('a[href="#contenido"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contenido').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.scroll-down').addEventListener('click', function() {
+            document.querySelector('#contenido').scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     </script>
 
