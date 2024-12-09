@@ -1,6 +1,9 @@
 /* Variables CSS */
 :root {
     --color-primary: #4CAF50;     /* Verde principal suave */
+} /* Cerrar el bloque :root */
+
+:root {
     --color-primary-light: #81C784; /* Verde claro */
     --color-primary-dark: #388E3C;  /* Verde oscuro */
     --color-accent: #C8E6C9;      /* Verde muy claro para acentos */
@@ -19,6 +22,16 @@ body {
 /* Estilos de navegación */
 .navbar-wh {
     background-color: var(--color-gray);
+}
+
+/* Cambiar el color del navbar-toggler-icon a blanco */
+.navbar-wh .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cambiar el contorno del botón de la hamburguesa a blanco */
+.navbar-wh .navbar-toggler {
+    border-color: #ffffff; /* Blanco */
 }
 
 .navbar .nav-link {
@@ -221,6 +234,62 @@ body {
 .footer {
     background-color: var(--color-gray);
     color: var(--color-white);
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: none;
+    /* Eliminar restricciones de ancho */
+    /* max-width: 1400px; */ /* Eliminar si existe */
+    /* margin: 0 auto; */ /* Eliminar si existe */
+}
+
+/* Centrar el contenido interno del footer */
+.footer .row {
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    /* ...existing styles... */
+}
+
+/* Asegurar que el footer no ocupe toda la pantalla */
+@media (min-width: 1400px) {
+    .footer {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        /* Eliminar max-width si existe */
+        /* max-width: 1400px; */ /* Eliminar */
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer {
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+    
+    .footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer .social-icons {
+        justify-content: center;
+    }
 }
 
 .social-icons a {
@@ -585,13 +654,30 @@ body {
     scroll-margin-top: 76px; /* Altura del navbar */
 }
 
-
 /* Ajustes de contenedor principal */
 .container-fluid {
     max-width: 1400px; /* Limitar el ancho máximo */
     margin: 0 auto;
     padding: 0 2rem;
 }
+
+/* Asegurar que .container tenga márgenes adecuados */
+.container {
+    max-width: 1400px; /* Limitar el ancho máximo para mantener márgenes en pantallas grandes */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Eliminar estilos innecesarios relacionados con wrappers antiguos */
+/* Si existiera alguna clase como .whaper, eliminar sus estilos */
+/* Ejemplo: */
+/*
+.whaper {
+    // estilos a eliminar
+}
+*/
 
 /* Ajustes responsive */
 @media (max-width: 1400px) {
@@ -869,3 +955,10 @@ body {
 /* ...existing styles for #modalInfantil and #modalProgramaPrimaria ... */
 
 /* ...existing code... */
+
+/* Ajustar el contenedor interno del footer para ocupar todo el ancho */
+.footer .container-fluid {
+    max-width: none; /* Eliminar la restricción de ancho máximo */
+    margin: 0;        /* Eliminar márgenes automáticos */
+    padding: 0 2rem;  /* Mantener padding si es necesario */
+}
