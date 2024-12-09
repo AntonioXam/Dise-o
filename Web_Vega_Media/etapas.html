@@ -10,7 +10,7 @@
     <title>CES Vega Media</title>
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-wh sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -54,10 +54,11 @@
     </nav>
 
     <!-- Contenedor principal -->
-    <div class="container-fluid px-4"></div>
+    <div class="container-fluid px-4">
         <div class="content-wrapper">
-            <!-- Educación Básica -->
+            <!-- Accordion de Etapas Educativas -->
             <div class="accordion" id="educacionBasica">
+                <!-- Educación Infantil -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#infantil">
@@ -87,9 +88,7 @@
                     </div>
                 </div>
 
-              
-
-                <!-- Similares secciones para Primaria, ESO y FP Básica -->
+                <!-- Educación Primaria -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#primaria">
@@ -119,6 +118,7 @@
                     </div>
                 </div>
 
+                <!-- Educación Secundaria -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eso">
@@ -127,12 +127,10 @@
                     </h2>
                     <div id="eso" class="accordion-collapse collapse" data-bs-parent="#educacionBasica">
                         <div class="accordion-body bg-body-tertiary">
-                            <!-- Añadir video y descripción de Educación Secundaria -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <video class="w-100 rounded" controls autoplay loop muted>
                                         <source src="videos/secundaria.mp4" type="video/mp4">
-                                        <!-- ...existing code... -->
                                     </video>
                                 </div>
                                 <div class="col-md-6">
@@ -140,7 +138,6 @@
                                 </div>
                             </div>
 
-                            <!-- Nueva disposición con características y materias destacadas -->
                             <div class="row mt-4">
                                 <div class="col-md-6">
                                     <h4 class="mt-2"><u>Características principales</u></h4>
@@ -166,26 +163,21 @@
                                 </div>
                             </div>
 
-                            <!-- Lista de cursos de Educación Secundaria -->
                             <h4 class="mt-4"><u>Cursos de Educación Secundaria</u></h4>
                             <ol>
                                 <li><strong>Primero de ESO:</strong> Introducción a las materias básicas y desarrollo de habilidades fundamentales.</li>
                                 <li><strong>Segundo de ESO:</strong> Profundización en conocimientos académicos y comienzo de actividades extracurriculares.</li>
                                 <li><strong>Tercero de ESO:</strong> Preparación para la orientación profesional y fortalecimiento de competencias.</li>
                                 <li><strong>Cuarto de ESO:</strong> Finalización de la educación secundaria con proyectos de investigación y actividades de orientación laboral.</li>
-                                <!-- Añadir más cursos si es necesario -->
                             </ol>
 
-                           
                         </div>
                     </div>
                 </div>
-
-              
+            </div>
 
             <!-- Ciclos Formativos -->
             <h2 class="text-center my-5">Ciclos Formativos <span class="badge bg-primary">Formación Profesional</span></h2>
-
 
             <!-- Grado Medio -->
             <div class="etapa-header">
@@ -202,7 +194,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Nuevo Ciclo de Cuidados Auxiliares de Enfermería -->
                     <div class="col">
                         <div class="card card-ciclo h-100">
                             <div class="card-body">
@@ -232,7 +223,6 @@
             <div class="etapa-header">
                 <h3>Grado Superior <span class="badge bg-warning">Formación Profesional</span></h3>
                 <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
-                    <!-- Nuevo Ciclo de Desarrollo de Aplicaciones Web -->
                     <div class="col">
                         <div class="card card-ciclo h-100">
                             <div class="card-body">
@@ -244,7 +234,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Nuevo Ciclo de Educación Infantil -->
                     <div class="col">
                         <div class="card card-ciclo h-100">
                             <div class="card-body">
@@ -256,15 +245,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Añadir más ciclos de Grado Superior si es necesario -->
                 </div>
             </div>
         </div>
-    </div> <!-- Cierre del contenedor principal -->
+    </div> 
 
-    <!-- Modales-->
+    <!-- Modales -->
 
-    <!-- Modal Infantil -->
+
     <div class="modal fade" id="modalInfantil" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -326,7 +314,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- Añadir una tarjeta informativa -->
                     <div class="card mt-4 border-success">
                         <div class="card-body">
                             <h5 class="card-title text-success"><i class="bi bi-info-circle"></i> Información Adicional</h5>
@@ -338,377 +325,331 @@
         </div>
     </div>
 
-<!-- Modal Eléctronica-->
-<div class="modal fade" id="modalElectrica" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title">Instalaciones Eléctricas y Automáticas</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Ocupaciones más relevantes:</h6>
-                <ul>
-                    <li>Instalador-mantenedor electricista</li>
-                    <li>Electricista de construcción</li>
-                    <li>Electricista industrial</li>
-                    <li>Electricista de mantenimiento</li>
-                    <li>Instalador-mantenedor de sistemas domóticos</li>
-                    <li>Instalador-mantenedor de antenas</li>
-                    <li>Instalador de telecomunicaciones en edificios de viviendas</li>
-                    <li>Instalador-mantenedor de equipos e instalaciones telefónicas</li>
-                    <li>Montador de instalaciones de energía solar fotovoltaica</li>
-                </ul>
-                <!-- Contenido adicional para el ciclo -->
-                <h6>Contenido del Módulo:</h6>
-                <ul>
-                    <li>Introducción a las instalaciones eléctricas</li>
-                    <li>Automatización y control</li>
-                    <li>Seguridad eléctrica</li>
-                    <li>Mantenimiento de sistemas eléctricos</li>
-                    <li>Proyectos prácticos</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Gestión Administrativa -->
-<div class="modal fade" id="modalAdmin" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title">Gestión Administrativa</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Descripción del Ciclo:</h6>
-                <p>Formación en tareas administrativas y gestión empresarial, preparándote para trabajar en cualquier departamento administrativo.</p>
-
-                <h6>Competencias que adquirirás:</h6>
-                <ul>
-                    <li>Gestión administrativa de compra-venta</li>
-                    <li>Gestión de recursos humanos</li>
-                    <li>Contabilidad y tesorería</li>
-                    <li>Tratamiento de documentación y archivo</li>
-                </ul>
-
-                <h6>Salidas Profesionales:</h6>
-                <ul>
-                    <li>Auxiliar administrativo</li>
-                    <li>Gestor de cobros y pagos</li>
-                    <li>Empleado de atención al cliente</li>
-                    <li>Administrativo comercial</li>
-                </ul>
-                <h6>Contenido del Módulo:</h6>
-                <ul>
-                    <li>Contabilidad básica</li>
-                    <li>Gestión de recursos humanos</li>
-                    <li>Administración de empresas</li>
-                    <li>Marketing y ventas</li>
-                    <li>Gestión documental</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Desarrollo de Aplicaciones Web -->
-<div class="modal fade" id="modalDAW" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-secondary text-white">
-                <h5 class="modal-title">Desarrollo de Aplicaciones Web</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Descripción del Ciclo:</h6>
-                <p>Formación en instalación y mantenimiento de sistemas informáticos y redes locales, preparándote para el sector TI.</p>
-
-                <h6>Competencias que adquirirás:</h6>
-                <ul>
-                    <li>Montaje y mantenimiento de equipos</li>
-                    <li>Sistemas operativos y redes</li>
-                    <li>Aplicaciones ofimáticas</li>
-                    <li>Seguridad informática</li>
-                </ul>
-
-                <h6>Salidas Profesionales:</h6>
-                <ul>
-                    <li>Técnico en sistemas microinformáticos</li>
-                    <li>Administrador de redes locales</li>
-                    <li>Técnico de soporte informático</li>
-                    <li>Reparador de equipos</li>
-                </ul>
-
-                <!-- Tabla de Distribución de Horas -->
-                <h6>Distribución de Horas</h6>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Año</th>
-                            <th>Horas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Primer Año</td>
-                            <td>1500 horas</td>
-                        </tr>
-                        <tr>
-                            <td>Segundo Año</td>
-                            <td>1500 horas</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            
-                <!-- Contenido adicional para el ciclo -->
-                <h6>Contenido del Módulo:</h6>
-                <ul>
-                    <li>Fundamentos de programación web</li>
-                    <li>Desarrollo front-end</li>
-                    <li>Desarrollo back-end</li>
-                    <li>Bases de datos</li>
-                    <li>Proyectos de desarrollo web</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Nuevo Modal Programa Primaria -->
-<div class="modal fade" id="modalProgramaPrimaria" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header bg-success text-white">
-                <h5 class="modal-title">Programa de Educación Primaria</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6 class="text-success">Currículo Académico</h6>
-                        <p>El currículo está diseñado para desarrollar habilidades críticas y creativas en los alumnos, fomentando un aprendizaje significativo.</p>
-                        <ul>
-                            <li>Lengua y Literatura</li>
-                            <li>Matemáticas</li>
-                            <li>Ciencias Naturales</li>
-                            <li>Historia y Geografía</li>
-                            <li>Educación Física</li>
-                        </ul>
-
-                        <h6 class="text-success">Metodología</h6>
-                        <p>Utilizamos metodologías activas que promueven la participación y el trabajo colaborativo entre los estudiantes.</p>
-
-                        <h6 class="text-success">Tecnología en el Aula</h6>
-                        <ul>
-                            <li>Computadoras portátiles</li>
-                            <li>Pizarra interactiva</li>
-                            <li>Acceso a plataformas educativas en línea</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h6 class="text-success">Desarrollo Personal</h6>
-                        <p>Fomentamos el desarrollo emocional y social de nuestros alumnos a través de actividades específicas.</p>
-                        <ul>
-                            <li>Inteligencia emocional</li>
-                            <li>Proyectos de responsabilidad social</li>
-                            <li>Actividades extracurriculares</li>
-                        </ul>
-
-                        <h6 class="text-success">Creatividad</h6>
-                        <p>Promovemos la creatividad mediante talleres de arte, música y teatro.</p>
-                        <ul>
-                            <li>Taller de arte</li>
-                            <li>Clases de música</li>
-                            <li>Teatro y dramatización</li>
-                        </ul>
-
-                        <h6 class="text-success">Actividades Semanales</h6>
-                        <ul>
-                            <li><strong>Lunes:</strong> Taller de creatividad</li>
-                            <li><strong>Martes:</strong> Deportes y educación física</li>
-                            <li><strong>Miércoles:</strong> Laboratorio de ciencias</li>
-                            <li><strong>Jueves:</strong> Club de lectura</li>
-                            <li><strong>Viernes:</strong> Jornada de proyectos</li>
-                        </ul>
-                    </div>
+    
+    <div class="modal fade" id="modalElectrica" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Instalaciones Eléctricas y Automáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <!-- Añadir una tarjeta informativa -->
-                <div class="card mt-4 border-success">
-                    <div class="card-body">
-                        <h5 class="card-title text-success"><i class="bi bi-info-circle"></i> Información Adicional</h5>
-                        <p class="card-text">Nuestro programa está orientado a ofrecer una educación integral que prepara a los estudiantes para enfrentar los retos del futuro con confianza y habilidades sólidas.</p>
+                <div class="modal-body">
+                    <h6>Ocupaciones más relevantes:</h6>
+                    <ul>
+                        <li>Instalador-mantenedor electricista</li>
+                        <li>Electricista de construcción</li>
+                        <li>Electricista industrial</li>
+                        <li>Electricista de mantenimiento</li>
+                        <li>Instalador-mantenedor de sistemas domóticos</li>
+                        <li>Instalador-mantenedor de antenas</li>
+                        <li>Instalador de telecomunicaciones en edificios de viviendas</li>
+                        <li>Instalador-mantenedor de equipos e instalaciones telefónicas</li>
+                        <li>Montador de instalaciones de energía solar fotovoltaica</li>
+                    </ul>
+                    <h6>Contenido del Módulo:</h6>
+                    <ul>
+                        <li>Introducción a las instalaciones eléctricas</li>
+                        <li>Automatización y control</li>
+                        <li>Seguridad eléctrica</li>
+                        <li>Mantenimiento de sistemas eléctricos</li>
+                        <li>Proyectos prácticos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="modal fade" id="modalAdmin" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Gestión Administrativa</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Formación en tareas administrativas y gestión empresarial, preparándote para trabajar en cualquier departamento administrativo.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Gestión administrativa de compra-venta</li>
+                        <li>Gestión de recursos humanos</li>
+                        <li>Contabilidad y tesorería</li>
+                        <li>Tratamiento de documentación y archivo</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Auxiliar administrativo</li>
+                        <li>Gestor de cobros y pagos</li>
+                        <li>Empleado de atención al cliente</li>
+                        <li>Administrativo comercial</li>
+                    </ul>
+                    <h6>Contenido del Módulo:</h6>
+                    <ul>
+                        <li>Contabilidad básica</li>
+                        <li>Gestión de recursos humanos</li>
+                        <li>Administración de empresas</li>
+                        <li>Marketing y ventas</li>
+                        <li>Gestión documental</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="modal fade" id="modalDAW" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title">Desarrollo de Aplicaciones Web</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Formación en instalación y mantenimiento de sistemas informáticos y redes locales, preparándote para el sector TI.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Montaje y mantenimiento de equipos</li>
+                        <li>Sistemas operativos y redes</li>
+                        <li>Aplicaciones ofimáticas</li>
+                        <li>Seguridad informática</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Técnico en sistemas microinformáticos</li>
+                        <li>Administrador de redes locales</li>
+                        <li>Técnico de soporte informático</li>
+                        <li>Reparador de equipos</li>
+                    </ul>
+
+                    <h6>Distribución de Horas</h6>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Año</th>
+                                <th>Horas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Primer Año</td>
+                                <td>1500 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Segundo Año</td>
+                                <td>1500 horas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h6>Contenido del Módulo:</h6>
+                    <ul>
+                        <li>Fundamentos de programación web</li>
+                        <li>Desarrollo front-end</li>
+                        <li>Desarrollo back-end</li>
+                        <li>Bases de datos</li>
+                        <li>Proyectos de desarrollo web</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="modal fade" id="modalProgramaPrimaria" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Programa de Educación Primaria</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="text-success">Currículo Académico</h6>
+                            <p>El currículo está diseñado para desarrollar habilidades críticas y creativas en los alumnos, fomentando un aprendizaje significativo.</p>
+                            <ul>
+                                <li>Lengua y Literatura</li>
+                                <li>Matemáticas</li>
+                                <li>Ciencias Naturales</li>
+                                <li>Historia y Geografía</li>
+                                <li>Educación Física</li>
+                            </ul>
+
+                            <h6 class="text-success">Metodología</h6>
+                            <p>Utilizamos metodologías activas que promueven la participación y el trabajo colaborativo entre los estudiantes.</p>
+
+                            <h6 class="text-success">Tecnología en el Aula</h6>
+                            <ul>
+                                <li>Computadoras portátiles</li>
+                                <li>Pizarra interactiva</li>
+                                <li>Acceso a plataformas educativas en línea</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-success">Desarrollo Personal</h6>
+                            <p>Fomentamos el desarrollo emocional y social de nuestros alumnos a través de actividades específicas.</p>
+                            <ul>
+                                <li>Inteligencia emocional</li>
+                                <li>Proyectos de responsabilidad social</li>
+                                <li>Actividades extracurriculares</li>
+                            </ul>
+
+                            <h6 class="text-success">Creatividad</h6>
+                            <p>Promovemos la creatividad mediante talleres de arte, música y teatro.</p>
+                            <ul>
+                                <li>Taller de arte</li>
+                                <li>Clases de música</li>
+                                <li>Teatro y dramatización</li>
+                            </ul>
+
+                            <h6 class="text-success">Actividades Semanales</h6>
+                            <ul>
+                                <li><strong>Lunes:</strong> Taller de creatividad</li>
+                                <li><strong>Martes:</strong> Deportes y educación física</li>
+                                <li><strong>Miércoles:</strong> Laboratorio de ciencias</li>
+                                <li><strong>Jueves:</strong> Club de lectura</li>
+                                <li><strong>Viernes:</strong> Jornada de proyectos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mt-4 border-success">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="bi bi-info-circle"></i> Información Adicional</h5>
+                            <p class="card-text">Nuestro programa está orientado a ofrecer una educación integral que prepara a los estudiantes para enfrentar los retos del futuro con confianza y habilidades sólidas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal Cuidados Auxiliares de Enfermería -->
-<div class="modal fade" id="modalCuidados" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-                <h5 class="modal-title">Cuidados Auxiliares de Enfermería</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Descripción del Ciclo:</h6>
-                <p>Formación en tareas de apoyo en el ámbito sanitario, enfocada en brindar cuidados básicos a pacientes.</p>
-
-                <h6>Competencias que adquirirás:</h6>
-                <ul>
-                    <li>Atención básica al paciente</li>
-                    <li>Gestión de equipos sanitarios</li>
-                    <li>Administración de medicamentos</li>
-                    <li>Apoyo en procedimientos médicos</li>
-                </ul>
-
-                <h6>Salidas Profesionales:</h6>
-                <ul>
-                    <li>Auxiliar de Enfermería</li>
-                    <li>Asistente Sanitario</li>
-                    <li>Auxiliar de Cuidados en Residencias</li>
-                    <li>Técnico en Atención Sanitaria</li>
-                </ul>
-
-                <!-- Tabla de Distribución de Horas -->
-                <h6>Distribución de Horas</h6>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Año</th>
-                            <th>Horas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Primer Año</td>
-                            <td>1000 horas</td>
-                        </tr>
-                        <tr>
-                            <td>Segundo Año</td>
-                            <td>1000 horas</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-               
-                <!-- Contenido adicional para el ciclo -->
-                <h6>Contenido del Módulo:</h6>
-                <ul>
-                    <li>Fundamentos de enfermería</li>
-                    <li>Atención al paciente</li>
-                    <li>Administración de medicamentos</li>
-                    <li>Gestión de equipos sanitarios</li>
-                    <li>Prácticas clínicas</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Educación Infantil (Grado Superior) -->
-<div class="modal fade" id="modalEducacionInfantil" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-warning text-white">
-                <h5 class="modal-title">Educación Infantil</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Descripción del Ciclo:</h6>
-                <p>Formación en técnicas educativas y pedagógicas para el desarrollo integral de los niños en edad infantil.</p>
-
-                <h6>Competencias que adquirirás:</h6>
-                <ul>
-                    <li>Planificación educativa</li>
-                    <li>Desarrollo de actividades lúdicas</li>
-                    <li>Gestión de aula</li>
-                    <li>Técnicas de estimulación temprana</li>
-                </ul>
-
-                <h6>Salidas Profesionales:</h6>
-                <ul>
-                    <li>Educador Infantil</li>
-                    <li>Asistente de Maestro</li>
-                    <li>Coordinador de Programas Educativos</li>
-                    <li>Técnico en Educación Temprana</li>
-                </ul>
-
-                <!-- Tabla de Distribución de Horas -->
-                <h6>Distribución de Horas</h6>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Año</th>
-                            <th>Horas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Primer Año</td>
-                            <td>1500 horas</td>
-                        </tr>
-                        <tr>
-                            <td>Segundo Año</td>
-                            <td>1500 horas</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            
-                <!-- Contenido adicional para el ciclo -->
-                <h6>Contenido del Módulo:</h6>
-                <ul>
-                    <li>Teoría del desarrollo infantil</li>
-                    <li>Metodologías pedagógicas</li>
-                    <li>Gestión de aula</li>
-                    <li>Actividades lúdicas y educativas</li>
-                    <li>Prácticas en centros educativos</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
- <!-- Footer fuera del contenedor principal -->
- 
-<footer class="footer py-4 w-100 bg-dark text-white">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-4 mb-4">
-                <h5>Contacto</h5>
-                <p>
-                    <i class="bi bi-geo-alt"></i> Ctra. De Mula, 37 – Alguazas. 30560 – Murcia<br>
-                    <i class="bi bi-telephone"></i> 968 620 913<br>
-                    <i class="bi bi-envelope"></i> vegamedia@ces-vegamedia.es
-                </p>
-            </div>
-            <div class="col-md-4 text-center mb-4">
-                <h5>Redes Sociales</h5>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
-                    <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+    
+    <div class="modal fade" id="modalCuidados" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title">Cuidados Auxiliares de Enfermería</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-            </div> 
-            <div class="col-md-4 text-center mb-4">
-                <a href="index.html"></a>
-                    <img src="logosVM/logoVMfooter.png" alt="Logo CES Vega Media" height="70">
-                </a>
+                <div class="modal-body">
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Formación en tareas de apoyo en el ámbito sanitario, enfocada en brindar cuidados básicos a pacientes.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Atención básica al paciente</li>
+                        <li>Gestión de equipos sanitarios</li>
+                        <li>Administración de medicamentos</li>
+                        <li>Apoyo en procedimientos médicos</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Auxiliar de Enfermería</li>
+                        <li>Asistente Sanitario</li>
+                        <li>Auxiliar de Cuidados en Residencias</li>
+                        <li>Técnico en Atención Sanitaria</li>
+                    </ul>
+
+                    <h6>Distribución de Horas</h6>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Año</th>
+                                <th>Horas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Primer Año</td>
+                                <td>1000 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Segundo Año</td>
+                                <td>1000 horas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h6>Contenido del Módulo:</h6>
+                    <ul>
+                        <li>Fundamentos de enfermería</li>
+                        <li>Atención al paciente</li>
+                        <li>Administración de medicamentos</li>
+                        <li>Gestión de equipos sanitarios</li>
+                        <li>Prácticas clínicas</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="text-center"></div>
-            <small>&copy; 2024 CES Vega Media. Todos los derechos reservados.</small>
+    </div>
+
+    
+    <div class="modal fade" id="modalEducacionInfantil" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title">Educación Infantil</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Descripción del Ciclo:</h6>
+                    <p>Formación en técnicas educativas y pedagógicas para el desarrollo integral de los niños en edad infantil.</p>
+
+                    <h6>Competencias que adquirirás:</h6>
+                    <ul>
+                        <li>Planificación educativa</li>
+                        <li>Desarrollo de actividades lúdicas</li>
+                        <li>Gestión de aula</li>
+                        <li>Técnicas de estimulación temprana</li>
+                    </ul>
+
+                    <h6>Salidas Profesionales:</h6>
+                    <ul>
+                        <li>Educador Infantil</li>
+                        <li>Asistente de Maestro</li>
+                        <li>Coordinador de Programas Educativos</li>
+                        <li>Técnico en Educación Temprana</li>
+                    </ul>
+
+                    <h6>Distribución de Horas</h6>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Año</th>
+                                <th>Horas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Primer Año</td>
+                                <td>1500 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Segundo Año</td>
+                                <td>1500 horas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h6>Contenido del Módulo:</h6>
+                    <ul>
+                        <li>Teoría del desarrollo infantil</li>
+                        <li>Metodologías pedagógicas</li>
+                        <li>Gestión de aula</li>
+                        <li>Actividades lúdicas y educativas</li>
+                        <li>Prácticas en centros educativos</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
 
 </body>
 </html>
