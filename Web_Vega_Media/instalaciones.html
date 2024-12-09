@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Instalaciones - CES Vega Media</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-wh sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logosVM/grifo.png" class="rounded" alt="Logo CES Vega Media" height="50">
+            </a>
+            <h3 class="text-white">Instalaciones</h3>
+         
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="etapas.html">
+                            <i class="bi bi-book-fill"></i> Etapas Educativas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="instalaciones.html">
+                            <i class="bi bi-building"></i> Instalaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="bi bi-gear-fill"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content-wrapper">
+        <div class="content-section">
+            <h2 class="section-title text-center">Nuestras Instalaciones</h2>
+            <p class="lead text-center">Explora nuestras modernas instalaciones diseñadas para brindar el mejor ambiente educativo.</p>
+
+            <!-- Galería principal con slideshow -->
+            <div class="gallery-section">
+                <div class="slideshow-gallery-container">
+                    <div class="gallerySlide fade">
+                        <img src="images/Patio-infantil-HDR-centro.jpg" style="width:100%" alt="Instalación 1">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-212.jpg" style="width:100%" alt="Instalación 2">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-174.jpg" style="width:100%" alt="Instalación 3">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/centro.jpg" style="width:100%" alt="Instalación 4">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-111.jpg" style="width:100%" alt="Instalación 5">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-58.jpg" style="width:100%" alt="Instalación 6">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-40.jpg" style="width:100%" alt="Instalación 7">
+                    </div>
+                    <div class="gallerySlide fade">
+                        <img src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-117.jpg" style="width:100%" alt="Instalación 8">
+                    </div>
+
+                    <!-- Controles de navegación -->
+                    <a class="prev" onclick="plusGallerySlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusGallerySlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Miniaturas de la galería -->
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="images/Patio-infantil-HDR-centro.jpg" onclick="currentGallerySlide(1)" alt="Miniatura 1">
+                    <img class="thumbnail" src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-212.jpg" onclick="currentGallerySlide(2)" alt="Miniatura 2">
+                    <img class="thumbnail" src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-174.jpg" onclick="currentGallerySlide(3)" alt="Miniatura 3">
+                    <img class="thumbnail" src="images/centro.jpg" onclick="currentGallerySlide(4)" alt="Miniatura 4">
+                    <img class="thumbnail" src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-111.jpg" onclick="currentGallerySlide(5)" alt="Miniatura 5">
+                    <img class="thumbnail" src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-58.jpg" onclick="currentGallerySlide(6)" alt="Miniatura 6">
+                    <img class="thumbnail" src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-40.jpg" onclick="currentGallerySlide(7)" alt="Miniatura 7">
+                    <img class="thumbnail" src="images/Copia-de-CES-VEGA-MEDIA_CALIDAD-WEB-202002-117.jpg" onclick="currentGallerySlide(8)" alt="Miniatura 8">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 w-100 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-geo-alt"></i> Ctra. De Mula, 37 – Alguazas. 30560 – Murcia<br>
+                        <i class="bi bi-telephone"></i> 968 620 913<br>
+                        <i class="bi bi-envelope"></i> vegamedia@ces-vegamedia.es
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div> 
+                <div class="col-md-4 text-center mb-4">
+                    <a href="index.html">
+                        <img src="logosVM/logoVMfooter.png" alt="Logo CES Vega Media" height="70">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2024 CES Vega Media. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let gallerySlideIndex = 1;
+        showGallerySlides(gallerySlideIndex);
+
+        function plusGallerySlides(n) {
+            showGallerySlides(gallerySlideIndex += n);
+        }
+
+        function currentGallerySlide(n) {
+            showGallerySlides(gallerySlideIndex = n);
+        }
+
+        function showGallerySlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("gallerySlide");
+            let thumbnails = document.getElementsByClassName("thumbnail");
+            
+            // Asegurar que el índice esté dentro de los límites
+            if (n > slides.length) {gallerySlideIndex = 1}
+            if (n < 1) {gallerySlideIndex = slides.length}
+            
+            // Ocultar todas las diapositivas
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+            }
+            
+            // Mostrar la diapositiva actual y activar su miniatura
+            slides[gallerySlideIndex - 1].style.display = "block";
+            thumbnails[gallerySlideIndex - 1].className += " active";
+            
+            // Asegurar que la transición sea suave
+            slides[gallerySlideIndex - 1].style.opacity = 0;
+            setTimeout(() => {
+                slides[gallerySlideIndex - 1].style.opacity = 1;
+            }, 10);
+        }
+
+        // Iniciar el slideshow automáticamente
+        setInterval(() => {
+            plusGallerySlides(1);
+        }, 5000); // Cambiar imagen cada 5 segundos
+    </script>
+</body>
+</html>
