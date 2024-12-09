@@ -962,3 +962,17 @@ body {
     margin: 0;        /* Eliminar márgenes automáticos */
     padding: 0 2rem;  /* Mantener padding si es necesario */
 }
+
+/* Ajustar el padding de .container-fluid si es necesario */
+.container-fluid {
+    padding: 0 2rem;
+}
+
+/* Asegurar que el footer ocupe todo el ancho */
+.footer {
+    width: 100%;
+    /* ...existing code... */
+}
+
+/* Eliminar estilos innecesarios o clases como .whaper si existen */
+/* ...existing code... */
