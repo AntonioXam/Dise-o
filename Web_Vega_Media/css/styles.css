@@ -583,8 +583,8 @@ body {
 /* Ajustar el scroll para que muestre el alert */
 .scroll-to-content {
     scroll-margin-top: 76px; /* Altura del navbar */
-    scroll-snap-margin-top: 76px; /* Para navegadores antiguos */
 }
+
 
 /* Ajustes de contenedor principal */
 .container-fluid {
