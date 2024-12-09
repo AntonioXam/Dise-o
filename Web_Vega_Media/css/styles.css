@@ -162,8 +162,8 @@ body {
 }
 
 .section-title {
-    color: var(--color-primary-dark);
-    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary-dark); /* Verde oscuro */
+    border-bottom: 2px solid var(--color-primary); /* Línea verde */
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
@@ -474,7 +474,7 @@ body {
 
 .news-item .btn-outline-primary:hover {
     background-color: var(--color-primary);
-    border-color: var(--color-primary);
+    border-color: var (--color-primary);
     color: white;
 }
 
@@ -1068,3 +1068,120 @@ body {
         padding: 15px;
     }
 }
+
+/* ...existing code... */
+
+/* Estilos para la sección de Servicios */
+.servicios-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.servicios-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servicios-section .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.servicios-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.servicios-section .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.servicios-section .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* ...existing code... */
+
+/* Estilos para las tarjetas de servicios */
+.servicios-section .card-img-top {
+    height: 200px; /* Ajustar la altura de las imágenes */
+    object-fit: cover; /* Asegurar que la imagen cubra el área sin distorsión */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.servicios-section .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-primary-dark);
+}
+
+.servicios-section .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Hover efecto para las tarjetas */
+.servicios-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los modales */
+.modal-header.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.modal-header.text-white {
+    color: var(--color-white);
+}
+
+.modal-body {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.modal-footer .btn-secondary {
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: var(--color-gray-light);
+    border-color: var(--color-gray-light);
+}
+
+/* ...existing code... */
+
+/* Ajustar el tamaño de los modales */
+.modal-dialog {
+    max-width: 600px; /* Reducir el ancho para una apariencia más cuadrada */
+    height: 600px;     /* Establecer una altura igual al ancho */
+}
+
+.modal-content {
+    height: 100%;      /* Asegurar que el contenido ocupe toda la altura del modal */
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    flex: 1;           /* Permitir que el cuerpo del modal crezca para llenar el espacio disponible */
+    overflow-y: auto;  /* Añadir scroll si el contenido excede la altura */
+}
+
+/* Centrar verticalmente los modales */
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+/* Opcional: Ajustar la altura del modal si es necesario */
+.modal-content {
+    height: auto; /* Permite que el contenido determine la altura */
+}
+
+/* ...existing code... */

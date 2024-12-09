@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Servicios - CES Vega Media</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-wh sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logosVM/grifo.png" class="rounded" alt="Logo CES Vega Media" height="50">
+            </a>
+            <h3 class="text-white">Servicios</h3>
+         
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="etapas.html">
+                            <i class="bi bi-book-fill"></i> Etapas Educativas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">
+                            <i class="bi bi-building"></i> Instalaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="servicios.html">
+                            <i class="bi bi-gear-fill"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Servicios -->
+    <div class="content-wrapper">
+        <div class="content-section servicios-section">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <!-- Lista de Servicios -->
+            <div class="row">
+                <!-- Tarjeta Servicio 1: Comedor -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalComedor" style="cursor: pointer;">
+                        <img src="images/comedor-infantil.jpg" class="card-img-top" alt="Comedor">
+                        <div class="card-body">
+                            <h5 class="card-title">Comedor</h5>
+                            <p class="card-text">Los menús ofrecidos están elaborados por una nutricionista. Estos están basados en la dieta mediterránea.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Servicio 2: Autobús -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalAutobus" style="cursor: pointer;">
+                        <img src="images/auto.jpg" class="card-img-top" alt="Autobús">
+                        <div class="card-body">
+                            <h5 class="card-title">Autobús</h5>
+                            <p class="card-text">El transporte escolar es gratuito y gestionado por una empresa externa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Servicio 3: Madrugadores -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalMadrugadores" style="cursor: pointer;">
+                        <img src="images/madrugadores.jpg" class="card-img-top" alt="Madrugadores">
+                        <div class="card-body">
+                            <h5 class="card-title">Madrugadores</h5>
+                            <p class="card-text">Es un servicio orientado a aquellas familias que necesitan conciliar su vida familiar y profesional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Servicio 4: Dpto. Orientación -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalDptoOrientacion" style="cursor: pointer;">
+                        <img src="images/orientacion.jpg" class="card-img-top" alt="Departamento de Orientación">
+                        <div class="card-body">
+                            <h5 class="card-title">Dpto. Orientación</h5>
+                            <p class="card-text">El Departamento de Orientación es el órgano pedagógico donde se lleva a cabo las funciones de orientación y atención psicopedagógica.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Servicio 5: Academia de Inglés Crafts English -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalCraftsEnglish" style="cursor: pointer;">
+                        <img src="images/imagen-SERVICOS-webs-coles.png" class="card-img-top" alt="Academia de Inglés Crafts English">
+                        <div class="card-body">
+                            <h5 class="card-title">Academia de Inglés Crafts English</h5>
+                            <p class="card-text">Diviértete aprendiendo inglés y certifica tu nivel con nosotros.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Servicio 6: Tienda -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalTienda" style="cursor: pointer;">
+                        <img src="images/tienda-online.jpg" class="card-img-top" alt="Tienda">
+                        <div class="card-body">
+                            <h5 class="card-title">Tienda</h5>
+                            <p class="card-text">En la tienda VegaShop se pueden adquirir todo el material escolar que se utiliza en el centro así como uniformes y servicios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Servicio 7: Cantina -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#modalCantina" style="cursor: pointer;">
+                        <img src="images/cantina2.jpg" class="card-img-top" alt="Cantina">
+                        <div class="card-body">
+                            <h5 class="card-title">Cantina</h5>
+                            <p class="card-text">La cantina del nuestro centro es el lugar ideal para tomar un descanso mientras degustamos un buen desayuno.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales para los Servicios -->
+    <!-- Modal Servicio 1: Comedor -->
+    <div class="modal fade" id="modalComedor" tabindex="-1" aria-labelledby="modalComedorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalComedorLabel">Comedor</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El comedor de CES Vega Media ofrece menús nutritivos elaborados por una nutricionista, basados en la dieta mediterránea. Nos aseguramos de proporcionar comidas balanceadas que promuevan una alimentación saludable y adecuada para el desarrollo de nuestros estudiantes.</p>
+                    <!-- Contenido adicional: Menú semanal -->
+                    <h5>Menú Semanal</h5>
+                    <ul>
+                        <li><strong>Lunes:</strong> Sopa de verduras, pollo al horno con arroz, fruta.</li>
+                        <li><strong>Martes:</strong> Ensalada mixta, pasta a la boloñesa, yogur.</li>
+                        <li><strong>Miércoles:</strong> Crema de calabacín, pescado al vapor con patatas, gelatina.</li>
+                        <li><strong>Jueves:</strong> Lentejas estofadas, tortilla de patatas, fruta.</li>
+                        <li><strong>Viernes:</strong> Puré de zanahoria, albóndigas en salsa, helado de vainilla.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 2: Autobús -->
+    <div class="modal fade" id="modalAutobus" tabindex="-1" aria-labelledby="modalAutobusLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalAutobusLabel">Autobús</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ofrecemos transporte escolar gratuito gestionado por una empresa externa de confianza. Nuestro servicio de autobús garantiza la seguridad y el confort de nuestros estudiantes durante sus desplazamientos diarios al centro.</p>
+                    <!-- Contenido adicional: Horarios y rutas -->
+                    <h5>Horarios de Recogida</h5>
+                    <ul>
+                        <li><strong>Ruta 1:</strong> Salida a las 7:30 am desde Plaza Central.</li>
+                        <li><strong>Ruta 2:</strong> Salida a las 7:45 am desde Parque Norte.</li>
+                        <li><strong>Ruta 3:</strong> Salida a las 8:00 am desde Estación Sur.</li>
+                    </ul>
+                    <p>El regreso se realiza a las 15:00 pm desde el centro educativo hacia los puntos de origen.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 3: Madrugadores -->
+    <div class="modal fade" id="modalMadrugadores" tabindex="-1" aria-labelledby="modalMadrugadoresLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalMadrugadoresLabel">Madrugadores</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El servicio Madrugadores está diseñado para familias que necesitan conciliar su vida familiar y profesional. Ofrecemos horarios flexibles y actividades extracurriculares que permiten a los padres equilibrar sus responsabilidades laborales con el cuidado y desarrollo de sus hijos.</p>
+                    <!-- Contenido adicional: Horario del servicio -->
+                    <h5>Horario del Servicio Madrugadores</h5>
+                    <p>El programa de Madrugadores está disponible de lunes a viernes, de 7:00 am a 9:00 am. Este servicio permite a los padres dejar a sus hijos en un entorno seguro y supervisado antes del inicio de las clases.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 4: Dpto. Orientación -->
+    <div class="modal fade" id="modalDptoOrientacion" tabindex="-1" aria-labelledby="modalDptoOrientacionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalDptoOrientacionLabel">Departamento de Orientación</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El Departamento de Orientación es el órgano pedagógico encargado de las funciones de orientación y atención psicopedagógica. Nuestro equipo de profesionales apoya a estudiantes y familias en la gestión de sus necesidades educativas y emocionales, promoviendo un ambiente inclusivo y de crecimiento personal.</p>
+                    <!-- Contenido adicional: Servicios ofrecidos -->
+                    <h5>Servicios del Departamento de Orientación</h5>
+                    <ul>
+                        <li>Asesoramiento académico y vocacional.</li>
+                        <li>Apoyo psicopedagógico individualizado.</li>
+                        <li>Talleres de habilidades sociales y emocionales.</li>
+                        <li>Programas de inclusión y atención a la diversidad.</li>
+                    </ul>
+                    <p>Para solicitar una cita, por favor contacte con nuestro departamento a través del correo orientacion@cesvegamedia.edu.es.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 5: Academia de Inglés Crafts English -->
+    <div class="modal fade" id="modalCraftsEnglish" tabindex="-1" aria-labelledby="modalCraftsEnglishLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalCraftsEnglishLabel">Academia de Inglés Crafts English</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>En la Academia de Inglés Crafts English, ofrecemos programas interactivos y divertidos para aprender inglés. Nuestros cursos están diseñados para certificar el nivel de cada estudiante, utilizando métodos innovadores que facilitan el aprendizaje efectivo y la práctica constante del idioma.</p>
+                    <!-- Contenido adicional: Programas y niveles -->
+                    <h5>Programas Disponibles</h5>
+                    <ul>
+                        <li>Nivel A1 - Principiantes</li>
+                        <li>Nivel A2 - Básico</li>
+                        <li>Nivel B1 - Intermedio</li>
+                        <li>Preparación para exámenes oficiales (Cambridge English)</li>
+                    </ul>
+                    <p>Las clases son dinámicas e interactivas, enfocadas en mejorar las habilidades de comunicación en inglés de forma efectiva.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 6: Tienda -->
+    <div class="modal fade" id="modalTienda" tabindex="-1" aria-labelledby="modalTiendaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalTiendaLabel">Tienda VegaShop</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>En la Tienda VegaShop encontrarás todo el material escolar necesario, uniformes y servicios para nuestros estudiantes. Ofrecemos productos de alta calidad que cumplen con los estándares educativos, facilitando a las familias la adquisición de lo esencial para el día a día en el centro.</p>
+                    <!-- Contenido adicional: Productos disponibles -->
+                    <h5>Productos a la Venta</h5>
+                    <ul>
+                        <li>Uniformes escolares completos.</li>
+                        <li>Material escolar: cuadernos, lápices, bolígrafos, reglas.</li>
+                        <li>Mochilas y estuches con el logo del centro.</li>
+                        <li>Libros y agendas escolares.</li>
+                    </ul>
+                    <p>Nuestro horario de atención es de 8:00 am a 2:00 pm de lunes a viernes.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 7: Cantina -->
+    <div class="modal fade" id="modalCantina" tabindex="-1" aria-labelledby="modalCantinaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalCantinaLabel">Cantina</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La Cantina de nuestro centro es el lugar ideal para que estudiantes y personal tomen un descanso y disfruten de un buen desayuno o merienda. Ofrecemos una variedad de opciones saludables y deliciosas para satisfacer todos los gustos, creando un ambiente acogedor y relajado.</p>
+                    <!-- Contenido adicional: Menú de la cantina -->
+                    <h5>Menú de la Cantina</h5>
+                    <p>Ofrecemos una variedad de opciones saludables para todos los gustos:</p>
+                    <ul>
+                        <li>Bocadillos: jamón, queso, tortilla, vegetal.</li>
+                        <li>Snacks: frutos secos, barras de cereales.</li>
+                        <li>Bebidas: agua mineral, zumos naturales, batidos.</li>
+                        <li>Postres: fruta fresca, yogures, flanes.</li>
+                    </ul>
+                    <p>La cantina está abierta durante el recreo y después de las clases.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 w-100 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-geo-alt"></i> Ctra. De Mula, 37 – Alguazas. 30560 – Murcia<br>
+                        <i class="bi bi-telephone"></i> 968 620 913<br>
+                        <i class="bi bi-envelope"></i> vegamedia@ces-vegamedia.es
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div> 
+                <div class="col-md-4 text-center mb-4">
+                    <a href="index.html">
+                        <img src="logosVM/logoVMfooter.png" alt="Logo CES Vega Media" height="70">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2024 CES Vega Media. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
