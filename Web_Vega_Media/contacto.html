@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Contacto - CES Vega Media</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-wh sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logosVM/grifo.png" class="rounded" alt="Logo CES Vega Media" height="50">
+            </a>
+            <h3 class="text-white">Contacto</h3>
+         
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="etapas.html">
+                            <i class="bi bi-book-fill"></i> Etapas Educativas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">
+                            <i class="bi bi-building"></i> Instalaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="bi bi-gear-fill"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Contacto -->
+    <div class="content-wrapper">
+        <div class="content-section contact-section">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta o deseas más información, no dudes en contactarnos utilizando el formulario a continuación.</p>
+
+            <!-- Nueva disposición para formulario y datos de contacto -->
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Información de Contacto mejorada con clase adicional -->
+                    <div class="contact-info">
+                        <h4>Información de Contacto</h4>
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i> Ctra. De Mula, 37 – Alguazas. 3 Vega Media, 30560 – Murcia<br>
+                            <i class="bi bi-telephone-fill"></i> 968 620 913<br>
+                            <i class="bi bi-envelope-fill"></i> vegamedia@ces-vegamedia.es
+                        </p>
+                        <!-- Tarjeta de Horario de Atención -->
+                        <div class="card mt-3 contact-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Horario de Atención</h5>
+                                <p class="card-text">
+                                    Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                                    Sábado: 10:00 AM - 2:00 PM<br>
+                                    Domingo: Cerrado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Formulario de Contacto mejorado con clase adicional -->
+                    <div class="contact-form">
+                        <h4>Envíanos un Mensaje</h4>
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <!-- Campo de Selección para Matrículas -->
+                            <div class="mb-3">
+                                <label for="matricula" class="form-label">Tipo de Matrícula</label>
+                                <select class="form-select" id="matricula" name="matricula" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="primaria">Matrícula para Primaria</option>
+                                    <option value="secundaria">Matrícula para Secundaria</option>
+                                    <option value="ciclos_formativos">Matrícula para Ciclos Formativos</option>
+                                    <!-- Añadir más opciones según las etapas educativas disponibles -->
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="map-container mt-4">
+                <div id="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.123456789!2d-1.1307897!3d37.9922399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd637f123456789%3A0x123456789abcdef!2sCES%20Vega%20Media!5e0!3m2!1ses!2ses!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 20px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 w-100 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-geo-alt"></i> Ctra. De Mula, 37 – Alguazas. 30560 – Murcia<br>
+                        <i class="bi bi-telephone"></i> 968 620 913<br>
+                        <i class="bi bi-envelope"></i> vegamedia@ces-vegamedia.es
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Redes Sociales</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/CESVegaMedia" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/cesvegamedia" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/CESVEGAMEDIA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/cesvegamedia" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div> 
+                <div class="col-md-4 text-center mb-4">
+                    <a href="index.html">
+                        <img src="logosVM/logoVMfooter.png" alt="Logo CES Vega Media" height="50">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2024 CES Vega Media. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
