@@ -42,15 +42,21 @@ body {
     align-items: center;
     gap: 0.5rem;
     transition: color 0.3s ease;
+    background: transparent; /* Asegurarse de que no hay fondo */
+    border: none; /* Eliminar cualquier borde */
 }
 
 .navbar .nav-link.active {
     color: var(--color-primary-light);
     font-weight: bold;
+    background: transparent; /* Asegurarse de que no hay fondo en estado activo */
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
     color: var(--color-primary-light);
+    background: transparent; /* Asegurarse de que no hay fondo en hover */
+    outline: none; /* Eliminar el outline al hacer focus */
 }
 
 /* Componentes generales */
@@ -109,6 +115,164 @@ body {
     align-items: center;
     color: white;
     text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0; /* Asegurar que no hay margen inferior */
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Estilos de la sección de presentación */
+.presentation-section {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 76px); /* Ajustado para considerar la navbar */
+    padding: 2rem 0;
+    width: 100%;
+    margin-bottom: 0; /* Eliminar margen inferior */
+}
+
+.content-section {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    color: var(--color-primary-dark); /* Verde oscuro */
+    border-bottom: 2px solid var(--color-primary); /* Línea verde */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.subsection-title {
+    color: var(--color-primary);
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.values-list, .objectives-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.values-list li, .objectives-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Estilos para etapas educativas */
+.etapa-header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.card-ciclo {
+    transition: transform 0.3s;
+}
+
+.card-ciclo:hover {
+    transform: translateY(-5px);
+}
+
+.accordion-item {
+    background-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.accordion-button {
+    background-color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-accent);
+    color: var(--color-primary-dark);
+}
+
+.accordion-body {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.accordion-body img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    width: 100%;
+    padding: 2rem 0; /* Cambiado para manejar el padding verticalmente */
+}
+
+/* Centrar el contenido interno del footer */
+.footer .container {
+    max-width: 1400px; /* Mismo ancho que el contenido principal */
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Asegurar que las barras horizontales ocupen todo el ancho */
+.footer hr {
+    width: 100%;
+    margin: 1rem 0;
+    opacity: 0.2;
+}
+
+/* Ajustes responsive */
+@media (max-width: 1400px) {
+    .footer .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .navbar {
@@ -529,7 +693,7 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-/* Estilos responsive */
+/* Ajustes responsive */
 @media (max-width: 768px) {
     .video-hero {
         height: 70vh;
