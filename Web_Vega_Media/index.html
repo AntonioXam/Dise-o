@@ -71,62 +71,450 @@
 
     <!-- Contenido principal -->
     <div id="contenido" class="presentation-section">
-        <div class="container-fluid px-4">
-            <!-- Carta de presentación y Proyecto Educativo -->
-            <div class="row mb-4 mt-3">
-                <div class="col-12">
-                    <div class="content-section mb-5">
-                        <h3 class="section-title">Carta de Presentación</h3>
-                        <p>El <strong>CES Vega Media</strong> es un centro concertado donde la enseñanza es <em>totalmente gratuita</em>, gestionado por una 
-                        cooperativa de profesores con vocación por la formación, que forman una <strong>plantilla estable</strong> imprescindible para 
-                        conseguir un verdadero trabajo de equipo.</p>
+        <div class="container-fluid">
+            <!-- Alert de matrículas -->
+            <div class="alert alert-primary alert-dismissible fade show custom-alert" role="alert">
+                <strong>¡MATRÍCULAS ABIERTAS CURSO 2024/25!</strong> Ya puedes solicitar tu plaza para el próximo curso académico.
+                <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.location.href='contacto.html'">Más información</button>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
 
-                        <p>Hemos crecido y seguimos creciendo por nuestro <strong>Proyecto Cooperativo</strong>, dónde las personas y una fuerte apuesta 
-                        por un <em>proyecto de calidad</em>, son los elementos fundamentales de nuestra organización.</p>
-
-                        <p>El <strong>C.E.S. Vega Media</strong> es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio 
-                        dónde compartimos muchas cosas con otras Cooperativas pero dónde también tenemos nuestra <em>propia identidad</em> 
-                        que nos hace diferentes.</p>
-
-                        <p>Aquí se mezclan la <strong>experiencia, madurez y estabilidad</strong> que aportan los socios más antiguos, con la <em>frescura y la 
-                        ilusión</em> que nos traen las últimas generaciones, pero todos con un denominador común: "<strong>Seguir trabajando por 
-                        nuestro Centro, por una mayor calidad en nuestros servicios</strong>, siendo flexibles a los cambios constantes de la 
-                        sociedad para adaptarnos a ellos en las mejores condiciones".</p>
-
-                        <p>Por todo ello, estamos y seguiremos estando al <strong>servicio de nuestra Comunidad Educativa</strong>.</p>
-
-                        <p>El órgano responsable de la alta gestión de la cooperativa, es el <strong>Consejo Rector</strong> que está formado por siete 
-                        personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.</p>
+            <!-- Carousel de imágenes -->
+            <div id="presentationCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/vegamedia01.jpg" class="d-block w-100" alt="Imagen escuela 1">
+                        <div class="carousel-caption">
+                            <h3>Nuestro Centro</h3>
+                            <p>Instalaciones modernas y equipadas</p>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="images/vegamedia02.jpg" class="d-block w-100" alt="Imagen escuela 2">
+                        <div class="carousel-caption">
+                            <h3>Área Infantil</h3>
+                            <p>Espacios adaptados para el desarrollo y aprendizaje temprano</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/vegamedia03.jpg" class="d-block w-100" alt="Campo de fútbol">
+                        <div class="carousel-caption">
+                            <h3>Instalaciones Deportivas</h3>
+                            <p>Campo de fútbol para actividades deportivas y recreativas</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#presentationCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#presentationCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
 
-                    <div class="content-section mb-5">
-                        <h3 class="section-title">Proyecto Educativo</h3>
-                        <p>Nuestro proyecto educativo se basa en los siguientes principios:</p>
-                        
-                        <h4 class="subsection-title">Misión</h4>
-                        <p>Formar personas capaces de integrarse en la sociedad actual de manera responsable y competente, 
-                        desarrollando al máximo sus capacidades individuales en un marco de respeto y colaboración.</p>
-
-                        <h4 class="subsection-title">Valores</h4>
-                        <ul class="values-list">
-                            <li><strong>Respeto:</strong> Base fundamental de la convivencia.</li>
-                            <li><strong>Responsabilidad:</strong> Como compromiso personal y social.</li>
-                            <li><strong>Esfuerzo:</strong> Como medio para alcanzar metas.</li>
-                            <li><strong>Innovación:</strong> Adaptándonos a los cambios tecnológicos y sociales.</li>
-                            <li><strong>Compromiso:</strong> Con la educación y el desarrollo personal del alumnado.</li>
-                        </ul>
-
-                        <h4 class="subsection-title">Objetivos Educativos</h4>
-                        <ul class="objectives-list">
-                            <li>Desarrollar la capacidad de los alumnos para regular su propio aprendizaje.</li>
-                            <li>Fomentar el trabajo en equipo y la cooperación.</li>
-                            <li>Impulsar la innovación educativa y las nuevas tecnologías.</li>
-                            <li>Promover la formación integral del alumnado.</li>
-                            <li>Favorecer la inclusión y la atención a la diversidad.</li>
-                        </ul>
+            <!-- Reemplazar las Cards de presentación con el nuevo estilo -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="images/centro.jpg" alt="Proyecto Educativo" class="img-fluid">
+                            <span class="badge bg-success">Centro Concertado</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Quiénes Somos</h3>
+                            <p class="card-text mb-4">Centro concertado gestionado por una cooperativa de profesores con vocación por la formación.</p>
+                            <button class="btn btn-outline-success w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#misionModal">
+                                <i class="bi bi-book"></i> Proyecto Educativo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="images/presentacion.jpg" alt="Presentación" class="img-fluid">
+                            <span class="badge bg-primary">Presentación</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Carta de Presentación</h3>
+                            <p class="card-text">Conoce nuestra historia, valores y compromiso con la educación de calidad.</p>
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#cartaModal">
+                                <i class="bi bi-file-text"></i> Ver Carta de Presentación
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="images/objetivos.jpg" alt="Objetivos" class="img-fluid">
+                            <span class="badge bg-info">2024</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Objetivos</h3>
+                            <p class="card-text">Formación integral y desarrollo personal del alumnado.</p>
+                            <button class="btn btn-outline-info w-100" onclick="toggleSidebar()">
+                                <i class="bi bi-target"></i> Ver objetivos
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Añadir nueva sección de noticias y eventos -->
+            <section class="news-section">
+                <div class="section-header text-center mb-4">
+                    <h2>Últimas Noticias y Eventos</h2>
+                    <p class="lead">Mantente informado de todas nuestras actividades</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="news-item">
+                            <div class="news-image">
+                                <img src="images/matricula.jpg" alt="Matrículas 2024" class="img-fluid">
+                                <span class="badge bg-primary">Matrículas</span>
+                            </div>
+                            <div class="news-content">
+                                <h3>Periodo de Matriculación 2024/25</h3>
+                                <p>Abierto el plazo de matriculación para el próximo curso académico.</p>
+                                <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#matriculacionModal">
+                                    <i class="bi bi-calendar-check"></i> Ver plazos y proceso
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="news-item">
+                            <div class="news-image">
+                                <img src="images/servicios.jpg" alt="Servicios educativos" class="img-fluid">
+                                <span class="badge bg-info">Servicios</span>
+                            </div>
+                            <div class="news-content">
+                                <h3>Servicios Educativos</h3>
+                                <p>Descubre todos los servicios y recursos que ofrecemos para impulsar tu futuro profesional.</p>
+                                <a href="servicios.html" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-arrow-right-circle"></i> Ver servicios
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="news-item">
+                            <div class="news-image">
+                                <img src="images/intalaciones.jpg" alt="Nuevas instalaciones" class="img-fluid">
+                                <span class="badge bg-success">Instalaciones</span>
+                            </div>
+                            <div class="news-content">
+                                <h3>Nuevas Instalaciones</h3>
+                                <p>Conoce nuestras modernas instalaciones y equipamiento tecnológico.</p>
+                                <a href="instalaciones.html" class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-arrow-right-circle"></i> Ver instalaciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modificar la sección de ciclos formativos -->
+            <section class="cycles-section mt-5">
+                <div class="section-header text-center mb-4">
+                    <h2>Oferta Formativa</h2>
+                    <p class="lead">Descubre nuestros ciclos formativos</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Grado Medio -->
+                    <div class="col-md-6">
+                        <div class="cycle-category">
+                            <h3><i class="bi bi-tools"></i> Grado Medio</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Instalaciones Eléctricas y Automáticas
+                                    <span class="badge bg-success rounded-pill">Grado Medio</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Cuidados de Enfermería
+                                    <span class="badge bg-success rounded-pill">Grado Medio</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Gestión Administrativa
+                                    <span class="badge bg-success rounded-pill">Grado Medio</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Grado Superior -->
+                    <div class="col-md-6">
+                        <div class="cycle-category">
+                            <h3><i class="bi bi-laptop"></i> Grado Superior</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Desarrollo de Aplicaciones Web
+                                    <span class="badge bg-primary rounded-pill">Grado Superior</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Educación Infantil
+                                    <span class="badge bg-primary rounded-pill">Grado Superior</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="etapas.html" class="btn btn-success">Ver todos los ciclos formativos</a>
+                </div>
+            </section>
+
+            <!-- Sidebar offcanvas (elemento novedoso) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="objetivosSidebar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Objetivos del Centro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="objectives-content">
+                        <h6 class="text-success mb-3">Objetivos Generales</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Formación integral del alumnado
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Desarrollo de capacidades individuales
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Orientación académica y profesional
+                            </li>
+                        </ul>
+
+                        <h6 class="text-success mb-3 mt-4">Objetivos Específicos</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                Programas de Formación y Orientación Laboral
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                Atención a la diversidad
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                Desarrollo de competencias digitales
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                Fomento del emprendimiento
+                            </li>
+                        </ul>
+
+                        <div class="alert alert-success mt-4">
+                            <i class="bi bi-info-circle-fill me-2"></i>
+                            Trabajamos en colaboración con empresas de la región para garantizar las mejores prácticas profesionales.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modificar el Modal de Misión -->
+            <div class="modal fade" id="misionModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success text-white">
+                            <h5 class="modal-title">Proyecto Educativo</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h4 class="mb-0"><i class="bi bi-bullseye text-success me-2"></i>Misión</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="lead">Formar personas capaces de integrarse en la sociedad actual de manera responsable y competente, 
+                                            desarrollando al máximo sus capacidades individuales en un marco de respeto y colaboración.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-light">
+                                            <h4 class="mb-0"><i class="bi bi-heart-fill text-success me-2"></i>Valores</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <div>
+                                                        <strong>Respeto:</strong> Base fundamental de la convivencia
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <div>
+                                                        <strong>Responsabilidad:</strong> Compromiso personal y social
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <div>
+                                                        <strong>Esfuerzo:</strong> Como medio para alcanzar metas
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-light">
+                                            <h4 class="mb-0"><i class="bi bi-trophy text-success me-2"></i>Objetivos</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                                    Desarrollar capacidades individuales
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                                    Fomentar trabajo en equipo
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-arrow-right-circle-fill text-success me-2"></i>
+                                                    Impulsar innovación educativa
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-light">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reemplazar el modal de Carta de Presentación -->
+            <div class="modal fade" id="cartaModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Carta de Presentación</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Navegación del Scrollspy -->
+                                <div class="col-4">
+                                    <nav id="navbar-carta" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                                        <nav class="nav nav-pills flex-column">
+                                            <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+                                            <a class="nav-link" href="#proyecto-cooperativo">Proyecto Cooperativo</a>
+                                            <a class="nav-link" href="#identidad">Nuestra Identidad</a>
+                                            <a class="nav-link" href="#experiencia">Experiencia y Valores</a>
+                                            <a class="nav-link" href="#gestion">Gestión del Centro</a>
+                                        </nav>
+                                    </nav>
+                                </div>
+                                <!-- Contenido con Scrollspy -->
+                                <div class="col-8">
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-carta" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                                        <section id="quienes-somos">
+                                            <h4>Quiénes Somos</h4>
+                                            <p>El <strong>CES Vega Media</strong> es un centro concertado donde la enseñanza es <em>totalmente gratuita</em>, gestionado por una 
+                                            cooperativa de profesores con vocación por la formación, que forman una <strong>plantilla estable</strong> imprescindible para 
+                                            conseguir un verdadero trabajo de equipo.</p>
+                                        </section>
+
+                                        <section id="proyecto-cooperativo">
+                                            <h4>Proyecto Cooperativo</h4>
+                                            <p>Hemos crecido y seguimos creciendo por nuestro <strong>Proyecto Cooperativo</strong>, dónde las personas y una fuerte apuesta 
+                                            por un <em>proyecto de calidad</em>, son los elementos fundamentales de nuestra organización.</p>
+                                        </section>
+
+                                        <section id="identidad">
+                                            <h4>Nuestra Identidad</h4>
+                                            <p>El <strong>C.E.S. Vega Media</strong> es un centro dinámico, con una actitud abierta al cambio, siempre buscando nuestro espacio 
+                                            dónde compartimos muchas cosas con otras Cooperativas pero dónde también tenemos nuestra <em>propia identidad</em> 
+                                            que nos hace diferentes.</p>
+                                        </section>
+
+                                        <section id="experiencia">
+                                            <h4>Experiencia y Valores</h4>
+                                            <p>Aquí se mezclan la <strong>experiencia, madurez y estabilidad</strong> que aportan los socios más antiguos, con la <em>frescura y la 
+                                            ilusión</em> que nos traen las últimas generaciones, pero todos con un denominador común: "<strong>Seguir trabajando por 
+                                            nuestro Centro, por una mayor calidad en nuestros servicios</strong>".</p>
+                                        </section>
+
+                                        <section id="gestion">
+                                            <h4>Gestión del Centro</h4>
+                                            <p>El órgano responsable de la alta gestión de la cooperativa, es el <strong>Consejo Rector</strong> que está formado por siete 
+                                            personas, en las que recaen las funciones de organización y gestión del centro, a nivel empresarial y pedagógico.</p>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de Matriculación -->
+            <div class="modal fade" id="matriculacionModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title">Proceso de Matriculación 2024/25</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-primary">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                Plazo de matriculación abierto del 1 de marzo al 30 de junio de 2024
+                            </div>
+                            
+                            <h4 class="text-primary mb-4">Pasos para matricularte</h4>
+                            <div class="timeline-steps">
+                                <div class="timeline-step mb-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="circle bg-primary text-white rounded-circle p-2 me-3">1</div>
+                                        <h5 class="mb-0">Solicitud Online</h5>
+                                    </div>
+                                    <p class="text-muted ms-5">Rellena el formulario de preinscripción en nuestra web</p>
+                                </div>
+                                <div class="timeline-step mb-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="circle bg-primary text-white rounded-circle p-2 me-3">2</div>
+                                        <h5 class="mb-0">Documentación</h5>
+                                    </div>
+                                    <p class="text-muted ms-5">Prepara la documentación necesaria (DNI, expediente académico, etc.)</p>
+                                </div>
+                                <div class="timeline-step mb-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="circle bg-primary text-white rounded-circle p-2 me-3">3</div>
+                                        <h5 class="mb-0">Confirmación</h5>
+                                    </div>
+                                    <p class="text-muted ms-5">Recibirás un email con la confirmación de tu plaza</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a href="contacto.html" class="btn btn-primary">Comenzar matriculación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -134,14 +522,35 @@
     <script>
         document.querySelector('a[href="#contenido"]').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#contenido').scrollIntoView({
+            const contentElement = document.querySelector('#contenido');
+            const navHeight = document.querySelector('.navbar').offsetHeight;
+            const elementPosition = contentElement.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: elementPosition - navHeight,
                 behavior: 'smooth'
             });
         });
 
         document.querySelector('.scroll-down').addEventListener('click', function() {
-            document.querySelector('#contenido').scrollIntoView({
+            const contentElement = document.querySelector('#contenido');
+            const navHeight = document.querySelector('.navbar').offsetHeight;
+            const elementPosition = contentElement.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: elementPosition - navHeight,
                 behavior: 'smooth'
+            });
+        });
+
+        function toggleSidebar() {
+            var sidebar = new bootstrap.Offcanvas(document.getElementById('objetivosSidebar'));
+            sidebar.show();
+        }
+
+        // Inicializar tooltips y popovers
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function(tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
             });
         });
     </script>

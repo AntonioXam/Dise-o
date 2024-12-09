@@ -131,9 +131,10 @@ body {
 /* Estilos de la sección de presentación */
 .presentation-section {
     background-color: #f8f9fa;
-    min-height: 100vh;
+    min-height: calc(100vh - 76px); /* Ajustado para considerar la navbar */
     padding: 2rem 0;
     width: 100%;
+    margin-bottom: 0; /* Eliminar margen inferior */
 }
 
 .content-section {
@@ -240,6 +241,224 @@ body {
     padding: 0.75rem 1.25rem; /* Añadido padding específico */
 }
 
+/* Estilos para el carousel */
+.carousel {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 1200px;  /* Ajustado al mismo ancho que las cards */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;  /* Eliminar padding extra */
+}
+
+.carousel-item img {
+    height: 450px;  /* Aumentar altura para mejor visualización */
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);  /* Oscurecer un poco más el fondo */
+    border-radius: 8px;
+    padding: 1.5rem;
+    bottom: 20px;  /* Ajustar posición */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;  /* Ancho controlado */
+    max-width: 800px;  /* Máximo ancho para el caption */
+}
+
+/* Estilos para las cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Añadir estilos para los nuevos elementos */
+.card .btn-link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.card .btn-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.card .btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.card .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+/* Estilos para el offcanvas */
+.offcanvas {
+    max-width: 400px;
+    max-height: 90vh; /* Limitar altura al 90% de la ventana */
+}
+
+.offcanvas-body {
+    padding: 1.5rem;
+    overflow-y: auto; /* Permitir scroll solo en el contenido */
+}
+
+.objectives-content {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+.objectives-content .list-group-item {
+    border: none;
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: flex-start; /* Alinear al inicio para mejor legibilidad */
+    gap: 0.75rem;
+}
+
+.objectives-content .list-group-item i {
+    font-size: 1.1rem;
+    margin-top: 0.2rem; /* Ajustar alineación del icono */
+}
+
+.objectives-content .alert {
+    margin-bottom: 0; /* Eliminar margen inferior del último elemento */
+}
+
+/* Estilos para la sección de noticias */
+.news-section {
+    padding: 3rem 0;
+}
+
+.news-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    position: relative;
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-image .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.news-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px); /* Altura total menos la altura de la imagen */
+}
+
+.news-content .card-text {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.news-content {
+    padding: 1.5rem;
+}
+
+.news-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray);
+}
+
+/* Actualizar estilos para las cards principales */
+.news-item .btn-outline-success,
+.news-item .btn-outline-primary,
+.news-item .btn-outline-info {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.news-item .btn-outline-success:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.news-item .btn-outline-primary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.news-item .btn-outline-info:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.news-item .list-group-item {
+    padding: 0.75rem 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.news-item .list-group-item i {
+    margin-right: 0.5rem;
+}
+
+.news-item .collapse {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 1rem;
+}
+
+/* Estilos para la sección de ciclos */
+.cycles-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.cycle-category {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.cycle-category h3 {
+    color: var(--color-primary-dark);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cycle-category .list-group-item {
+    border: none;
+    background: transparent;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
 /* Estilos responsive */
 @media (max-width: 768px) {
     .video-hero {
@@ -268,6 +487,18 @@ body {
     .custom-alert {
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
+    }
+    
+    .news-section, .cycles-section {
+        padding: 2rem 0;
+    }
+    
+    .cycle-category {
+        padding: 1.5rem;
+    }
+    
+    .news-content {
+        padding: 1rem;
     }
 }
 
@@ -338,4 +569,243 @@ body {
     .accordion-body img {
         max-height: 300px;
     }
+}
+
+/* Ajustar el margen de las cards */
+.row.mb-4 {
+    margin-bottom: 0 !important; /* Forzar eliminación del margen */
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Ajustar el scroll para que muestre el alert */
+.scroll-to-content {
+    scroll-margin-top: 76px; /* Altura del navbar */
+    scroll-snap-margin-top: 76px; /* Para navegadores antiguos */
+}
+
+/* Ajustes de contenedor principal */
+.container-fluid {
+    max-width: 1400px; /* Limitar el ancho máximo */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 1400px) {
+    .container-fluid {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 1rem;
+    }
+    
+    .carousel {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        border-radius: 0;
+    }
+}
+
+/* Ajustar la sección de noticias */
+.news-section .row,
+.row.g-4.mb-5 {  /* Selector para las cards principales */
+    max-width: 1200px;  /* Mismo ancho que el carrusel */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Estilos para los nuevos modales */
+.timeline-steps .circle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-step {
+    position: relative;
+}
+
+.timeline-step::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 40px;
+    bottom: -20px;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.timeline-step:last-child::after {
+    display: none;
+}
+
+.modal-header.bg-info,
+.modal-header.bg-primary {
+    border-bottom: 0;
+}
+
+/* Estilos para el scrollspy en el modal */
+.scrollspy-example {
+    position: relative;
+    height: 500px; /* Aumentado de 350px a 500px */
+    overflow-y: auto;
+    padding: 1.5rem;
+    margin-right: 1rem;
+}
+
+.scrollspy-example section {
+    margin-bottom: 3rem; /* Aumentado el espacio entre secciones */
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.scrollspy-example h4 {
+    color: var(--color-primary-dark);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-primary-light);
+    font-size: 1.4rem;
+}
+
+.scrollspy-example p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#navbar-carta {
+    position: sticky;
+    top: 1rem;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#navbar-carta .nav-link {
+    color: var(--color-gray);
+    padding: 0.75rem 1.25rem;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    border-left: 3px solid transparent;
+}
+
+#navbar-carta .nav-link:hover,
+#navbar-carta .nav-link.active {
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+    border-left: 3px solid var(--color-primary);
+}
+
+/* Ajustar el tamaño del modal para la carta de presentación */
+#cartaModal .modal-dialog {
+    max-width: 1200px; /* Aumentar el ancho máximo */
+    margin: 1.75rem auto;
+}
+
+#cartaModal .modal-content {
+    min-height: 700px; /* Establecer una altura mínima */
+}
+
+#cartaModal .modal-body {
+    padding: 2rem;
+}
+
+/* Ajustes responsive para el modal */
+@media (max-width: 992px) {
+    #cartaModal .modal-dialog {
+        max-width: 95%;
+        margin: 1rem auto;
+    }
+
+    .scrollspy-example {
+        height: 400px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #cartaModal .modal-content {
+        min-height: auto;
+    }
+
+    .scrollspy-example {
+        height: 350px;
+    }
+
+    #navbar-carta {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Estilos para el acordeón del proyecto educativo */
+#misionModal .accordion-button:not(.collapsed) {
+    background-color: var(--color-accent);
+    color: var(--color-primary-dark);
+}
+
+#misionModal .accordion-button:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+#misionModal .accordion-button .bi {
+    transition: transform 0.3s ease;
+}
+
+#misionModal .accordion-button:not(.collapsed) .bi {
+    transform: rotate(90deg);
+}
+
+#misionModal .list-group-item {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#misionModal .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Estilos específicos para el modal del proyecto educativo */
+#misionModal .modal-body {
+    padding: 2rem;
+}
+
+#misionModal .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#misionModal .card-header {
+    border-bottom: none;
+    padding: 1rem;
+}
+
+#misionModal .card-body {
+    padding: 1.5rem;
+}
+
+#misionModal .list-group-item {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#misionModal .list-group-item:last-child {
+    border-bottom: none;
+}
+
+#misionModal .lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
