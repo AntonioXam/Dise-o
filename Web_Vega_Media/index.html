@@ -74,8 +74,14 @@
         <div class="container-fluid">
             <!-- Alert de matrículas -->
             <div class="alert alert-primary alert-dismissible fade show custom-alert" role="alert">
-                <strong>¡MATRÍCULAS ABIERTAS CURSO 2024/25!</strong> Ya puedes solicitar tu plaza para el próximo curso académico.
-                <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.location.href='contacto.html'">Más información</button>
+                <div class="alert-message">
+                    <strong>¡MATRÍCULAS ABIERTAS CURSO 2024/25!</strong> Ya puedes solicitar tu plaza para el próximo curso académico.
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='contacto.html'">
+                        <i class="bi bi-info-circle"></i> Más información
+                    </button>
+                </div>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
 
@@ -406,24 +412,34 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Carta de Presentación</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
+                            <div class="row g-3"> <!-- Añadido g-3 para gap entre columnas -->
                                 <!-- Navegación del Scrollspy -->
-                                <div class="col-4">
-                                    <nav id="navbar-carta" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-                                        <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
-                                            <a class="nav-link" href="#proyecto-cooperativo">Proyecto Cooperativo</a>
-                                            <a class="nav-link" href="#identidad">Nuestra Identidad</a>
-                                            <a class="nav-link" href="#experiencia">Experiencia y Valores</a>
-                                            <a class="nav-link" href="#gestion">Gestión del Centro</a>
+                                <div class="col-12 col-lg-4">
+                                    <nav id="navbar-carta" class="navbar navbar-light flex-column align-items-stretch p-3">
+                                        <nav class="nav nav-pills flex-column w-100">
+                                            <a class="nav-link" href="#quienes-somos">
+                                                <i class="bi bi-people-fill me-2"></i>Quiénes Somos
+                                            </a>
+                                            <a class="nav-link" href="#proyecto-cooperativo">
+                                                <i class="bi bi-building me-2"></i>Proyecto Cooperativo
+                                            </a>
+                                            <a class="nav-link" href="#identidad">
+                                                <i class="bi bi-fingerprint me-2"></i>Nuestra Identidad
+                                            </a>
+                                            <a class="nav-link" href="#experiencia">
+                                                <i class="bi bi-star-fill me-2"></i>Experiencia y Valores
+                                            </a>
+                                            <a class="nav-link" href="#gestion">
+                                                <i class="bi bi-gear-fill me-2"></i>Gestión del Centro
+                                            </a>
                                         </nav>
                                     </nav>
                                 </div>
                                 <!-- Contenido con Scrollspy -->
-                                <div class="col-8">
+                                <div class="col-12 col-lg-8">
                                     <div data-bs-spy="scroll" data-bs-target="#navbar-carta" data-bs-offset="0" class="scrollspy-example" tabindex="0">
                                         <section id="quienes-somos">
                                             <h4>Quiénes Somos</h4>
