@@ -10,15 +10,27 @@
         width: 100px;
         height: 100px;
         background-color: red;
-        position: relative;
-        transition: transfom 1s ease-in-out;
+        position: absolute;
+        transition: transform 1s;
     }
 
-    .box.animated{
-        transform: translateX(300px);
+    .box.derecha{
+        transform: translateX(400px);
+    }
+
+    .box.arriva{
+        transform: translateY(-400px);
+    }
+
+    .box.izquierda{
+        transform: translateX(-400px);
+    }
+
+    .box.abajo{
+        transform: translateY(400px);
     }
 </style>
-<body>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0;"></body>
     
     <h2>Video con cubo moviendose en el segundos 5</h2>
     <video src="media/video.mp4" controls width="400"></video>
@@ -29,8 +41,20 @@
         const box = document.querySelector('.box');
 
         video.addEventListener('timeupdate', () => {
-            if(video.currentTime >= 5){
-                box.classList.add('animated');
+            if(video.currentTime >= 3){
+                box.classList.add('derecha');
+            }
+
+            if(video.currentTime >= 6){
+                box.classList.add('arriva');
+            }
+
+            if(video.currentTime >= 9){
+                box.classList.add('izquierda');
+            }
+
+            if(video.currentTime >= 12){
+                box.classList.add('abajo');
             }
         });
     </script>
