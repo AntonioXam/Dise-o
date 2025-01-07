@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Animacion</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            transition: transform 1s;
+        }
+
+        .circle.animated{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h2>Audio y Animacion</h2>
+    <audio src="media/audio.mp3" controls></audio>
+    <div id="circle" class="circle"></div>
+
+    <script>
+        const audio = document.querySelector('audio');
+        const circle = document.querySelector('.circle');
+
+        audio.addEventListener('timeupdate', () => {
+            if(audio.currentTime >= 3){
+                circle.classList.add('animated');
+            }
+        });
+</script>
+
+    
+</body>
+</html>
