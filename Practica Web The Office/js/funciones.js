@@ -49,16 +49,24 @@ audioPlayers.forEach(audio => {
     });
 });
 
-// Detector de scroll mejorado
+// Mejorar el detector de scroll con nuevas animaciones
 const scrollAnimations = () => {
     const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach(element => {
+    
+    elements.forEach((element, index) => {
         const elementPosition = element.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.3;
         
         if (elementPosition < screenPosition) {
             element.style.opacity = '1';
-            element.classList.add('slide-in');
+            // Alternar entre diferentes animaciones
+            if (index % 3 === 0) {
+                element.classList.add('bounce-in');
+            } else if (index % 3 === 1) {
+                element.classList.add('rotate-in');
+            } else {
+                element.classList.add('slide-in');
+            }
         }
     });
 };

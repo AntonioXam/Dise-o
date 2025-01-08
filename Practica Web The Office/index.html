@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/the-office-tv-show-sign-seeklogo.svg" alt="The Office Logo" width="140" height="40" class="d-inline-block align-text-top">
+                <img src="assets/images/the-office-tv-show-sign-seeklogo.png" alt="The Office Logo" width="50" height="50" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -49,15 +50,16 @@
     <div class="hero-section" style="background: url('assets/images/portada.jpg') no-repeat center center; background-size: cover;">
         <div class="hero-overlay">
             <div class="container py-5">
-                <h1 class="display-4 text-white">Bienvenidos a The Office</h1>
-                <p class="lead text-white">Una comedia mockumentary sobre la vida cotidiana en la oficina de Dunder Mifflin</p>
+                <h1 class="display-4 text-white bounce-in">Bienvenidos a The Office</h1>
+                <p class="lead text-white rotate-in">Una comedia mockumentary sobre la vida cotidiana en la oficina de Dunder Mifflin</p>
             </div>
         </div>
     </div>
 
     <!-- Main Content -->
     <main class="container my-5">
-        <section class="synopsis bg-light p-4 rounded shadow-sm">
+        <!-- Ajustar las secciones principales para que tengan fondo semi-transparente -->
+        <section class="synopsis bg-white bg-opacity-95 p-4 rounded shadow-sm">
             <div class="row align-items-center">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <img src="assets/images/elenco.jpg" alt="Elenco de The Office" class="img-fluid rounded shadow">
@@ -73,19 +75,19 @@
                         <div class="mt-4">
                             <div class="row text-center">
                                 <div class="col-4">
-                                    <div class="stat-box p-2 bg-primary text-white rounded">
+                                    <div class="stat-box p-2 bg-primary text-white rounded float">
                                         <h4>9</h4>
                                         <small>Temporadas</small>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="stat-box p-2 bg-success text-white rounded">
+                                    <div class="stat-box p-2 bg-success text-white rounded float">
                                         <h4>201</h4>
                                         <small>Episodios</small>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="stat-box p-2 bg-info text-white rounded">
+                                    <div class="stat-box p-2 bg-info text-white rounded float">
                                         <h4>5</h4>
                                         <small>Premios Emmy</small>
                                     </div>
@@ -98,11 +100,13 @@
         </section>
 
         <section class="seasons mt-5">
-            <h2 class="mb-4">Temporadas</h2>
+            <h2 class="mb-4 text-dark">Temporadas</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T1.jpg" class="card-img-top" alt="Temporada 1">
+                    <div class="card animate-on-scroll" style="--animation-order: 1">
+                        <div class="card-img-container">
+                            <img src="assets/images/T1.jpg" class="card-img-top" alt="Temporada 1">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 1</h3>
                             <p>6 episodios - 2005</p>
@@ -111,8 +115,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T2.jpg" class="card-img-top" alt="Temporada 2">
+                    <div class="card animate-on-scroll" style="--animation-order: 2">
+                        <div class="card-img-container">
+                            <img src="assets/images/T2.jpg" class="card-img-top" alt="Temporada 2">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 2</h3>
                             <p>22 episodios - 2005-2006</p>
@@ -121,8 +127,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T3.jpg" class="card-img-top" alt="Temporada 3">
+                    <div class="card animate-on-scroll" style="--animation-order: 3">
+                        <div class="card-img-container">
+                            <img src="assets/images/T3.jpg" class="card-img-top" alt="Temporada 3">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 3</h3>
                             <p>25 episodios - 2006-2007</p>
@@ -131,8 +139,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T4.jpg" class="card-img-top" alt="Temporada 4">
+                    <div class="card animate-on-scroll" style="--animation-order: 4">
+                        <div class="card-img-container">
+                            <img src="assets/images/T4.jpg" class="card-img-top" alt="Temporada 4">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 4</h3>
                             <p>19 episodios - 2007-2008</p>
@@ -141,8 +151,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T5.jpg" class="card-img-top" alt="Temporada 5">
+                    <div class="card animate-on-scroll" style="--animation-order: 5">
+                        <div class="card-img-container">
+                            <img src="assets/images/T5.jpg" class="card-img-top" alt="Temporada 5">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 5</h3>
                             <p>28 episodios - 2008-2009</p>
@@ -151,8 +163,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T6.jpg" class="card-img-top" alt="Temporada 6">
+                    <div class="card animate-on-scroll" style="--animation-order: 6">
+                        <div class="card-img-container">
+                            <img src="assets/images/T6.jpg" class="card-img-top" alt="Temporada 6">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 6</h3>
                             <p>26 episodios - 2009-2010</p>
@@ -161,8 +175,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T7.jpg" class="card-img-top" alt="Temporada 7">
+                    <div class="card animate-on-scroll" style="--animation-order: 7">
+                        <div class="card-img-container">
+                            <img src="assets/images/T7.jpg" class="card-img-top" alt="Temporada 7">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 7</h3>
                             <p>26 episodios - 2010-2011</p>
@@ -171,8 +187,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T8.jpg" class="card-img-top" alt="Temporada 8">
+                    <div class="card animate-on-scroll" style="--animation-order: 8">
+                        <div class="card-img-container">
+                            <img src="assets/images/T8.jpg" class="card-img-top" alt="Temporada 8">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 8</h3>
                             <p>24 episodios - 2011-2012</p>
@@ -181,8 +199,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card animate-on-scroll">
-                        <img src="assets/images/T9.jpg" class="card-img-top" alt="Temporada 9">
+                    <div class="card animate-on-scroll" style="--animation-order: 9">
+                        <div class="card-img-container">
+                            <img src="assets/images/T9.jpg" class="card-img-top" alt="Temporada 9">
+                        </div>
                         <div class="card-body">
                             <h3 class="h5">Temporada 9</h3>
                             <p>25 episodios - 2012-2013</p>
@@ -195,10 +215,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div la="col-md-6">
                     <h5>Licencias y Atribuciones</h5>
                     <p>Este sitio web está bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light">Creative Commons Attribution-ShareAlike 4.0</a></p>
                     <p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> 2023 The Office Fan Site</p>
