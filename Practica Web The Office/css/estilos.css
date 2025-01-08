@@ -55,10 +55,10 @@ body::before {
 
 /* Cards de temporadas */
 .seasons .card {
-    height: 100%;
+    height: auto;  /* Cambiado de 100% a auto */
     display: flex;
     flex-direction: column;
-    background-color: rgba(124, 159, 179, 0.95);
+    background-color: rgba(41, 58, 68, 0.95);
     overflow: hidden;
     margin-bottom: 20px;
     border: none;
@@ -66,6 +66,7 @@ body::before {
     animation: fadeIn 0.8s ease-out forwards;
     animation-delay: calc(var(--animation-order, 0) * 0.2s);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;  /* Asegura que ocupe el ancho completo */
 }
 
 .seasons .card:hover {
@@ -76,20 +77,20 @@ body::before {
 
 .seasons .card-img-top {
     width: 100%;
-    height: 300px;
-    object-fit: contain;
-    padding: 0.5rem;
+    height: auto;  /* Cambiado de 400px a auto */
+    max-height: 400px;  /* Altura máxima */
+    object-fit: contain;  /* Cambiado de cover a contain */
     transition: transform 0.3s ease;
 }
 
 .seasons .card:hover .card-img-top {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .seasons .card-body {
     padding: 1rem;
-    background-color: rgba(124, 159, 179, 0.95);
-    min-height: 120px;
+    background-color: rgba(164, 187, 201, 0.95);
+    height: auto;  /* Cambiado de min-height a height auto */
     transition: all 0.3s ease;
 }
 
@@ -125,6 +126,103 @@ body::before {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* Timeline de temporadas */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgba(0, 44, 58, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: calc(var(--animation-order, 0) * 0.2s);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: #8ed3e7;
+    border: 4px solid rgba(0, 44, 58, 0.9);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -12px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.timeline-content img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover img {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item::after {
+        left: 19px;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero-section {
@@ -155,7 +253,6 @@ body::before {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-
 .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
     transition: color 0.3s ease;
@@ -182,4 +279,107 @@ body::before {
     background-color: rgba(0, 44, 58, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el acordeón de temporadas */
+.accordion-item {
+    background-color: rgba(245, 245, 245, 0.95);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-button {
+    background-color: rgba(0, 44, 58, 0.9);
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0, 44, 58, 0.8);
+    color: #8ed3e7;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    padding: 1.5rem;
+}
+
+.accordion-body img {
+    transition: transform 0.3s ease;
+}
+
+.accordion-body img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el carrusel circular */
+.season-wheel {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 50px auto;
+}
+
+.season-item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.season-item.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+}
+
+.season-content {
+    background: rgba(245, 245, 245, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.season-content:hover {
+    transform: scale(1.05);
+}
+
+.season-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.wheel-controls {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wheel-controls button {
+    background: rgba(0, 44, 58, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wheel-controls button:hover {
+    background: #8ed3e7;
+    transform: scale(1.1);
 }
