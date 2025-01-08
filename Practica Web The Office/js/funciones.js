@@ -250,3 +250,44 @@ class SeasonWheel {
 document.addEventListener('DOMContentLoaded', () => {
     new SeasonWheel();
 });
+
+// Animación de aparición para las temporadas
+const observerOptions = {
+    threshold: 0.2
+};
+
+const seasonObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.season-container').forEach(season => {
+    seasonObserver.observe(season);
+});
+
+/* Animación de aparición para las tarjetas de temporada */
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});
