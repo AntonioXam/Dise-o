@@ -175,8 +175,14 @@
 
 /* Mejoras para las temporadas */
 .seasons .card {
-    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 550px; /* Altura aumentada */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: none; /* Eliminar borde */
 }
 
 .seasons .card:hover {
@@ -186,13 +192,60 @@
 
 /* Ajustes para las cards de temporadas */
 .seasons .card {
-    max-width: 280px;
+    max-width: 100%;
     margin: 0 auto;
+    height: 550px; /* Altura aumentada */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: none; /* Eliminar borde */
 }
 
 .seasons .card-img-top {
+    width: 100%;
+    height: 400px; /* Altura fija más grande */
+    object-fit: contain;
+    background-color: transparent; /* Eliminar fondo negro */
+    padding: 0;
+}
+
+.seasons .card-body {
+    padding: 1.25rem;
+    height: 150px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.seasons .card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.seasons .card-body p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.seasons .card-body {
     height: 180px;
-    object-fit: cover;
+    padding: 1.25rem;
+    overflow: auto; /* Por si el contenido es muy largo */
+    background-color: #fff;
+    flex: 1; /* Hace que el body ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.seasons .card-body h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.seasons .card-body p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
 }
 
 .seasons .col-md-4 {
