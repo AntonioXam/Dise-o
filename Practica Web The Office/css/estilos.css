@@ -465,65 +465,133 @@ body::before {
 
 /* Character Card Styles */
 .character-card {
-    position: relative;
-    transition: transform 0.3s ease;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.character-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    perspective: 1000px;
+    background: transparent;
+    border: none;
+    margin-bottom: 20px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-flip {
     position: relative;
     width: 100%;
-    height: 350px;
-    perspective: 1000px;
-    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.front-image,
-.back-image {
+.character-card:hover .image-flip {
+    transform: rotateX(180deg);
+}
+
+.front-image, .back-image {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 15px;
+    object-fit: contain; /* Cambiado de cover a contain */
+    object-position: center;
+}
+
+.front-image {
+    transform: rotateX(0deg);
 }
 
 .back-image {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
-.image-flip:hover .front-image {
-    transform: rotateY(-180deg);
+.card-body {
+    position: absolute;
+    bottom: 60px; /* Ajustado para dejar espacio al footer */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
 }
 
-.image-flip:hover .back-image {
-    transform: rotateY(0);
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-top: none;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
 }
 
 .quotes-list {
-    font-style: italic;
-    color: #666;
-    padding: 10px;
-    background: rgba(0,0,0,0.05);
+    color: white;
+    padding: 15px;
     border-radius: 8px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quotes-list li {
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+    color: #fff;
+    text-align: left;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.quotes-list li::before {
-    content: '"';
-    position: absolute;
-    left: 0;
-    color: #999;
+.quotes-list li:last-child {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid white;
+    transform: translateY(-1px);
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .character-card {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .character-card {
+        height: 300px;
+    }
+}
+
+/* Contenedor principal de personajes */
+.container.my-5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Ajustes para la cuadrícula de personajes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* Compensar el padding de las columnas */
+}
+
+.col-md-4 {
+    padding: 15px;
 }
