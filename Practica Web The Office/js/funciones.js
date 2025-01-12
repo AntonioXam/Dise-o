@@ -469,3 +469,50 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavbarAnimations();
     // ... resto del código existente
 });
+
+// Lazy loading y animación de las tarjetas de personajes
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.character-card');
+    const imageContainers = document.querySelectorAll('.image-flip');
+    
+    // Observador para las tarjetas
+    const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                
+                // Cargar las imágenes cuando la tarjeta sea visible
+                const frontImage = entry.target.querySelector('.front-image');
+                const backImage = entry.target.querySelector('.back-image');
+                
+                if (frontImage.dataset.src) {
+                    frontImage.src = frontImage.dataset.src;
+                    frontImage.addEventListener('load', () => {
+                        frontImage.classList.add('loaded');
+                        frontImage.removeAttribute('data-src');
+                    });
+                }
+                
+                if (backImage.dataset.src) {
+                    backImage.src = backImage.dataset.src;
+                    backImage.addEventListener('load', () => {
+                        backImage.classList.add('loaded');
+                        backImage.removeAttribute('data-src');
+                    });
+                }
+                
+                cardObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '50px'
+    });
+    
+    // Añadir clase loading y observar cada tarjeta
+    cards.forEach(card => {
+        const imageContainer = card.querySelector('.image-flip');
+        imageContainer.classList.add('loading');
+        cardObserver.observe(card);
+    });
+});

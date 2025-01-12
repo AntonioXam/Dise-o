@@ -91,6 +91,14 @@ body::before {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.character-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .character-card:hover {
@@ -534,5 +542,50 @@ footer {
     .card-body {
         min-height: 120px;
     }
+}
+
+/* Animaciones para las tarjetas */
+.character-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.character-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto de skeleton loading */
+.image-flip.loading {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 44, 58, 0.05) 25%,
+        rgba(0, 44, 58, 0.1) 50%,
+        rgba(0, 44, 58, 0.05) 75%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Mantener las imágenes ocultas hasta que se carguen */
+.front-image[data-src], 
+.back-image[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.front-image.loaded, 
+.back-image.loaded {
+    opacity: 1;
 }
  
