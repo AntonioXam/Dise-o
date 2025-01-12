@@ -516,3 +516,25 @@ document.addEventListener('DOMContentLoaded', function() {
         cardObserver.observe(card);
     });
 });
+
+// Añadir al código existente
+document.addEventListener('DOMContentLoaded', function() {
+    // Animación para las tarjetas de recomendación
+    const recommendationCards = document.querySelectorAll('.recommendation-card');
+    
+    const recommendationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                recommendationObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '50px'
+    });
+    
+    recommendationCards.forEach(card => {
+        recommendationObserver.observe(card);
+    });
+});

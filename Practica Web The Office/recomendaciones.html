@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Office - Recomendaciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/recomendaciones.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/the-office-tv-show-sign-seeklogo.png" alt="The Office Logo" width="" height="50" class="d-inline-block align-text-top">
+                <img src="assets/images/the-office-tv-show-sign-seeklogo.svg" alt="The Office Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars text-white"></i>
             </button>
-            <div class="navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
@@ -45,84 +47,238 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <h1 class="mb-4">Series Similares</h1>
-        
-        <div class="row">
-            <!-- Parks and Recreation -->
-            <div class="col-md-6 mb-4">
-                <div class="card animate-on-scroll">
-                    <img src="assets/images/parks-rec.jpg" class="card-img-top" alt="Parks and Recreation">
-                    <div class="card-body">
-                        <h5 class="card-title">Parks and Recreation</h5>
-                        <p class="card-text">Otra comedia mockumentary que sigue la vida de los empleados del departamento de parques de Pawnee.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Brooklyn Nine-Nine -->
-            <div class="col-md-6 mb-4">
-                <div class="card animate-on-scroll">
-                    <img src="assets/images/brooklyn99.jpg" class="card-img-top" alt="Brooklyn Nine-Nine">
-                    <div class="card-body">
-                        <h5 class="card-title">Brooklyn Nine-Nine</h5>
-                        <p class="card-text">Una comedia que sigue las aventuras de un equipo de detectives en Brooklyn.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modern Family -->
-            <div class="col-md-6 mb-4">
-                <div class="card animate-on-scroll">
-                    <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" 
-                         class="card-img-top" alt="Modern Family" loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Family</h5>
-                        <p class="card-text">Otra comedia mockumentary que sigue la vida de tres familias interconectadas.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Superstore -->
-            <div class="col-md-6 mb-4">
-                <div class="card animate-on-scroll">
-                    <img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg" 
-                         class="card-img-top" alt="Superstore" loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title">Superstore</h5>
-                        <p class="card-text">Una comedia sobre los empleados de una tienda minorista en Missouri.</p>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1 class="display-4 text-white">Series Similares</h1>
+                <p class="lead text-white">Si te gustó The Office, estas series te encantarán</p>
             </div>
         </div>
     </div>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Licencias y Atribuciones</h5>
-                    <p>Este sitio web está bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light">Creative Commons Attribution-ShareAlike 4.0</a></p>
-                    <p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> 2023 The Office Fan Site</p>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Introducción -->
+        <section class="intro-section bg-white bg-opacity-95 p-4 rounded shadow-sm mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="border-bottom pb-2 mb-4">¿Por qué te gustarán estas series?</h2>
+                    <p class="lead">Si disfrutaste del humor único de The Office, su formato mockumentary y sus personajes memorables, estas series comparten elementos similares que seguramente apreciarás.</p>
                 </div>
-                <div class="col-md-6">
-                    <h5>Recursos Utilizados</h5>
-                    <ul class="list-unstyled">
-                        <li>Imágenes: <a href="https://www.gettyimages.es/fotos/the-office-programa-de-televisi%C3%B3n" class="text-light">gettyimages</a> (Licencia libre)</li>
-                        <li>Iconos: <a href="https://fontawesome.com" class="text-light">Font Awesome</a> (Licencia libre)</li>
-                        <li>Audio: <a href="https://freesound.org" class="text-light">Freesound</a> (CC0)</li>
-                        <li>Video: <a href="https://www.pexels.com" class="text-light">Pexels</a> (Licencia libre)</li>
-                    </ul>
+                <div class="col-lg-4">
+                    <div class="recommendation-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-laugh-beam"></i>
+                            <span>Humor Similar</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-video"></i>
+                            <span>Estilo Mockumentary</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Personajes Carismáticos</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr class="my-3">
-            <p class="text-center mb-0">
-                Las imágenes y contenidos relacionados con The Office son utilizados con fines educativos bajo Fair Use.
-                The Office™ es una marca registrada de NBCUniversal.
-            </p>
+        </section>
+
+        <!-- Series Recomendadas -->
+        <section class="recommendations">
+            <div class="row g-4">
+                <!-- Parks and Recreation -->
+                <div class="col-lg-6">
+                    <div class="recommendation-card">
+                        <div class="card-image">
+                            <img src="assets/images/parks-rec.jpg" alt="Parks and Recreation">
+                            <div class="overlay">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.6/10</span>
+                                </div>
+                                <div class="info">
+                                    <span class="seasons">7 Temporadas</span>
+                                    <span class="year">2009-2015</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Parks and Recreation</h3>
+                            <p class="description">Sigue las aventuras de Leslie Knope y su equipo en el departamento de parques de Pawnee, Indiana. Con el mismo estilo mockumentary y humor inteligente que The Office.</p>
+                            <div class="tags">
+                                <span class="tag">Comedia</span>
+                                <span class="tag">Mockumentary</span>
+                                <span class="tag">Política Local</span>
+                            </div>
+                            <a href="https://www.primevideo.com/detail/Parks-and-Recreation/0IZFGJ8ZP7U0EY7MF1GAW9NOSI" 
+                               class="watch-button" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Ver en Prime Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brooklyn Nine-Nine -->
+                <div class="col-lg-6">
+                    <div class="recommendation-card">
+                        <div class="card-image">
+                            <img src="assets/images/brooklyn99.jpg" alt="Brooklyn Nine-Nine">
+                            <div class="overlay">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.4/10</span>
+                                </div>
+                                <div class="info">
+                                    <span class="seasons">8 Temporadas</span>
+                                    <span class="year">2013-2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Brooklyn Nine-Nine</h3>
+                            <p class="description">Una comedia que sigue al detective Jake Peralta y sus colegas en el precinto 99 de Brooklyn. Humor inteligente y personajes memorables.</p>
+                            <div class="tags">
+                                <span class="tag">Comedia</span>
+                                <span class="tag">Policíaca</span>
+                                <span class="tag">Sitcom</span>
+                            </div>
+                            <a href="https://www.netflix.com/title/70281562" 
+                               class="watch-button netflix" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Ver en Netflix
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modern Family -->
+                <div class="col-lg-6">
+                    <div class="recommendation-card">
+                        <div class="card-image">
+                            <img src="assets/images/modern-family.jpg" alt="Modern Family">
+                            <div class="overlay">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.5/10</span>
+                                </div>
+                                <div class="info">
+                                    <span class="seasons">11 Temporadas</span>
+                                    <span class="year">2009-2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Modern Family</h3>
+                            <p class="description">Una comedia mockumentary que sigue a tres familias relacionadas mientras lidian con sus hijos, relaciones y vida cotidiana.</p>
+                            <div class="tags">
+                                <span class="tag">Comedia</span>
+                                <span class="tag">Familiar</span>
+                                <span class="tag">Mockumentary</span>
+                            </div>
+                            <a href="https://www.disneyplus.com/series/modern-family/6p2yzz9mh8Kp" 
+                               class="watch-button disney" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Ver en Disney+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What We Do in the Shadows -->
+                <div class="col-lg-6">
+                    <div class="recommendation-card">
+                        <div class="card-image">
+                            <img src="assets/images/what-we-do-shadows.jpg" alt="What We Do in the Shadows">
+                            <div class="overlay">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>8.7/10</span>
+                                </div>
+                                <div class="info">
+                                    <span class="seasons">5 Temporadas</span>
+                                    <span class="year">2019-Presente</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>What We Do in the Shadows</h3>
+                            <p class="description">Un mockumentary que sigue a cuatro vampiros que viven juntos en Staten Island, lidiando con la vida moderna.</p>
+                            <div class="tags">
+                                <span class="tag">Comedia</span>
+                                <span class="tag">Fantasía</span>
+                                <span class="tag">Mockumentary</span>
+                            </div>
+                            <a href="https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac" 
+                               class="watch-button hulu" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Ver en Hulu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Comparación -->
+        <section class="comparison-section bg-white bg-opacity-95 p-4 rounded shadow-sm mt-5">
+            <h2 class="text-center mb-4">¿Por qué estas series son similares?</h2>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <i class="fas fa-video"></i>
+                    <h4>Estilo Documental</h4>
+                    <p>Todas utilizan el formato mockumentary con entrevistas a cámara.</p>
+                </div>
+                <div class="comparison-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Ensemble Cast</h4>
+                    <p>Elencos diversos con química única entre los personajes.</p>
+                </div>
+                <div class="comparison-item">
+                    <i class="fas fa-laugh"></i>
+                    <h4>Humor Similar</h4>
+                    <p>Combinación de comedia situacional y momentos incómodos.</p>
+                </div>
+                <div class="comparison-item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Desarrollo de Personajes</h4>
+                    <p>Personajes que evolucionan a lo largo de la serie.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row footer-sections">
+                    <div class="col-lg-6 footer-section">
+                        <h5>Licencias y Atribuciones</h5>
+                        <p>Este sitio web está bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light">Creative Commons Attribution-ShareAlike 4.0</a></p>
+                        <p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> 2023 The Office Fan Site</p>
+                        <div class="footer-logo">
+                            <img src="assets/images/the-office-tv-show-sign-seeklogo.png" 
+                                 alt="The Office Logo" 
+                                 class="footer-brand-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 footer-section">
+                        <h5>Recursos Utilizados</h5>
+                        <ul class="list-unstyled">
+                            <li>Imágenes: <a href="https://www.gettyimages.es/" class="text-light">gettyimages</a> (Licencia libre)</li>
+                            <li>Iconos: <a href="https://fontawesome.com" class="text-light">Font Awesome</a> (Licencia libre)</li>
+                            <li>Audio: <a href="https://freesound.org" class="text-light">Freesound</a> (CC0)</li>
+                            <li>Video: <a href="https://www.pexels.com" class="text-light">Pexels</a> (Licencia libre)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-separator">
+            <div class="footer-bottom">
+                <p>Las imágenes y contenidos relacionados con The Office son utilizados con fines educativos bajo Fair Use.
+                    The Office™ es una marca registrada de NBCUniversal.</p>
+            </div>
         </div>
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

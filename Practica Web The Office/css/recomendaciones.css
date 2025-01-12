@@ -1,0 +1,302 @@
+/* Hero Section específico para recomendaciones */
+.hero-section {
+    position: relative;
+    min-height: 400px;
+    background: url('../assets/images/muchasSeries.webp') no-repeat center center;
+    background-size: cover;
+    margin-top: 76px;
+}
+
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-section p {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+/* Sección de introducción */
+.intro-section {
+    animation: fadeIn 1s ease-out;
+}
+
+.recommendation-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 44, 58, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item i {
+    font-size: 2rem;
+    color: #002c3a;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item span {
+    display: block;
+    color: #002c3a;
+    font-weight: 600;
+}
+
+/* Tarjetas de recomendación */
+.recommendation-card {
+    background: rgba(0, 44, 58, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.recommendation-card.visible {
+    animation: cardReveal 0.8s ease-out forwards;
+}
+
+.card-image {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.rating {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.rating i {
+    color: #ffd700;
+    margin-right: 0.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.description {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.tags {
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(142, 211, 231, 0.1);
+    color: #8ed3e7;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(142, 211, 231, 0.3);
+}
+
+.watch-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #002c3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.watch-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.watch-button i {
+    margin-right: 0.5rem;
+}
+
+/* Variantes de botones para diferentes plataformas */
+.watch-button.netflix {
+    background: #e50914;
+}
+
+.watch-button.disney {
+    background: #113ccf;
+}
+
+.watch-button.hulu {
+    background: #1ce783;
+    color: #000;
+}
+
+/* Hover effects */
+.recommendation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(142, 211, 231, 0.3);
+}
+
+.recommendation-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.recommendation-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Sección de comparación */
+.comparison-section {
+    margin-top: 4rem;
+    
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.comparison-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 44, 58, 0.05);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.comparison-item:hover {
+    transform: translateY(-5px);
+}
+
+.comparison-item i {
+    font-size: 2.5rem;
+    color: #002c3a;
+    margin-bottom: 1rem;
+}
+
+.comparison-item h4 {
+    color: #002c3a;
+    margin-bottom: 1rem;
+}
+
+.comparison-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Animaciones */
+@keyframes cardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .hero-section {
+        min-height: 300px;
+    }
+    
+    .recommendation-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 250px;
+    }
+    
+    .hero-overlay {
+        padding: 60px 0;
+    }
+    
+    .comparison-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .card-content {
+        padding: 1rem;
+    }
+    
+    .watch-button {
+        width: 100%;
+        text-align: center;
+    }
+} 
