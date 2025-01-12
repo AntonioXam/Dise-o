@@ -58,6 +58,52 @@ body::before {
     }
 }
 
+/* Nuevas animaciones */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animación de giro para las temporadas */
+@keyframes rotateInScale {
+    from {
+        opacity: 0;
+        transform: perspective(1000px) rotateY(45deg) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(1000px) rotateY(0) scale(1);
+    }
+}
+
 /* Clases de animación */
 .animate-fade-up {
     opacity: 0;
@@ -146,12 +192,12 @@ body::before {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transform: translateY(30px);
+    transform-origin: center;
+    transform: perspective(1000px) rotateY(45deg) scale(0.8);
 }
 
 .seasons .card.active {
-    opacity: 1;
-    transform: translateY(0);
+    animation: rotateInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .seasons .card-body {
@@ -236,8 +282,8 @@ body::before {
 
 /* Hover effect */
 .seasons .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: perspective(1000px) rotateY(-5deg) scale(1.03) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     z-index: 1;
 }
 
@@ -265,16 +311,22 @@ body::before {
     margin: 2rem 0;
     color: #e6f3f7;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+}
+
+.synopsis.active {
+    animation: fadeInUp 0.8s ease forwards;
 }
 
 .synopsis img {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    opacity: 0;
 }
 
-.synopsis img:hover {
-    transform: scale(1.02);
+.synopsis img.active {
+    animation: slideInLeft 0.8s ease forwards 0.3s;
 }
 
 .synopsis h2 {
@@ -297,6 +349,14 @@ body::before {
     font-weight: 400;
 }
 
+.synopsis-content {
+    opacity: 0;
+}
+
+.synopsis-content.active {
+    animation: slideInRight 0.8s ease forwards 0.3s;
+}
+
 /* Estilos para las cajas de estadísticas */
 .stat-box {
     background: rgba(255, 255, 255, 0.15);
@@ -304,6 +364,23 @@ body::before {
     padding: 1rem;
     backdrop-filter: blur(5px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+}
+
+.stat-box.active {
+    animation: popIn 0.5s ease forwards;
+}
+
+.stat-box:nth-child(1).active {
+    animation-delay: 0.6s;
+}
+
+.stat-box:nth-child(2).active {
+    animation-delay: 0.8s;
+}
+
+.stat-box:nth-child(3).active {
+    animation-delay: 1s;
 }
 
 .stat-box:hover {
@@ -339,3 +416,22 @@ body::before {
         margin-bottom: 1rem;
     }
 }
+
+.seasons h2 {
+    opacity: 0;
+}
+
+.seasons h2.active {
+    animation: fadeInUp 0.6s ease forwards 0.3s;
+}
+
+/* Retrasos para la aparición secuencial */
+.seasons .col-lg-4:nth-child(1) .card.active { animation-delay: 0.1s; }
+.seasons .col-lg-4:nth-child(2) .card.active { animation-delay: 0.3s; }
+.seasons .col-lg-4:nth-child(3) .card.active { animation-delay: 0.5s; }
+.seasons .col-lg-4:nth-child(4) .card.active { animation-delay: 0.7s; }
+.seasons .col-lg-4:nth-child(5) .card.active { animation-delay: 0.9s; }
+.seasons .col-lg-4:nth-child(6) .card.active { animation-delay: 1.1s; }
+.seasons .col-lg-4:nth-child(7) .card.active { animation-delay: 1.3s; }
+.seasons .col-lg-4:nth-child(8) .card.active { animation-delay: 1.5s; }
+.seasons .col-lg-4:nth-child(9) .card.active { animation-delay: 1.7s; }

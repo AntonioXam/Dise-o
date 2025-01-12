@@ -302,7 +302,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para animar elementos cuando son visibles
     function animateOnScroll() {
-        const elements = document.querySelectorAll('.animate-fade-up, .animate-fade-scale, .seasons .card');
+        const elements = document.querySelectorAll(`
+            .animate-fade-up, 
+            .animate-fade-scale, 
+            .seasons .card,
+            .synopsis,
+            .synopsis img,
+            .synopsis-content,
+            .stat-box,
+            .seasons h2
+        `);
         
         elements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
@@ -314,19 +323,63 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Animar elementos iniciales
+    function animateInitialElements() {
+        const synopsis = document.querySelector('.synopsis');
+        const synopsisImg = document.querySelector('.synopsis img');
+        const synopsisContent = document.querySelector('.synopsis-content');
+        const statBoxes = document.querySelectorAll('.stat-box');
+        const seasonsTitle = document.querySelector('.seasons h2');
+
+        if (synopsis) synopsis.classList.add('active');
+        if (synopsisImg) synopsisImg.classList.add('active');
+        if (synopsisContent) synopsisContent.classList.add('active');
+        if (seasonsTitle) seasonsTitle.classList.add('active');
+        
+        statBoxes.forEach((box, index) => {
+            setTimeout(() => {
+                box.classList.add('active');
+            }, 600 + (index * 200));
+        });
+    }
+
     // Animar cards de temporadas en secuencia
     function animateSeasonCards() {
         const cards = document.querySelectorAll('.seasons .card');
+        
+        // Primero ocultamos todas las cards
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'perspective(1000px) rotateY(45deg) scale(0.8)';
+        });
+
+        // Luego las animamos en secuencia
         cards.forEach((card, index) => {
             setTimeout(() => {
-                card.style.transition = 'all 0.5s ease';
+                card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
                 card.classList.add('active');
-            }, index * 150); // 150ms de retraso entre cada card
+            }, 100 + (index * 200)); // Más tiempo entre cada card
+        });
+    }
+
+    // Función para reiniciar animaciones cuando las cards vuelven a estar en vista
+    function checkSeasonCardsVisibility() {
+        const cards = document.querySelectorAll('.seasons .card');
+        cards.forEach((card, index) => {
+            const rect = card.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
+            
+            if (isVisible && !card.classList.contains('active')) {
+                setTimeout(() => {
+                    card.classList.add('active');
+                }, index * 200);
+            }
         });
     }
 
     // Asegurar que las imágenes estén cargadas antes de animar
     window.addEventListener('load', () => {
+        animateInitialElements();
         animateSeasonCards();
         animateOnScroll();
     });
@@ -335,4 +388,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         animateOnScroll();
     });
+
+    // Añadir el listener para el scroll
+    window.addEventListener('scroll', checkSeasonCardsVisibility);
 });
