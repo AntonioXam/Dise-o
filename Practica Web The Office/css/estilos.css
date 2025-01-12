@@ -176,7 +176,7 @@ body::before {
     object-position: center 0%;
     border-radius: 12px 12px 0 0;
     flex-grow: 1;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .seasons .card {
@@ -185,7 +185,7 @@ body::before {
     max-width: 350px;
     border: none;
     background: transparent;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
     border-radius: 15px;
     overflow: hidden;
@@ -194,6 +194,7 @@ body::before {
     opacity: 0;
     transform-origin: center;
     transform: perspective(1000px) rotateY(45deg) scale(0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .seasons .card.active {
@@ -209,6 +210,7 @@ body::before {
     border-radius: 0 0 15px 15px;
     flex-shrink: 0;
     height: 230px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .seasons .card-title {
@@ -216,11 +218,13 @@ body::before {
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
+    transition: all 0.3s ease;
 }
 
 .seasons .card-text {
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 /* Contenedor de las cards */
@@ -282,9 +286,23 @@ body::before {
 
 /* Hover effect */
 .seasons .card:hover {
-    transform: perspective(1000px) rotateY(-5deg) scale(1.03) translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-    z-index: 1;
+    transform: perspective(1000px) translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.seasons .card:hover .card-img-top.season-image {
+    transform: scale(1.1);
+}
+
+.seasons .card:hover .card-body {
+    background: rgba(0, 44, 58, 1);
+    transform: translateY(-5px);
+}
+
+.seasons .card:hover .card-title {
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 /* Ajuste para el texto del hero */
@@ -301,7 +319,7 @@ body::before {
     animation: fadeInUp 0.8s ease forwards 0.3s;
 }
 
-/* Estilos para la sección de sinopsis */
+/* Estilos para la sección de sinopsis con hover effects y animaciones */
 .synopsis {
     background: linear-gradient(135deg, rgba(0, 44, 58, 0.95), rgba(142, 211, 231, 0.95));
     backdrop-filter: blur(10px);
@@ -310,23 +328,64 @@ body::before {
     padding: 2rem;
     margin: 2rem 0;
     color: #e6f3f7;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 }
 
+/* Restaurar animaciones de entrada */
 .synopsis.active {
     animation: fadeInUp 0.8s ease forwards;
 }
 
+.synopsis img.active {
+    animation: slideInLeft 0.8s ease forwards 0.3s;
+}
+
+.synopsis-content.active {
+    animation: slideInRight 0.8s ease forwards 0.3s;
+}
+
+.stat-box.active {
+    animation: popIn 0.5s ease forwards;
+}
+
+.stat-box:nth-child(1).active { animation-delay: 0.6s; }
+.stat-box:nth-child(2).active { animation-delay: 0.8s; }
+.stat-box:nth-child(3).active { animation-delay: 1s; }
+
+/* Mantener efectos hover */
+.synopsis:hover {
+    background: linear-gradient(135deg, rgba(0, 44, 58, 0.98), rgba(142, 211, 231, 0.98));
+    box-shadow: 0 12px 40px rgba(0, 44, 58, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Estilos para la imagen de sinopsis */
 .synopsis img {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
+    transform-origin: center;
 }
 
+/* Mantener la animación de entrada */
 .synopsis img.active {
     animation: slideInLeft 0.8s ease forwards 0.3s;
+    opacity: 1;
+}
+
+/* Simplificar el efecto hover a solo zoom */
+.synopsis img:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+/* Asegurar que la animación no interfiera con el hover */
+.synopsis img.active:hover {
+    animation: none;
+    transform: scale(1.02);
+    opacity: 1;
 }
 
 .synopsis h2 {
@@ -353,52 +412,55 @@ body::before {
     opacity: 0;
 }
 
-.synopsis-content.active {
-    animation: slideInRight 0.8s ease forwards 0.3s;
-}
-
 /* Estilos para las cajas de estadísticas */
 .stat-box {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 1rem;
     backdrop-filter: blur(5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 }
 
-.stat-box.active {
-    animation: popIn 0.5s ease forwards;
-}
-
-.stat-box:nth-child(1).active {
-    animation-delay: 0.6s;
-}
-
-.stat-box:nth-child(2).active {
-    animation-delay: 0.8s;
-}
-
-.stat-box:nth-child(3).active {
-    animation-delay: 1s;
-}
-
 .stat-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.stat-box h4 {
+.stat-box:hover h4 {
+    transform: scale(1.1);
     color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box:hover small {
+    color: #ffffff;
+}
+
+/* Transiciones para elementos internos */
+.stat-box h4 {
+    transition: all 0.3s ease;
 }
 
 .stat-box small {
-    color: #e6f3f7;
-    font-size: 0.9rem;
-    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.synopsis h2 {
+    transition: all 0.3s ease;
+}
+
+.synopsis:hover h2 {
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.synopsis .lead {
+    transition: all 0.3s ease;
+}
+
+.synopsis:hover .lead {
+    color: #ffffff;
 }
 
 /* Ajustes responsive */
@@ -419,10 +481,52 @@ body::before {
 
 .seasons h2 {
     opacity: 0;
+    color: #002c3a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.seasons h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #002c3a, #8ed3e7);
+    border-radius: 2px;
 }
 
 .seasons h2.active {
     animation: fadeInUp 0.6s ease forwards 0.3s;
+}
+
+/* Ajuste responsive para el título */
+@media (max-width: 768px) {
+    .seasons h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .seasons h2::after {
+        width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seasons h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .seasons h2::after {
+        width: 60px;
+    }
 }
 
 /* Retrasos para la aparición secuencial */
