@@ -1,3 +1,4 @@
+/* Mantener */
 /* Estilos base */
 body {
     position: relative;
@@ -64,209 +65,11 @@ body::before {
     align-items: center;
 }
 
-/* Cards de temporadas */
-.seasons .card {
-    height: 100%;
-    width: 300px;
-    border: none;
-    background: transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.seasons .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-    z-index: 2;
-}
-
-.seasons .card-img-top {
-    width: 100%;
-    height: auto;  /* Cambiado de 400px a auto */
-    object-fit: contain;  /* Cambiado de cover a contain */
-    transition: transform 0.3s ease;
-}
-
-.seasons .card:hover .card-img-top {
-    transform: scale(1.1);
-}
-
-.seasons .card-body {
-    position: relative;
-    bottom: 0;
-    background: rgba(0, 44, 58, 0.9);
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 44, 58, 0.9);
     backdrop-filter: blur(10px);
-    color: white;
-    padding: 1.25rem;
-    border-radius: 0 0 15px 15px;
-}
-
-.seasons .card-title {
-    color: #8ed3e7;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-}
-
-.seasons .card-text {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
-}
-
-.seasons .card.animate-on-scroll {
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.seasons .card.animate-on-scroll:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos para las tarjetas de temporada */
-.seasons-wrapper .card {
-    background-color: rgba(245, 245, 245, 0.95);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.seasons-wrapper .card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.seasons-wrapper .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-.seasons-wrapper .season-image {
-    object-fit: contain; /* Asegura que la imagen se muestre completa */
-    height: 200px;
-    transition: transform 0.3s ease;
-}
-
-.seasons-wrapper .card:hover .season-image {
-    transform: scale(1.05);
-}
-
-.seasons-wrapper .card-img-top {
-    height: 200px; /* Ajusta esta altura según prefieras */
-    object-fit: cover;
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.seasons-wrapper .card-body {
-    flex-grow: 1;
-}
-
-/* Animaciones generales */
-.animate-on-scroll {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.animate-on-scroll.visible {
-    animation: fadeInUp 0.5s forwards;
-}
-
-.bounce-in {
-    animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.float {
-    animation: floatAnimation 3s ease-in-out infinite;
-}
-
-/* Sinopsis */
-.synopsis {
-    background-color: rgba(245, 245, 245, 0.95);
-    backdrop-filter: blur(5px);
-    transition: transform 0.3s ease;
-}
-
-/* Estadísticas */
-.stat-box {
-    transition: all 0.3s ease;
-    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.stat-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 768px) {
-    .timeline::after {
-        left: 31px;
-    }
-    
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-    
-    .timeline-item:nth-child(even) {
-        left: 0;
-    }
-    
-    .timeline-item::after {
-        left: 19px;
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 2rem 0;
-    }
-    
-    .seasons .card-img-top {
-        max-height: 300px;
-    }
-}
-
-@media (min-width: 992px) {
-    .seasons-wrapper .season-image {
-        height: 250px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .seasons-wrapper .season-image {
-        height: 300px;
-    }
-}
-
-.synopsis {
-    background: linear-gradient(135deg, rgba(218, 233, 243, 0.95), rgba(78, 125, 150, 0.95));
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.synopsis img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    transition: transform 0.3s ease;
-}
-
-.synopsis img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-nav .nav-link {
@@ -291,572 +94,39 @@ body::before {
     transition: color 0.3s ease;
 }
 
-.navbar {
-    background-color: rgba(0, 44, 58, 0.9);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para el acordeón de temporadas */
-.accordion-item {
-    background-color: rgba(245, 245, 245, 0.95);
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.accordion-button {
-    background-color: rgba(0, 44, 58, 0.9);
-    color: white;
-    font-weight: bold;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: rgba(0, 44, 58, 0.8);
-    color: #8ed3e7;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-    border-color: transparent;
-}
-
-.accordion-body {
-    padding: 1.5rem;
-}
-
-.accordion-body img {
-    transition: transform 0.3s ease;
-}
-
-.accordion-body img:hover {
-    transform: scale(1.05);
-}
-
-/* Estilos para el carrusel circular */
-.season-wheel {
-    position: relative;
-    width: 800px;
-    height: 800px;
-    margin: 50px auto;
-}
-
-.season-item {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    left: 50%;
-    top: 50%;
-    transform-origin: center;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.season-item.active {
-    opacity: 1;
-    pointer-events: all;
-    z-index: 2;
-}
-
-.season-content {
-    background: rgba(245, 245, 245, 0.95);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.season-content:hover {
-    transform: scale(1.05);
-}
-
-.season-content img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.wheel-controls {
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.wheel-controls button {
-    background: rgba(0, 44, 58, 0.9);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.wheel-controls button:hover {
-    background: #8ed3e7;
-    transform: scale(1.1);
-}
-
-/* Nuevo estilo para las temporadas */
-.season-container {
-    padding: 2rem;
-    margin-bottom: 2rem;
-    background: rgba(245, 245, 245, 0.95);
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-}
-
-.season-container.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.season-container .season-image {
-    width: 100%;
-    height: 300px;
-    object-fit: contain; /* De cover a contain para mostrar la imagen completa */
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.season-container:hover .season-image {
-    transform: scale(1.05);
-}
-
-.season-info {
-    padding: 1rem 0;
-}
-
-.season-info h3 {
-    color: #003366;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.season-info .season-meta {
-    color: #666;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.season-description {
-    line-height: 1.6;
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .season-container {
-        padding: 1rem;
-    }
-    
-    .season-image {
-        height: 200px;
-    }
-}
-
-.season-container {
-    background: linear-gradient(135deg, rgba(41, 58, 68, 0.95), rgba(164, 187, 201, 0.95));
-    color: white;
-}
-
-.season-info h3 {
-    color: white;
-}
-
-.season-info .season-meta {
-    color: #e0e0e0;
-}
-
-.season-description {
-    color: #f0f0f0;
-}
-
-.season-image {
-    margin-right: auto;
-    display: block;
-    float: left;
-    margin: 0 20px 10px 0;
-    max-width: 300px;
-}
-
-/* Character Card Styles */
-.character-card {
-    perspective: 1000px;
-    background: transparent;
-    border: none;
-    margin-bottom: 20px;
-    height: 450px;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.image-flip {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.character-card:hover .image-flip {
-    transform: rotateX(180deg);
-}
-
-.front-image, .back-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    object-fit: cover;
-    object-position: 50% 50%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-.front-image {
-    transform: rotateX(0deg);
-}
-
-.back-image {
-    transform: rotateX(180deg);
-}
-
-.card-body {
-    position: absolute;
-    bottom: 60px;
-    width: 100%;
-    background: rgba(0, 44, 58, 0.9);
-    backdrop-filter: blur(10px);
-    color: white;
-    padding: 15px;
-    border-radius: 15px 15px 0 0;
-    z-index: 2;
-}
-
-.card-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 44, 58, 0.9) !important;
-    backdrop-filter: blur(10px);
-    border-top: none;
-    padding: 10px;
-    border-radius: 0 0 15px 15px;
-    z-index: 2;
-}
-
-.quotes-list {
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    background: rgba(0, 44, 58, 0.9);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.quotes-list li {
-    color: rgba(255, 255, 255, 0.9);
-    font-style: italic;
-    margin-bottom: 0.8rem;
-    text-align: left;
-    line-height: 1.4;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.quotes-list li:last-child {
-    margin-bottom: 0;
-}
-
-.btn-primary {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid white;
-    transform: translateY(-1px);
-}
-
-/* Ajustes responsive */
-@media (max-width: 768px) {
-    .character-card {
-        height: 350px;
-    }
-}
-
-@media (max-width: 576px) {
-    .character-card {
-        height: 300px;
-    }
-}
-
-/* Contenedor principal de personajes */
-.container.my-5 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Ajustes para la cuadrícula de personajes */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-}
-
-/* Pantallas grandes (3 por fila) */
-.col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding: 15px;
-}
-
-/* Pantallas medianas (2 por fila) */
-@media (max-width: 992px) {
-    .col-md-4 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    
-    .character-card {
-        height: 400px;
-    }
-}
-
-/* Pantallas pequeñas (1 por fila) */
-@media (max-width: 576px) {
-    .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .character-card {
-        height: 450px;
-    }
-    
-    .container.my-5 {
-        padding: 0 15px;
-    }
-}
-
-/* Ajustes adicionales para mejorar la visualización */
-@media (max-width: 992px) {
-    .container.my-5 {
-        max-width: 720px;
-    }
-}
-
-@media (max-width: 576px) {
-    .container.my-5 {
-        max-width: 100%;
-    }
-    
-    .card-body {
-        bottom: 60px;
-    }
-    
-    .quotes-list {
-        font-size: 1rem;
-    }
-}
-
-.card-title {
-    color: #8ed3e7;
-    font-weight: bold;
-}
-
-.card-text {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* Ajustes responsive para personajes */
-@media (max-width: 1200px) {
-    .character-card {
-        height: 400px;
-    }
-    
-    .card-body {
-        bottom: 50px;
-        padding: 12px;
-    }
-    
-    .card-text {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .character-card {
-        height: 380px;
-    }
-    
-    .container.my-5 {
-        padding: 0 10px;
-    }
-    
-    .quotes-list {
-        padding: 12px;
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .character-card {
-        height: 450px; /* Más alto en tablets para mejor visualización */
-    }
-    
-    .col-md-4 {
-        padding: 10px;
-    }
-    
-    .row {
-        margin: -10px;
-    }
-    
-    .card-body {
-        padding: 10px;
-    }
-    
-    .card-footer {
-        padding: 8px;
-    }
-    
-    .quotes-list {
-        padding: 10px;
-    }
-    
-    h1.mb-4 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .character-card {
-        height: 400px;
-    }
-    
-    .container.my-5 {
-        padding: 0 8px;
-    }
-    
-    .col-md-4 {
-        padding: 8px;
-    }
-    
-    .row {
-        margin: -8px;
-    }
-    
-    .card-title {
-        font-size: 1.1rem;
-    }
-    
-    .card-text {
-        font-size: 0.85rem;
-    }
-    
-    .btn-primary {
-        font-size: 0.85rem;
-        padding: 4px 8px;
-    }
-    
-    .quotes-list li {
-        margin-bottom: 0.6rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .character-card {
-        height: 350px;
-    }
-    
-    .card-body {
-        bottom: 45px;
-        padding: 8px;
-    }
-    
-    .quotes-list {
-        padding: 8px;
-        font-size: 0.8rem;
-    }
-    
-    h1.mb-4 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem !important;
-    }
-}
-
-/* Ajuste para dispositivos en modo landscape */
-@media (max-height: 500px) and (orientation: landscape) {
-    .character-card {
-        height: 300px;
-    }
-    
-    .card-body {
-        bottom: 40px;
-    }
-}
-
-/* Ajustes para asegurar que las imágenes mantengan su aspecto en diferentes tamaños */
-@media (max-width: 768px) {
-    .front-image, .back-image {
-        border-width: 3px;
-        padding: 4px;
-    }
-}
-
-@media (max-width: 576px) {
-    .front-image, .back-image {
-        border-width: 2px;
-        padding: 3px;
-    }
-}
-
-/* Ajustes para las cards del index */
+/* Estilos para las cards del index */
 .card-img-top.season-image {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
-    object-position: top;
-    border-radius: 15px 15px 0 0;
+    object-position: center 0%;
+    border-radius: 12px 12px 0 0;
+    flex-grow: 1;
+    transition: transform 0.3s ease;
 }
 
 .seasons .card {
-    height: 100%;
-    width: 300px;
+    height: 630px;
+    width: 350px;
     border: none;
     background: transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0 auto;
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .seasons .card-body {
     position: relative;
-    bottom: 0;
     background: rgba(0, 44, 58, 0.9);
     backdrop-filter: blur(10px);
     color: white;
-    padding: 1.25rem;
+    padding: 1.5rem;
     border-radius: 0 0 15px 15px;
+    flex-shrink: 0;
+    height: 230px;
 }
 
 .seasons .card-title {
@@ -871,79 +141,59 @@ body::before {
     font-size: 0.9rem;
 }
 
-.seasons .card.animate-on-scroll {
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.seasons .card.animate-on-scroll:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Ajustes responsive para las cards de temporadas */
-@media (max-width: 768px) {
-    .card-img-top.season-image {
-        height: 250px;
-    }
-    
-    .seasons .card-body {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .card-img-top.season-image {
-        height: 200px;
-    }
-    
-    .seasons .card-title {
-        font-size: 1.1rem;
-    }
-}
-
 /* Contenedor de las cards */
 .seasons-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 0 15px;
+    gap: 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
+/* Pantallas grandes (3 por fila) */
 .seasons .col-lg-4 {
-    width: auto;
-    padding: 0;
     display: flex;
     justify-content: center;
+    padding: 0.25rem;
+}
+
+.seasons .card {
+    width: 100%;
+    max-width: 350px;
+    height: 630px;
+    margin: 0;
 }
 
 /* Ajustes responsive */
 @media (max-width: 992px) {
-    .seasons .card {
-        width: 280px;
-    }
-}
-
-@media (max-width: 768px) {
-    .seasons .card {
-        width: 250px;
+    .seasons .col-lg-4 {
+        width: 50%;
+        padding: 0.25rem;
     }
     
-    .card-img-top.season-image {
-        height: 250px;
+    .seasons-wrapper {
+        padding: 0.5rem;
+    }
+    
+    .seasons .card {
+        height: 580px;
     }
 }
 
 @media (max-width: 576px) {
-    .seasons .card {
+    .seasons .col-lg-4 {
         width: 100%;
-        max-width: 300px;
+        padding: 0.25rem;
     }
     
-    .card-img-top.season-image {
-        height: 200px;
+    .seasons-wrapper {
+        padding: 0.5rem;
     }
-}
+    
+    .seasons .card {
+        height: 500px;
+    }
 }
