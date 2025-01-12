@@ -291,3 +291,48 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Animar elementos del hero
+    setTimeout(() => {
+        document.querySelectorAll('.hero-section h1, .hero-section p').forEach(el => {
+            el.classList.add('active');
+        });
+    }, 100);
+
+    // Función para animar elementos cuando son visibles
+    function animateOnScroll() {
+        const elements = document.querySelectorAll('.animate-fade-up, .animate-fade-scale, .seasons .card');
+        
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+            
+            if (elementTop < window.innerHeight - 50 && elementBottom > 0) {
+                element.classList.add('active');
+            }
+        });
+    }
+
+    // Animar cards de temporadas en secuencia
+    function animateSeasonCards() {
+        const cards = document.querySelectorAll('.seasons .card');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.style.transition = 'all 0.5s ease';
+                card.classList.add('active');
+            }, index * 150); // 150ms de retraso entre cada card
+        });
+    }
+
+    // Asegurar que las imágenes estén cargadas antes de animar
+    window.addEventListener('load', () => {
+        animateSeasonCards();
+        animateOnScroll();
+    });
+
+    // Animar elementos al hacer scroll
+    window.addEventListener('scroll', () => {
+        animateOnScroll();
+    });
+});
