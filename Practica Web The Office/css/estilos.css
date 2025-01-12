@@ -124,13 +124,14 @@ body::before {
 /* Hero section */
 .hero-section {
     position: relative;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
     cursor: pointer;
     transition: transform 0.3s ease;
+    padding-top: 60px;
 }
 
 .hero-section:hover {
@@ -145,33 +146,76 @@ body::before {
     align-items: center;
 }
 
-/* Navbar */
+/* Estilos para el nuevo navbar */
 .navbar {
-    background-color: rgba(0, 44, 58, 0.9);
+    background: transparent;
+    padding: 1rem 0;
+    transition: all 0.4s ease;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    animation: slideInDown 0.8s ease-out forwards;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 44, 58, 0.95);
     backdrop-filter: blur(10px);
+    padding: 0.75rem 0;
+    position: fixed;
+    top: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
-    transition: color 0.3s ease;
+.navbar-brand img {
+    height: 35px;
+    transition: all 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #63cece;
+.navbar.scrolled .navbar-brand img {
+    height: 30px;
 }
 
-.navbar-nav .nav-link.active {
-    color: #8ed3e7;
+.navbar-nav {
+    margin-left: auto;
 }
 
-.navbar-nav .nav-link.active:hover {
-    color: #0d9999;
+.nav-item {
+    position: relative;
+    margin: 0 0.5rem;
 }
 
-.navbar-brand {
-    color: rgb(255, 255, 255);
-    transition: color 0.3s ease;
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.35rem 1rem !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #8ed3e7;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /* Estilos para las cards del index */
@@ -366,6 +410,13 @@ body::before {
     transform: translateY(-5px);
 }
 
+/* Estilos para el contenedor de la imagen de sinopsis */
+.synopsis-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 /* Estilos para la imagen de sinopsis */
 .synopsis img {
     border-radius: 15px;
@@ -373,9 +424,47 @@ body::before {
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     transform-origin: center;
+    display: block;
+    width: 100%;
 }
 
-/* Mantener la animación de entrada */
+/* Overlay con icono */
+.synopsis-link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 44, 58, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.synopsis-link-overlay i {
+    color: white;
+    font-size: 2rem;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+/* Efectos hover */
+.synopsis-img-container:hover .synopsis-link-overlay {
+    opacity: 1;
+}
+
+.synopsis-img-container:hover .synopsis-link-overlay i {
+    transform: scale(1);
+}
+
+.synopsis-img-container:hover img {
+    transform: scale(1.02);
+}
+
+/* Mantener animaciones existentes */
 .synopsis img.active {
     animation: slideInLeft 0.8s ease forwards 0.3s;
     opacity: 1;
@@ -742,4 +831,62 @@ footer {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
+}
+
+/* Ajustes responsive */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: rgba(0, 44, 58, 0.98);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .nav-link::after {
+        bottom: -2px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .navbar.scrolled .navbar-brand img {
+        height: 30px;
+    }
+}
+
+/* Animación para el navbar */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Ajuste para los elementos del navbar */
+.navbar-nav .nav-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.navbar-nav .nav-item:nth-child(1) { animation-delay: 0.3s; }
+.navbar-nav .nav-item:nth-child(2) { animation-delay: 0.4s; }
+.navbar-nav .nav-item:nth-child(3) { animation-delay: 0.5s; }
+.navbar-nav .nav-item:nth-child(4) { animation-delay: 0.6s; }
+
+/* Animación para el logo */
+.navbar-brand {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 0.2s;
 }

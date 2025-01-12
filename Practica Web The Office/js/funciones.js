@@ -420,3 +420,52 @@ document.addEventListener('DOMContentLoaded', function() {
         animateHero();
     }
 });
+
+// Función para manejar el navbar al hacer scroll
+function handleNavbarScroll() {
+    const navbar = document.querySelector('.navbar');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}
+
+// Añadir el evento scroll
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', handleNavbarScroll);
+    // Comprobar la posición inicial
+    handleNavbarScroll();
+});
+
+// Función para inicializar las animaciones del navbar
+function initNavbarAnimations() {
+    const navbar = document.querySelector('.navbar');
+    const navItems = document.querySelectorAll('.nav-item');
+    const navBrand = document.querySelector('.navbar-brand');
+
+    // Resetear las animaciones
+    navbar.style.animation = 'none';
+    navBrand.style.animation = 'none';
+    navItems.forEach(item => {
+        item.style.animation = 'none';
+    });
+
+    // Forzar reflow
+    void navbar.offsetWidth;
+
+    // Reiniciar animaciones
+    navbar.style.animation = '';
+    navBrand.style.animation = '';
+    navItems.forEach(item => {
+        item.style.animation = '';
+    });
+}
+
+// Añadir al DOMContentLoaded existente
+document.addEventListener('DOMContentLoaded', function() {
+    initNavbarAnimations();
+    // ... resto del código existente
+});
