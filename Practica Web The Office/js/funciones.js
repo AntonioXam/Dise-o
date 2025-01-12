@@ -392,3 +392,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Añadir el listener para el scroll
     window.addEventListener('scroll', checkSeasonCardsVisibility);
 });
+
+// Función para animar el hero
+function animateHero() {
+    const heroTitle = document.querySelector('.hero-section h1');
+    const heroText = document.querySelector('.hero-section p');
+    
+    // Primero removemos las clases active
+    heroTitle.classList.remove('active');
+    heroText.classList.remove('active');
+    
+    // Forzamos un reflow para reiniciar las animaciones
+    void heroTitle.offsetWidth;
+    void heroText.offsetWidth;
+    
+    // Volvemos a añadir las clases active
+    heroTitle.classList.add('active');
+    heroText.classList.add('active');
+}
+
+// Añadir el evento click al hero
+document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+        heroSection.addEventListener('click', animateHero);
+        // Animación inicial
+        animateHero();
+    }
+});

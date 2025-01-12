@@ -129,6 +129,12 @@ body::before {
     align-items: center;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero-section:hover {
+    transform: scale(1.01);
 }
 
 .hero-overlay {
@@ -539,3 +545,201 @@ body::before {
 .seasons .col-lg-4:nth-child(7) .card.active { animation-delay: 1.3s; }
 .seasons .col-lg-4:nth-child(8) .card.active { animation-delay: 1.5s; }
 .seasons .col-lg-4:nth-child(9) .card.active { animation-delay: 1.7s; }
+
+/* Estilos mejorados para el footer */
+footer {
+    background: linear-gradient(135deg, rgba(0, 44, 58, 0.98), rgba(0, 44, 58, 0.95));
+    backdrop-filter: blur(10px);
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+    box-shadow: 0 -8px 32px rgba(0, 44, 58, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: drop-shadow(0 0 5px rgba(142, 211, 231, 0.6));
+}
+
+.footer-sections {
+    width: 100%;
+}
+
+.footer-section {
+    margin-bottom: 1.5rem;
+}
+
+.footer-section:first-child {
+    text-align: left;
+}
+
+.footer-section:last-child {
+    text-align: right;
+}
+
+.footer-separator {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 -15px;
+}
+
+/* Ajustes responsive */
+@media (max-width: 992px) {
+    .footer-section,
+    .footer-section:first-child,
+    .footer-section:last-child {
+        text-align: center;
+    }
+    
+    .footer-logo {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    
+    .footer-logo img {
+        width: 110px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        margin-top: 1.5rem;
+    }
+    
+    .footer-logo img {
+        width: 100px;
+        height: 40px;
+    }
+    
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-logo {
+        margin-top: 1rem;
+    }
+    
+    .footer-logo img {
+        width: 90px;
+        height: 35px;
+    }
+    
+    .footer-section h5 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-section p,
+    .footer-section li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para los enlaces de las cards */
+.card-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.card-link::after {
+    content: 'Ver en Prime Video';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00A8E1;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects */
+.card-link:hover::before {
+    opacity: 1;
+}
+
+.card-link:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Mantener los efectos de hover existentes */
+.card-link:hover .card {
+    transform: perspective(1000px) translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-link:hover .card-img-top.season-image {
+    transform: scale(1.1);
+}
+
+.card-link:hover .card-body {
+    background: rgba(0, 44, 58, 1);
+}
+
+/* Ajustes responsive del botón */
+@media (max-width: 768px) {
+    .card-link::after {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-link::after {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
