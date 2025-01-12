@@ -470,9 +470,9 @@ body::before {
     border: none;
     margin-bottom: 20px;
     height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .image-flip {
@@ -482,9 +482,6 @@ body::before {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .character-card:hover .image-flip {
@@ -498,8 +495,12 @@ body::before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 15px;
-    object-fit: contain; /* Cambiado de cover a contain */
-    object-position: center;
+    object-fit: cover;
+    object-position: 50% 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .front-image {
@@ -512,22 +513,26 @@ body::before {
 
 .card-body {
     position: absolute;
-    bottom: 60px; /* Ajustado para dejar espacio al footer */
+    bottom: 60px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 44, 58, 0.9);
+    backdrop-filter: blur(10px);
     color: white;
     padding: 15px;
     border-radius: 15px 15px 0 0;
+    z-index: 2;
 }
 
 .card-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: rgba(0, 44, 58, 0.9) !important;
+    backdrop-filter: blur(10px);
     border-top: none;
     padding: 10px;
     border-radius: 0 0 15px 15px;
+    z-index: 2;
 }
 
 .quotes-list {
@@ -536,14 +541,15 @@ body::before {
     border-radius: 8px;
     margin-bottom: 0;
     font-size: 0.9rem;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 44, 58, 0.9);
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quotes-list li {
+    color: rgba(255, 255, 255, 0.9);
     font-style: italic;
     margin-bottom: 0.8rem;
-    color: #fff;
     text-align: left;
     line-height: 1.4;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -589,9 +595,215 @@ body::before {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px; /* Compensar el padding de las columnas */
+    margin: -15px;
 }
 
+/* Pantallas grandes (3 por fila) */
 .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
     padding: 15px;
+}
+
+/* Pantallas medianas (2 por fila) */
+@media (max-width: 992px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .character-card {
+        height: 400px;
+    }
+}
+
+/* Pantallas pequeñas (1 por fila) */
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .character-card {
+        height: 450px;
+    }
+    
+    .container.my-5 {
+        padding: 0 15px;
+    }
+}
+
+/* Ajustes adicionales para mejorar la visualización */
+@media (max-width: 992px) {
+    .container.my-5 {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.my-5 {
+        max-width: 100%;
+    }
+    
+    .card-body {
+        bottom: 60px;
+    }
+    
+    .quotes-list {
+        font-size: 1rem;
+    }
+}
+
+.card-title {
+    color: #8ed3e7;
+    font-weight: bold;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Ajustes responsive para personajes */
+@media (max-width: 1200px) {
+    .character-card {
+        height: 400px;
+    }
+    
+    .card-body {
+        bottom: 50px;
+        padding: 12px;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .character-card {
+        height: 380px;
+    }
+    
+    .container.my-5 {
+        padding: 0 10px;
+    }
+    
+    .quotes-list {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .character-card {
+        height: 450px; /* Más alto en tablets para mejor visualización */
+    }
+    
+    .col-md-4 {
+        padding: 10px;
+    }
+    
+    .row {
+        margin: -10px;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
+    
+    .card-footer {
+        padding: 8px;
+    }
+    
+    .quotes-list {
+        padding: 10px;
+    }
+    
+    h1.mb-4 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .character-card {
+        height: 400px;
+    }
+    
+    .container.my-5 {
+        padding: 0 8px;
+    }
+    
+    .col-md-4 {
+        padding: 8px;
+    }
+    
+    .row {
+        margin: -8px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-text {
+        font-size: 0.85rem;
+    }
+    
+    .btn-primary {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+    
+    .quotes-list li {
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .character-card {
+        height: 350px;
+    }
+    
+    .card-body {
+        bottom: 45px;
+        padding: 8px;
+    }
+    
+    .quotes-list {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    
+    h1.mb-4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Ajuste para dispositivos en modo landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    .character-card {
+        height: 300px;
+    }
+    
+    .card-body {
+        bottom: 40px;
+    }
+}
+
+/* Ajustes para asegurar que las imágenes mantengan su aspecto en diferentes tamaños */
+@media (max-width: 768px) {
+    .front-image, .back-image {
+        border-width: 3px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .front-image, .back-image {
+        border-width: 2px;
+        padding: 3px;
+    }
+}
 }
