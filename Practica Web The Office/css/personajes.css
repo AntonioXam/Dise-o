@@ -743,4 +743,26 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* Solo cambiar el color de fondo de los stat-item */
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(81, 94, 97, 0.95); /* Nuevo color de fondo */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item i {
+    font-size: 2rem;
+    color: #ffffff; /* Cambiado a blanco para mejor contraste */
+    margin-bottom: 0.5rem;
+}
+
+.stat-item span {
+    display: block;
+    color: #ffffff; /* Cambiado a blanco para mejor contraste */
+    font-weight: 600;
+}
  

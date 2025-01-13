@@ -1,0 +1,294 @@
+/* Hero Section con Video */
+.hero-section {
+    position: relative;
+    height: 400px;
+    min-height: 400px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#heroVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+/* Estilos de Sección */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to right, #8ed3e7, transparent);
+}
+
+/* Filtros de Galería */
+.gallery-filters {
+    background: rgba(81, 94, 97, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #8ed3e7;
+    transform: translateY(-2px);
+}
+
+.filter-btn i {
+    margin-right: 0.5rem;
+}
+
+/* Grid de Imágenes */
+.gallery-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(81, 94, 97, 0.95);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-card:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Sección de Videos */
+.video-card {
+    background: rgba(81, 94, 97, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.play-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #8ed3e7;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-overlay {
+    opacity: 1;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Sección de Audio */
+.audio-card {
+    background: rgba(81, 94, 97, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.audio-thumbnail {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.audio-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.audio-player {
+    text-align: center;
+}
+
+.audio-player audio {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Modal */
+.modal-content {
+    background: rgba(81, 94, 97, 0.95);
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-item {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .gallery-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 250px;
+        min-height: 250px;
+    }
+}
+
+/* Ajustar el navbar dentro del hero */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+    top: 0;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 44, 58, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+}
+
+/* Ajustar el contenedor principal */
+main.container {
+    position: relative;
+    z-index: 1;
+    margin-top: 3rem;
+} 

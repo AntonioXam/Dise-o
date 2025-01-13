@@ -6,166 +6,198 @@
     <title>The Office - Galería</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/the-office-tv-show-sign-seeklogo.png" alt="The Office Logo" width="" height="50" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="fas fa-home"></i> Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">
-                            <i class="fas fa-images"></i> Galería
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="personajes.html">
-                            <i class="fas fa-users"></i> Personajes
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="recomendaciones.html">
-                            <i class="fas fa-star"></i> Recomendaciones
-                        </a>
-                    </li>
-                </ul>
+    <!-- Hero Section con Video -->
+    <div class="hero-section">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/the-office-tv-show-sign-seeklogo.svg" alt="The Office Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="galeria.html">
+                                <i class="fas fa-images"></i> Galería
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="personajes.html">
+                                <i class="fas fa-users"></i> Personajes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recomendaciones.html">
+                                <i class="fas fa-star"></i> Recomendaciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container my-5">
-        <h1 class="mb-4">Galería de The Office</h1>
-        
-        <!-- Filtros de galería -->
-        <div class="mb-4">
-            <div class="btn-group">
-                <button class="btn btn-outline-primary active" data-filter="all">Todos</button>
-                <button class="btn btn-outline-primary" data-filter="temporada1">Temporada 1</button>
-                <button class="btn btn-outline-primary" data-filter="behind">Detrás de cámaras</button>
+        <div class="hero-video">
+            <video autoplay muted loop id="heroVideo">
+                <source src="assets/videos/the-office-intro.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1 class="display-4 text-white">Galería Multimedia</h1>
+                    <p class="lead text-white">Explora los mejores momentos de The Office</p>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="row g-4">
-            <!-- Ejemplo de item de galería -->
-            <div class="col-md-4">
-                <div class="gallery-item animate-on-scroll">
-                    <img src="assets/images/office-team.jpg" class="img-fluid rounded" alt="Equipo de The Office">
-                    <div class="mt-2">
-                        <h5>El equipo completo</h5>
-                        <p>El elenco principal de The Office reunido en la oficina de Scranton</p>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Filtros de Galería -->
+        <section class="gallery-filters mb-5">
+            <h2 class="section-title">Momentos Memorables</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Todo
+                </button>
+                <button class="filter-btn" data-filter="momentos">
+                    <i class="fas fa-camera"></i> Momentos
+                </button>
+                <button class="filter-btn" data-filter="detras">
+                    <i class="fas fa-film"></i> Detrás de Cámaras
+                </button>
+                <button class="filter-btn" data-filter="eventos">
+                    <i class="fas fa-calendar"></i> Eventos
+                </button>
+            </div>
+        </section>
+
+        <!-- Grid de Imágenes -->
+        <section class="gallery-grid">
+            <div class="row g-4">
+                <!-- Imagen 1 -->
+                <div class="col-md-4 gallery-item" data-category="momentos">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeria/jim-pam-kiss.jpg" alt="Jim y Pam">
+                        <div class="gallery-overlay">
+                            <h3>Primer Beso</h3>
+                            <p>Jim y Pam en Casino Night</p>
+                            <button class="expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <!-- Más imágenes... -->
             </div>
-            <!-- Más items de galería aquí -->
-            <div class="col-md-4">
-                <div class="gallery-item animate-on-scroll">
-                    <img src="assets/images/pranks.jpg" class="img-fluid rounded" alt="Bromas de Jim">
-                    <div class="mt-2">
-                        <h5>Las bromas de Jim</h5>
-                        <p>Las mejores bromas de Jim a Dwight</p>
+        </section>
+
+        <!-- Sección de Videos -->
+        <section class="video-section mt-5">
+            <h2 class="section-title">Mejores Momentos en Video</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <video poster="assets/images/thumbnails/fire-drill.jpg">
+                                <source src="assets/videos/fire-drill.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>El Simulacro de Incendio</h3>
+                            <p>Dwight crea el caos con su simulacro de incendio</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Más videos... -->
             </div>
-            <div class="col-md-4">
-                <div class="gallery-item animate-on-scroll">
-                    <img src="assets/images/dundies.jpg" class="img-fluid rounded" alt="Los Dundies">
-                    <div class="mt-2">
-                        <h5>Los Dundies</h5>
-                        <p>La ceremonia anual de premios de la oficina</p>
+        </section>
+
+        <!-- Sección de Audio -->
+        <section class="audio-section mt-5">
+            <h2 class="section-title">Frases Memorables</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="audio-card">
+                        <div class="audio-thumbnail">
+                            <img src="assets/images/thumbnails/michael-scott.jpg" alt="Michael Scott">
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="assets/audio/thats-what-she-said.mp3" type="audio/mpeg">
+                            </audio>
+                            <p>"That's what she said" - Michael Scott</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Más audios... -->
             </div>
-            <div class="col-md-4">
-                <div class="gallery-item animate-on-scroll">
-                    <img src="assets/images/office-party.jpg" class="img-fluid rounded" alt="Fiesta de Navidad">
-                    <div class="mt-2">
-                        <h5>Fiesta de Navidad</h5>
-                        <p>Celebraciones navideñas en la oficina</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <!-- Modal para imágenes -->
-        <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal fade" id="imageModal">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-body p-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
                         <img src="" class="img-fluid" id="modalImage">
                     </div>
                 </div>
             </div>
         </div>
+    </main>
 
-        <!-- Sección de Video -->
-        <div class="mt-5">
-            <h2>Momentos Memorables</h2>
-            <div class="ratio ratio-16x9 mt-3">
-                <video controls poster="assets/images/video-thumbnail.jpg">
-                    <source src="assets/videos/office-moments.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
-        </div>
-
-        <!-- Sección de Audio -->
-        <div class="mt-5 audio-section">
-            <h2>Momentos Memorables en Audio</h2>
-            <div class="audio-grid">
-                <div class="audio-item">
-                    <audio controls>
-                        <source src="assets/audio/thats-what-she-said.mp3" type="audio/mpeg">
-                    </audio>
-                    <p>"That's what she said" - Michael Scott</p>
-                </div>
-                <div class="audio-item">
-                    <audio controls>
-                        <source src="assets/audio/bears-beets.mp3" type="audio/mpeg">
-                    </audio>
-                    <p>"Bears, Beets, Battlestar Galactica" - Jim</p>
-                </div>
-            </div>
-        </div>
-
-       
-
+    <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Licencias y Atribuciones</h5>
-                    <p>Este sitio web está bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light">Creative Commons Attribution-ShareAlike 4.0</a></p>
-                    <p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> 2023 The Office Fan Site</p>
-                </div>
-                <div class="col-md-6">
-                    <h5>Recursos Utilizados</h5>
-                    <ul class="list-unstyled">
-                        <li>Imágenes: <a href="https://www.gettyimages.es/fotos/the-office-programa-de-televisi%C3%B3n" class="text-light">gettyimages</a> (Licencia libre)</li>
-                        <li>Iconos: <a href="https://fontawesome.com" class="text-light">Font Awesome</a> (Licencia libre)</li>
-                        <li>Audio: <a href="https://freesound.org" class="text-light">Freesound</a> (CC0)</li>
-                        <li>Video: <a href="https://www.pexels.com" class="text-light">Pexels</a> (Licencia libre)</li>
-                    </ul>
+            <div class="footer-content">
+                <div class="row footer-sections">
+                    <div class="col-lg-6 footer-section">
+                        <h5>Licencias y Atribuciones</h5>
+                        <p>Este sitio web está bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light">Creative Commons Attribution-ShareAlike 4.0</a></p>
+                        <p><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> 2023 The Office Fan Site</p>
+                        <div class="footer-logo">
+                            <img src="assets/images/the-office-tv-show-sign-seeklogo.png" 
+                                 alt="The Office Logo" 
+                                 class="footer-brand-logo" style="width: 150px; height: auto;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 footer-section">
+                        <h5>Recursos Utilizados</h5>
+                        <ul class="list-unstyled">
+                            <li>Imágenes: <a href="https://www.gettyimages.es/" class="text-light">gettyimages</a> (Licencia libre)</li>
+                            <li>Iconos: <a href="https://fontawesome.com" class="text-light">Font Awesome</a> (Licencia libre)</li>
+                            <li>Audio: <a href="https://freesound.org" class="text-light">Freesound</a> (CC0)</li>
+                            <li>Video: <a href="https://www.pexels.com" class="text-light">Pexels</a> (Licencia libre)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <hr class="my-3">
-            <p class="text-center mb-0">
-                Las imágenes y contenidos relacionados con The Office son utilizados con fines educativos bajo Fair Use.
-                The Office™ es una marca registrada de NBCUniversal.
-            </p>
+            <hr>
+            <div class="footer-bottom">
+                <p>Las imágenes y contenidos relacionados con The Office son utilizados con fines educativos bajo Fair Use.
+                    The Office™ es una marca registrada de NBCUniversal.</p>
+            </div>
         </div>
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
