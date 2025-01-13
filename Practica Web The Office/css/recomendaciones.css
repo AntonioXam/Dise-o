@@ -4,7 +4,7 @@
     min-height: 400px;
     background: url('../assets/images/muchasSeries.webp') no-repeat center center;
     background-size: cover;
-    margin-top: 76px;
+    margin-top: 0;
 }
 
 .hero-overlay {
@@ -307,4 +307,18 @@
     .recommendation-stats {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* Ajustar el navbar para que no se superponga */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+
+/* Asegurar que el contenido principal no se superponga con el hero */
+main.container {
+    position: relative;
+    z-index: 1;
 } 
