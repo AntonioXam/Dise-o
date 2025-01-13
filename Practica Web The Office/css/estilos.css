@@ -416,72 +416,107 @@ body::before {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Estilos para la imagen de sinopsis */
-.synopsis img {
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-    transform-origin: center;
-    display: block;
+.synopsis-img-container img {
     width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
 }
 
-/* Overlay con icono */
+.synopsis-img-container:hover img {
+    transform: scale(1.05);
+}
+
 .synopsis-link-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 44, 58, 0.7);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: all 0.3s ease;
-    border-radius: 15px;
+}
+
+.synopsis-link-overlay:hover {
+    opacity: 1;
 }
 
 .synopsis-link-overlay i {
-    color: white;
     font-size: 2rem;
-    transform: scale(0.8);
+    color: white;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.synopsis-link-overlay:hover i {
+    transform: translateY(0);
+}
+
+/* Nuevo diseño para los highlights */
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.highlight-pill {
+    background: linear-gradient(135deg, rgba(142, 211, 231, 0.2), rgba(0, 44, 58, 0.2));
+    border: 1px solid rgba(142, 211, 231, 0.3);
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
     transition: all 0.3s ease;
 }
 
-/* Efectos hover */
-.synopsis-img-container:hover .synopsis-link-overlay {
-    opacity: 1;
+.highlight-pill:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, rgba(142, 211, 231, 0.3), rgba(0, 44, 58, 0.3));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.synopsis-img-container:hover .synopsis-link-overlay i {
-    transform: scale(1);
+.highlight-pill i {
+    font-size: 1.2rem;
+    color: #8ed3e7;
 }
 
-.synopsis-img-container:hover img {
-    transform: scale(1.02);
+.highlight-pill span {
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
 }
 
-/* Mantener animaciones existentes */
-.synopsis img.active {
-    animation: slideInLeft 0.8s ease forwards 0.3s;
-    opacity: 1;
-}
+/* Media queries */
+@media (max-width: 768px) {
+    .synopsis-img-container {
+        min-height: 300px;
+        max-width: 100%;
+        margin: 0 auto 2rem;
+    }
 
-/* Simplificar el efecto hover a solo zoom */
-.synopsis img:hover {
-    transform: scale(1.02);
-    opacity: 1;
-}
+    .highlights-container {
+        justify-content: center;
+    }
 
-/* Asegurar que la animación no interfiera con el hover */
-.synopsis img.active:hover {
-    animation: none;
-    transform: scale(1.02);
-    opacity: 1;
+    .highlight-pill {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
 }
 
 .synopsis h2 {
@@ -981,4 +1016,445 @@ footer {
         height: 8px;
         bottom: 8px;
     }
+}
+
+/* Estilos para las estadísticas */
+.stats-section {
+    background: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(142, 211, 231, 0.1), rgba(0, 44, 58, 0.1));
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #002c3a;
+}
+
+.stat-icon .award-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.stat-icon i {
+    background: linear-gradient(45deg, #002c3a, #8ed3e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #002c3a;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #515e61;
+    margin-bottom: 0.5rem;
+}
+
+.stat-detail {
+    font-size: 0.9rem;
+    color: #6c757d;
+    display: block;
+}
+
+/* Animación al hacer hover */
+.stat-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(142, 211, 231, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: transform 0.6s ease;
+}
+
+.stat-card:hover::after {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos para la sección de sinopsis y estadísticas */
+.synopsis-stats-section {
+    background: rgba(0, 44, 58, 0.95);
+    padding: 4rem 0;
+    border-radius: 15px;
+}
+
+.synopsis-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    color: white;
+}
+
+.synopsis-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+.synopsis-text-extended {
+    display: inline;
+    transition: all 0.3s ease;
+}
+
+.synopsis-text-extra {
+    display: inline;
+    transition: all 0.3s ease;
+}
+
+.highlight-extra {
+    display: none;
+}
+
+.synopsis-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.synopsis-link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 44, 58, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.synopsis-link-overlay:hover {
+    opacity: 1;
+}
+
+.highlight-item {
+    background: rgba(142, 211, 231, 0.1);
+    border: 1px solid rgba(142, 211, 231, 0.2);
+}
+
+.highlight-item:hover {
+    background: rgba(142, 211, 231, 0.2);
+}
+
+.highlight-item i,
+.highlight-item span {
+    color: white;
+}
+
+/* Actualización de las tarjetas de estadísticas */
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.stat-number {
+    color: #8ed3e7;
+}
+
+.stat-label {
+    color: white;
+}
+
+.stat-detail {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-title {
+    color: #8ed3e7;
+    border-bottom: 2px solid rgba(142, 211, 231, 0.3);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Media Queries actualizados */
+@media (max-width: 1200px) {
+    .synopsis-text-extended {
+        display: none;
+    }
+
+    .synopsis-text {
+        margin-bottom: 1.5rem;
+    }
+
+    .synopsis-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .synopsis-card {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    .synopsis-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .synopsis-img-container {
+        min-height: 250px;
+        max-width: 100%;
+        margin: 0 auto 1.5rem;
+    }
+
+    .synopsis-card {
+        padding: 1.25rem;
+    }
+
+    .highlights-container {
+        gap: 0.75rem;
+    }
+
+    .highlight-pill {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .synopsis-img-container {
+        min-height: 200px;
+    }
+
+    .synopsis-card {
+        padding: 1rem;
+    }
+
+    .synopsis-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+    }
+
+    .highlight-pill {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Actualizar estilos de las estadísticas */
+.stats-row {
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+}
+
+.stat-icon .award-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    color: #8ed3e7;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .stat-card {
+        padding: 1rem;
+    }
+
+    .stat-icon {
+        font-size: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media Queries actualizados */
+@media (min-width: 1200px) {
+    .synopsis-text-extra {
+        display: inline;
+    }
+
+    .highlight-extra {
+        display: flex;
+    }
+
+    .synopsis-card {
+        padding: 3rem;
+    }
+
+    .synopsis-text {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        margin-bottom: 2.5rem;
+    }
+
+    .highlights-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+
+    .highlight-pill {
+        padding: 1rem 1.8rem;
+        font-size: 1.1rem;
+    }
+
+    .highlight-pill i {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .synopsis-card {
+        padding: 3.5rem;
+    }
+
+    .synopsis-text {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    .highlights-container {
+        gap: 1.5rem;
+    }
+
+    .highlight-pill {
+        padding: 1.2rem 2rem;
+    }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1199px) {
+    .synopsis-text-extended,
+    .synopsis-text-extra,
+    .highlight-extra {
+        display: none;
+    }
+
+    .synopsis-text {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Colores personalizados para los iconos de estadísticas */
+.stat-card .stat-icon i.fa-tv {
+    background: linear-gradient(45deg, #FF6B6B, #FF8E8E); /* Rojo suave para temporadas */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card .stat-icon i.fa-film {
+    background: linear-gradient(45deg, #4ECDC4, #45B7AF); /* Verde azulado para episodios */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card .stat-icon i.fa-star {
+    background: linear-gradient(45deg, #FFD93D, #FFC107); /* Amarillo dorado para rating */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Ajustar el tamaño y el brillo de los iconos */
+.stat-card .stat-icon i {
+    font-size: 2.2rem;
+    filter: brightness(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para los iconos */
+.stat-card:hover .stat-icon i {
+    filter: brightness(1.2);
+    transform: scale(1.1);
 }

@@ -57,47 +57,113 @@
     <!-- Main Content -->
     <main class="container my-5">
         <!-- Ajustar las secciones principales para que tengan fondo semi-transparente -->
-        <section class="synopsis bg-white bg-opacity-95 p-4 rounded shadow-sm">
-            <div class="row align-items-center">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="synopsis-img-container">
-                        <img src="assets/images/elenco.jpg" alt="Elenco de The Office" class="img-fluid shadow">
-                        <a href="https://es.wikipedia.org/wiki/The_Office_(Estados_Unidos)" 
-                           class="synopsis-link-overlay" 
-                           target="_blank" 
-                           rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+        <section class="synopsis-stats-section py-5">
+            <div class="container">
+                <!-- Sinopsis primero, ocupando todo el ancho -->
+                <div class="synopsis-card mb-5">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="synopsis-img-container">
+                                <img src="assets/images/elenco.jpg" 
+                                     alt="Elenco de The Office" 
+                                     class="img-fluid rounded shadow">
+                                <a href="https://es.wikipedia.org/wiki/The_Office_(Estados_Unidos)" 
+                                   class="synopsis-link-overlay" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="section-title">Sinopsis</h2>
+                            <p class="synopsis-text">
+                                The Office es una serie de televisión estadounidense que sigue el día a día de los empleados de la empresa papelera Dunder Mifflin en Scranton, Pennsylvania.
+                                <span class="synopsis-text-extended">
+                                    A través de un formato de falso documental, la serie retrata las divertidas y a menudo incómodas situaciones laborales lideradas por Michael Scott, el excéntrico gerente regional. La serie destaca por su humor único, sus personajes memorables y su capacidad para mezclar momentos hilarantes con toques emotivos.
+                                    
+                                </span>
+                            </p>
+                            <div class="highlights-container">
+                                <div class="highlight-pill">
+                                    <i class="fas fa-laugh-beam"></i>
+                                    <span>Comedia Mockumentary</span>
+                                </div>
+                                <div class="highlight-pill">
+                                    <i class="fas fa-building"></i>
+                                    <span>Ambientada en una oficina</span>
+                                </div>
+                                <div class="highlight-pill">
+                                    <i class="fas fa-users"></i>
+                                    <span>Elenco Memorable</span>
+                                </div>
+                                <div class="highlight-pill highlight-extra">
+                                    <i class="fas fa-award"></i>
+                                    <span>Múltiples Premios</span>
+                                </div>
+                                <div class="highlight-pill highlight-extra">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Fenómeno Global</span>
+                                </div>
+                                <div class="highlight-pill highlight-extra">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Historias Emotivas</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <h2 class="border-bottom pb-2 mb-4">Sinopsis</h2>
-                    <div class="synopsis-content">
-                        <p class="lead text-white fw-bold">The Office es una serie de televisión estadounidense de comedia que se desarrolla en la sucursal de Scranton de Dunder Mifflin, una empresa de papel. A través del formato mockumentary, la serie sigue el día a día de los empleados liderados por Michael Scott, el excéntrico gerente regional.</p>
-                        <div class="mt-3">
-                            <p class="text-muted">La serie, adaptada de la versión británica original creada por Ricky Gervais y Stephen Merchant, se estrenó en 2005 y se extendió durante nueve temporadas hasta 2013. A través de situaciones cotidianas y momentos hilarantes, The Office explora temas como las relaciones laborales, la amistad, el amor y las peculiaridades de la vida corporativa estadounidense.</p>
-                            <p>Con su humor único y personajes entrañables, la serie se ha convertido en un fenómeno cultural, ganando numerosos premios Emmy y el corazón de millones de espectadores en todo el mundo.</p>
+
+                <!-- Estadísticas debajo, en una fila de 4 columnas -->
+                <div class="row stats-row">
+                    <!-- Premios Emmy -->
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <img src="assets/images/emmy-icon.png" alt="Emmy Award" class="award-icon" style="width: 50px; height: auto;">
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">5</h3>
+                                <p class="stat-label">Premios Emmy</p>
+                            </div>
                         </div>
-                        <div class="mt-4">
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="stat-box p-2 bg-primary text-white rounded float">
-                                        <h4>9</h4>
-                                        <small>Temporadas</small>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="stat-box p-2 bg-success text-white rounded float">
-                                        <h4>201</h4>
-                                        <small>Episodios</small>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="stat-box p-2 bg-info text-white rounded float">
-                                        <h4>5</h4>
-                                        <small>Premios Emmy</small>
-                                    </div>
-                                </div>
+                    </div>
+
+                    <!-- Temporadas -->
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">9</h3>
+                                <p class="stat-label">Temporadas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Episodios -->
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">201</h3>
+                                <p class="stat-label">Episodios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rating IMDB -->
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 class="stat-number">8.9/10</h3>
+                                <p class="stat-label">Rating IMDB</p>
                             </div>
                         </div>
                     </div>
