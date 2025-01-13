@@ -1,10 +1,11 @@
 /* Hero Section con Video */
 .hero-section {
     position: relative;
-    height: 400px;
-    min-height: 400px;
+    height: auto;
+    min-height: 500px;
     overflow: hidden;
     margin-top: 0;
+    
 }
 
 .hero-video {
@@ -12,12 +13,23 @@
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #000;
 }
 
 #heroVideo {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .hero-overlay {
@@ -36,7 +48,7 @@
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: #ffffff;
+    color: #002c3a;
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
@@ -50,7 +62,7 @@
     left: 0;
     width: 50%;
     height: 3px;
-    background: linear-gradient(to right, #8ed3e7, transparent);
+    background: linear-gradient(to right, #002c3a, transparent);
 }
 
 /* Filtros de Galería */
@@ -291,4 +303,94 @@ main.container {
     position: relative;
     z-index: 1;
     margin-top: 3rem;
+}
+
+/* Estilos para la sección de momentos memorables */
+.moments-section {
+    background: rgba(81, 94, 97, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link {
+    color: #ffffff;
+    border: none;
+    padding: 1rem 1.5rem;
+    margin-right: 0.5rem;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-tabs .nav-link.active {
+    background: #8ed3e7;
+    color: #002c3a;
+}
+
+.moment-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.moment-card:hover {
+    transform: translateY(-5px);
+}
+
+.moment-image {
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.moment-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.moment-info {
+    padding: 1.5rem;
+    color: white;
+}
+
+.moment-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.moment-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Animaciones */
+.tab-pane {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Asegurar que los títulos dentro de las cards mantengan su color blanco */
+.moment-card h3,
+.video-card h3,
+.audio-card h3 {
+    color: #ffffff;
 } 

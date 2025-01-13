@@ -538,3 +538,21 @@ document.addEventListener('DOMContentLoaded', function() {
         recommendationObserver.observe(card);
     });
 });
+
+// Añadir al código existente
+document.addEventListener('DOMContentLoaded', function() {
+    const heroVideo = document.getElementById('heroVideo');
+    
+    if (heroVideo) {
+        heroVideo.addEventListener('error', function(e) {
+            console.error('Error loading video:', e);
+            // Fallback a una imagen si el video falla
+            heroVideo.parentElement.style.backgroundImage = "url('assets/images/galeria-hero.jpg')";
+        });
+
+        // Verificar si el video se está reproduciendo
+        heroVideo.addEventListener('playing', function() {
+            console.log('Video is playing');
+        });
+    }
+});

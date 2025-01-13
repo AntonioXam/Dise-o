@@ -49,8 +49,10 @@
         </nav>
 
         <div class="hero-video">
-            <video autoplay muted loop id="heroVideo">
-                <source src="assets/videos/the-office-intro.mp4" type="video/mp4">
+            <video autoplay muted loop id="heroVideo" playsinline>
+                <source src="assets/videos/Best Intro Ever - The Office US.mp4" type="video/mp4">
+                <source src="assets/videos/office-intro.webm" type="video/webm">
+                Tu navegador no soporta el elemento de video.
             </video>
             <div class="hero-overlay">
                 <div class="container">
@@ -63,42 +65,237 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <!-- Filtros de Galería -->
-        <section class="gallery-filters mb-5">
-            <h2 class="section-title">Momentos Memorables</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> Todo
-                </button>
-                <button class="filter-btn" data-filter="momentos">
-                    <i class="fas fa-camera"></i> Momentos
-                </button>
-                <button class="filter-btn" data-filter="detras">
-                    <i class="fas fa-film"></i> Detrás de Cámaras
-                </button>
-                <button class="filter-btn" data-filter="eventos">
-                    <i class="fas fa-calendar"></i> Eventos
-                </button>
-            </div>
-        </section>
+       
 
-        <!-- Grid de Imágenes -->
-        <section class="gallery-grid">
-            <div class="row g-4">
-                <!-- Imagen 1 -->
-                <div class="col-md-4 gallery-item" data-category="momentos">
-                    <div class="gallery-card">
-                        <img src="assets/images/galeria/jim-pam-kiss.jpg" alt="Jim y Pam">
-                        <div class="gallery-overlay">
-                            <h3>Primer Beso</h3>
-                            <p>Jim y Pam en Casino Night</p>
-                            <button class="expand-btn" data-bs-toggle="modal" data-bs-target="#imageModal">
-                                <i class="fas fa-expand"></i>
-                            </button>
+        <!-- Momentos Memorables -->
+        <section class="moments-section">
+            <div class="moments-content">
+                <ul class="nav nav-tabs" id="momentsTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#momentos">
+                            <i class="fas fa-heart"></i> Momentos Icónicos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bromas">
+                            <i class="fas fa-laugh-squint"></i> Bromas
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#eventos">
+                            <i class="fas fa-calendar"></i> Eventos Especiales
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#detras">
+                            <i class="fas fa-film"></i> Detrás de Cámaras
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Contenido de las pestañas -->
+                <div class="tab-content" id="momentsContent">
+                    <!-- Momentos Icónicos -->
+                    <div class="tab-pane fade show active" id="momentos">
+                        <div class="row g-4">
+                            <!-- Prison Mike -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/v0eHX3n28wvoQ/giphy.gif" alt="Prison Mike">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Prison Mike</h3>
+                                        <p>Temporada 3, Episodio 9</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CPR Training -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/6xWQt3NF9VqBW/giphy.gif" alt="CPR Scene">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Entrenamiento RCP</h3>
+                                        <p>Temporada 5, Episodio 14</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kevin's Chili -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/RLWwOuPbqObupogOLB/giphy.gif" alt="Kevin's Chili">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>El Chile de Kevin</h3>
+                                        <p>Temporada 5, Episodio 26</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bromas -->
+                    <div class="tab-pane fade" id="bromas">
+                        <div class="row g-4">
+                            <!-- Stapler in Jello -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/2u11zpzwyMTy8/giphy.gif" alt="Stapler in Jello">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>La Grapa en Gelatina</h3>
+                                        <p>Temporada 1, Episodio 1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Asian Jim -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/7SOdwNYHzCI7ygrLw7/giphy.gif" alt="Asian Jim">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Jim Asiático</h3>
+                                        <p>Temporada 9, Episodio 3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eventos Especiales -->
+                    <div class="tab-pane fade" id="eventos">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/dXtS0aWE6I0iA/giphy.gif" alt="Dundies Awards">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Los Dundies</h3>
+                                        <p>Temporada 2, Episodio 1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/wwl3EorfXZW4o/giphy.gif" alt="Threat Level Midnight">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Threat Level Midnight</h3>
+                                        <p>Temporada 7, Episodio 17</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/ui1hpJSyBDWlG/giphy.gif" alt="Parkour">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Parkour!</h3>
+                                        <p>Temporada 6, Episodio 1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Más momentos icónicos -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/Qs0QEnugOy0xIsFkpD/giphy.gif" alt="Kevin's Chili">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>El Chile de Kevin</h3>
+                                        <p>Temporada 5, Episodio 26</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Videos populares -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/7iPyz6Yqwl4/giphy.gif" alt="Stress Relief - The Office">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Relajación del Estrés</h3>
+                                        <p>Temporada 1, Episodio 1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Más bromas -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/dw7lCpFmsyfS0/giphy.gif" alt="Jim imita a Dwight">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Jim imita a Dwight</h3>
+                                        <p>Temporada 3, Episodio 2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Detrás de cámaras -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/3kzrzzQXUfI6bmUNf3/giphy.gif" alt="Bloopers">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Tomas Falsas</h3>
+                                        <p>Temporada 4 Bloopers</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="https://media.giphy.com/media/jOpLbiGmHR9S0/giphy.gif" alt="Behind the Scenes">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Entre Escenas</h3>
+                                        <p>Momentos divertidos durante la grabación</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detrás de Cámaras -->
+                    <div class="tab-pane fade" id="detras">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="moment-card">
+                                    <div class="moment-image">
+                                        <img src="assets/images/galeria/bloopers.jpg" alt="Bloopers">
+                                    </div>
+                                    <div class="moment-info">
+                                        <h3>Tomas Falsas</h3>
+                                        <p>Temporada 2</p>
+                                        <div class="moment-description">
+                                            <p>El elenco no puede contener la risa durante las grabaciones.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Más contenido detrás de cámaras... -->
                         </div>
                     </div>
                 </div>
-                <!-- Más imágenes... -->
             </div>
         </section>
 
@@ -106,25 +303,104 @@
         <section class="video-section mt-5">
             <h2 class="section-title">Mejores Momentos en Video</h2>
             <div class="row g-4">
+                <!-- Fire Drill -->
                 <div class="col-lg-6">
                     <div class="video-card">
                         <div class="video-wrapper">
-                            <video poster="assets/images/thumbnails/fire-drill.jpg">
-                                <source src="assets/videos/fire-drill.mp4" type="video/mp4">
-                            </video>
-                            <div class="video-overlay">
-                                <button class="play-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
+                            <iframe width="100%" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/gO8N3L_aERg"
+                                    title="Fire Drill Scene" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="video-info">
                             <h3>El Simulacro de Incendio</h3>
-                            <p>Dwight crea el caos con su simulacro de incendio</p>
+                            <p>El caótico simulacro de Dwight</p>
                         </div>
                     </div>
                 </div>
-                <!-- Más videos... -->
+
+                <!-- That's What She Said -->
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="100%" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/dBUGfs9rwms"
+                                    title="That's What She Said Compilation" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>That's What She Said</h3>
+                            <p>Las mejores frases de Michael Scott</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jim's Pranks -->
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="100%" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/kqgWXW4nVe0"
+                                    title="Jim's Best Pranks" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Las Bromas de Jim</h3>
+                            <p>Las mejores bromas a Dwight</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Más videos populares -->
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="100%" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/mfokPqeSNcw"
+                                    title="The Office Best Moments" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Mejores Momentos</h3>
+                            <p>Recopilación de escenas memorables</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="100%" 
+                                    height="315" 
+                                    src="https://www.youtube.com/embed/uyIVAm9PVrI"
+                                    title="Threat Level Midnight" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Threat Level Midnight</h3>
+                            <p>La película de Michael Scott</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -132,20 +408,75 @@
         <section class="audio-section mt-5">
             <h2 class="section-title">Frases Memorables</h2>
             <div class="row g-4">
+                <!-- Michael Scott -->
                 <div class="col-md-4">
                     <div class="audio-card">
                         <div class="audio-thumbnail">
-                            <img src="assets/images/thumbnails/michael-scott.jpg" alt="Michael Scott">
+                            <img src="https://i.insider.com/5f5b1e267ed0ee001e25dd5c" alt="Michael Scott">
                         </div>
                         <div class="audio-player">
-                            <audio controls>
-                                <source src="assets/audio/thats-what-she-said.mp3" type="audio/mpeg">
-                            </audio>
+                            <iframe width="100%" 
+                                    height="166" 
+                                    src="https://www.youtube.com/embed/ClzJkv3dpY8" 
+                                    title="That's What She Said Compilation"
+                                    frameborder="0">
+                            </iframe>
                             <p>"That's what she said" - Michael Scott</p>
                         </div>
                     </div>
                 </div>
-                <!-- Más audios... -->
+
+                <div class="col-md-4">
+                    <div class="audio-card">
+                        <div class="audio-thumbnail">
+                            <img src="https://i.insider.com/5f5b1e267ed0ee001e25dd5b" alt="Dwight Schrute">
+                        </div>
+                        <div class="audio-player">
+                            <iframe width="100%" 
+                                    height="166" 
+                                    src="https://www.youtube.com/embed/cE8G8Y77NoU" 
+                                    title="Dwight's Best Quotes"
+                                    frameborder="0">
+                            </iframe>
+                            <p>"False!" - Dwight Schrute</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="audio-card">
+                        <div class="audio-thumbnail">
+                            <img src="https://i.insider.com/5f5b1e267ed0ee001e25dd5b" alt="Jim Halpert">
+                        </div>
+                        <div class="audio-player">
+                            <iframe width="100%" 
+                                    height="166" 
+                                    src="https://www.youtube.com/embed/ClzJkv3dpY8" 
+                                    title="That's What She Said Compilation"
+                                    frameborder="0">
+                            </iframe>
+                            <p>"Look at the camera like this" - Jim Halpert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Más clips de audio -->
+                <div class="col-md-4">
+                    <div class="audio-card">
+                        <div class="audio-thumbnail">
+                            <img src="https://media.giphy.com/media/RAGxhwdfH6Je8/giphy.gif" alt="Dwight Quotes">
+                        </div>
+                        <div class="audio-player">
+                            <iframe width="100%" 
+                                    height="166" 
+                                    src="https://www.youtube.com/embed/Zv9rZdjv4Mo"
+                                    title="Dwight's Best Quotes" 
+                                    frameborder="0">
+                            </iframe>
+                            <p>Las mejores frases de Dwight</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
