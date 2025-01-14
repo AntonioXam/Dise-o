@@ -67,7 +67,7 @@
 
 /* Filtros de Galería */
 .gallery-filters {
-    background: rgba(81, 94, 97, 0.95);
+    background:  rgba(0, 24, 29, 0.95);
     padding: 2rem;
     border-radius: 15px;
     margin-bottom: 3rem;
@@ -81,7 +81,7 @@
 }
 
 .filter-btn {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 54, 58, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     padding: 0.8rem 1.5rem;
@@ -92,7 +92,7 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: #8ed3e7;
+    background: #023f57;
     transform: translateY(-2px);
 }
 
@@ -105,7 +105,7 @@
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    background: rgba(81, 94, 97, 0.95);
+    background:  rgba(0, 24, 29, 0.95);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
@@ -215,10 +215,11 @@
 
 /* Sección de Audio */
 .audio-card {
-    background: rgba(81, 94, 97, 0.95);
+    background: rgba(1, 43, 54, 0.95);
     border-radius: 15px;
     overflow: hidden;
     padding: 1rem;
+    color:white
 }
 
 .audio-thumbnail {
@@ -246,7 +247,7 @@
 
 /* Modal */
 .modal-content {
-    background: rgba(81, 94, 97, 0.95);
+    background: rgba(1, 31, 37, 0.95);
     border: none;
 }
 
