@@ -146,24 +146,41 @@
 
 /* Sección de Videos */
 .video-card {
-    background: rgba(81, 94, 97, 0.95);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 24, 29, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    height: 100%;
 }
 
 .video-wrapper {
     position: relative;
-    padding-top: 56.25%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
 }
 
-.video-wrapper video {
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+}
+
+.video-info {
+    padding: 15px;
+}
+
+.video-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.video-info p {
+    margin: 0;
+    color: #ffffff;
 }
 
 .video-overlay {
@@ -393,4 +410,4 @@ main.container {
 .video-card h3,
 .audio-card h3 {
     color: #ffffff;
-} 
+}
