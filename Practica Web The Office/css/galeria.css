@@ -62,7 +62,7 @@
     left: 0;
     width: 50%;
     height: 3px;
-    background: linear-gradient(to right, #002c3a, transparent);
+    background: linear-gradient(to right, #303f44, transparent);
 }
 
 /* Filtros de Galería */
@@ -81,7 +81,7 @@
 }
 
 .filter-btn {
-    background: rgba(0, 54, 58, 0.1);
+    background: rgb(21, 60, 63);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     padding: 0.8rem 1.5rem;
@@ -92,7 +92,7 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: #023f57;
+    background: #334f5a;
     transform: translateY(-2px);
 }
 
@@ -146,7 +146,7 @@
 
 /* Sección de Videos */
 .video-card {
-    background: rgba(0, 24, 29, 0.95);
+    background: rgba(68, 79, 82, 0.95);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
@@ -215,7 +215,7 @@
 
 /* Sección de Audio */
 .audio-card {
-    background: rgba(1, 43, 54, 0.95);
+    background: rgba(59, 73, 77, 0.95);
     border-radius: 15px;
     overflow: hidden;
     padding: 1rem;
